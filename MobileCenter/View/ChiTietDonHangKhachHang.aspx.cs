@@ -1,7 +1,6 @@
 ﻿using MobileCenter.App_User;
 using MobileCenter.Models.BUS;
 using MobileCenter.Models.DTO;
-using MOONLY.Common;
 using System;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -44,9 +43,9 @@ namespace MobileCenter.View
             }
             gridChiTietDonHang.DataSource = chiTietDonHangBUS.KetQua;
             gridChiTietDonHang.DataBind();
-            lblIDGiaoDich.Text = Request.QueryString["IdGiaoDich"];
-            DonHang donhang = new DonHang();
-            donhang.Idgiaodich = Request.QueryString["IdGiaoDich"];
+            lblIDGiaoDich.Text = Request.QueryString["MaGiaoDich"];
+            DonHangDTO donHang = new DonHangDTO();
+            donHang.MaGiaoDich = Request.QueryString["MaGiaoDich"];
         }
     }
 }

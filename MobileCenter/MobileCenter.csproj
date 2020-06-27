@@ -100,18 +100,6 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.4\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="MOONLY.BusinessLogic">
-      <HintPath>..\..\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\Web\Bin\MOONLY.BusinessLogic.dll</HintPath>
-    </Reference>
-    <Reference Include="MOONLY.Common">
-      <HintPath>..\..\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\Web\Bin\MOONLY.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="MOONLY.DataAccess">
-      <HintPath>..\..\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\Web\Bin\MOONLY.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="MOONLY.Operational">
-      <HintPath>..\..\[Sharecode.vn] Code do an thiet ke web ban hang sony ASP.Net full code\Web\Bin\MOONLY.Operational.dll</HintPath>
-    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
