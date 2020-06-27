@@ -58,7 +58,7 @@ namespace MobileCenter.View
                     CheckBox check = (CheckBox)row.FindControl("checkboxDelete");
                     if (check.Checked)
                     {
-                        Delete(int.Parse(data.Values["IDgiohang"].ToString()));
+                        Delete(int.Parse(data.Values["IdGioHang"].ToString()));
                         //IDgiohang la gia tri cua thuoc tinh DataKeyNames="IDgiohang" trong gridview
                         // ma ta tao trong file giao dien giohang.aspx
                     }
@@ -70,7 +70,7 @@ namespace MobileCenter.View
                     int.Parse(gridgiohang.DataKeys[row.DataItemIndex].Value.ToString());
                     if (giatri_moi_trong_textbox != giatri_bandau_trong_textbox)
                     {
-                        Update(int.Parse(data.Values["IDgiohang"].ToString()),
+                        Update(int.Parse(data.Values["IdGioHang"].ToString()),
                         giatri_moi_trong_textbox);
                     }
                 }
