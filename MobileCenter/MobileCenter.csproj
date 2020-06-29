@@ -185,6 +185,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admins\View\affix.css" />
     <Content Include="Admins\View\images\ADMIN.png" />
     <Content Include="Admins\View\images\arr.gif" />
     <Content Include="Admins\View\images\arr2.gif" />
@@ -289,7 +290,9 @@
     <Content Include="Admins\View\images\working.gif" />
     <Content Include="Admins\View\ChiTietDonHang.aspx" />
     <Content Include="Admins\View\DangNhapAdmin.aspx" />
+    <Content Include="Admins\View\jquery-1.4.2.min.js" />
     <Content Include="Admins\View\SanPham.aspx" />
+    <Content Include="Admins\View\style.css" />
     <Content Include="Admins\View\SuaSanPham.aspx" />
     <Content Include="Admins\View\ThongKeDonHang.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
@@ -462,6 +465,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\admin.css" />
+    <Content Include="css\affix.css" />
+    <Content Include="css\menusm.css" />
+    <Content Include="css\pagenavi-css.css" />
+    <Content Include="css\shoping-card.css" />
+    <Content Include="css\slideshow.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\superfish.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -485,6 +496,20 @@
     <Content Include="ckeditor\skins\moono-lisa\readme.md" />
     <Content Include="Admins\View\images\logo.psd" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\slide3.jpg" />
+    <Content Include="images\slide4.jpg" />
+    <Content Include="js\affix.js" />
+    <Content Include="js\app.js" />
+    <Content Include="js\coin-slider.min.js" />
+    <Content Include="js\cufon-chunkfive.js" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\menusm.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\slideshow.js" />
+    <Content Include="js\swiper.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
