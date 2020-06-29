@@ -275,3 +275,6 @@ __pycache__/
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore
 /MobileCenter/bin/MobileCenter.dll
 /MobileCenter/bin/MobileCenter.dll.config
+/MobileCenter/Web.Debug.config
+/MobileCenter/Web.Release.config
+/MobileCenter/Web.config
