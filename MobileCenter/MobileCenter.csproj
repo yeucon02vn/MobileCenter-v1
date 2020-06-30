@@ -495,6 +495,7 @@
     <Content Include="ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="ckeditor\skins\moono-lisa\readme.md" />
     <Content Include="Admins\View\images\logo.psd" />
+    <Content Include="Admins\View\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\slide1.jpg" />
     <Content Include="images\slide2.jpg" />

@@ -12,6 +12,8 @@ namespace MobileCenter.Admins.View
 {
     public partial class DangNhapAdmin : System.Web.UI.Page
     {
+        //string name = ((My)this.Master).strName;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             textUsername.Focus();

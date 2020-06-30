@@ -23,30 +23,29 @@
             <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 1000px">
 
                 <tr>
-                    <td style="width: 179px; background-color: #ffffff; height: 277px;" valign="top">
-                        <table border="0" cellpadding="0" cellspacing="0" style="width: 179px;">
-                            <nav class="navbar" style="align-items: initial;">
-                            <ul class="nav flex-column">
-                               <li class="nav-item">
-                                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/admin/themsanpham">ĐĂNG SẢN PHẨM</asp:HyperLink>
-                               </li>
-                               <li class="nav-item">
-                                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/admin/sanpham">SẢN PHẨM</asp:HyperLink>
-                               </li>
-                               <li class="nav-item">
-                                 <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/admin/thongkedonhang">THỐNG KÊ ĐƠN HÀNG</asp:HyperLink>
-                               </li>
-                                <li class="nav-item">
-                                 <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="">TRANG CHỦ</asp:HyperLink>
-                               </li>
-                                <li class="nav-item">
-                                 &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">ĐĂNG XUẤT</asp:LinkButton>
-                               </li>
-                            </ul>
-                        </nav>
-                        </table>
-                    </td>
-
+                        <td id="menu" runat="server" style="width: 179px; background-color: #ffffff; height: 277px;" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" style="width: 179px;">
+                                <nav class="navbar" style="align-items: initial;">
+                                <ul class="nav flex-column">
+                                   <li class="nav-item">
+                                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/admin/themsanpham">ĐĂNG SẢN PHẨM</asp:HyperLink>
+                                   </li>
+                                   <li class="nav-item">
+                                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/admin/sanpham">SẢN PHẨM</asp:HyperLink>
+                                   </li>
+                                   <li class="nav-item">
+                                     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/admin/thongkedonhang">THỐNG KÊ ĐƠN HÀNG</asp:HyperLink>
+                                   </li>
+                                    <li class="nav-item">
+                                     <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="">TRANG CHỦ</asp:HyperLink>
+                                   </li>
+                                    <li class="nav-item">
+                                     &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">ĐĂNG XUẤT</asp:LinkButton>
+                                   </li>
+                                </ul>
+                            </nav>
+                            </table>
+                        </td>
                     <td style="padding: 10px; background-color: #ffffff; width: 821px; height: 277px;">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
