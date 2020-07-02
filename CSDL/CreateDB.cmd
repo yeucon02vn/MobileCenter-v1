@@ -1,1 +1,1 @@
-SQLCMD -S DESKTOP-Q3L9OQF\SQLEXPRESS -E -i MobileCenterDBscript.sql
+SQLCMD -S DESKTOP-Q3L9OQF -E -i MobileCenterDB.sql
