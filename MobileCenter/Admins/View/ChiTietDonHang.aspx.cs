@@ -74,7 +74,7 @@ namespace MobileCenter.Admins.View
         //---------Xự kiện nút trở về--------------------
         protected void btnTroVe_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~admin/thongkedonhang");
+            Response.Redirect("~/admin/thongkedonhang");
         }
         // ---------sự kiện kích image button--------------
 
@@ -107,15 +107,15 @@ namespace MobileCenter.Admins.View
             donHang.NgayXuLyDonHang = Convert.ToDateTime(textShippedDate.Text);
             donHang.TrackingNumber = textTrackingNumber.Text;
             xulycapnhatdonhang._donhang = donHang;         
-            try
-            {
+/*            try
+            {*/
                 xulycapnhatdonhang.Update();
-            }
+/*            }
             catch
             {
                 Response.Redirect("../Trangloi.aspx");
-            }
-            Response.Redirect("~admin/thongkedonhang");
+            }*/
+            Response.Redirect("~/admin/thongkedonhang");
         }
     }
 }

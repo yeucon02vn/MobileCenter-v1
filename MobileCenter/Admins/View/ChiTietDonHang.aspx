@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Admins/View/Admin.Master" AutoEventWireup="true" CodeBehind="ChiTietDonHang.aspx.cs" Inherits="MobileCenter.Admins.View.ChiTietDonHang" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table style="width: 820px">
+    <table style="width: 1020px">
         <tr>
             <td style="width: 300px" align="center">
                 ID Giao dịch</td>
