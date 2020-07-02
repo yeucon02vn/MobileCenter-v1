@@ -17,10 +17,7 @@
                             <asp:Label ID="Label3" runat="server" Text='<%# Eval("GiaSanPham","{0:###,###,###} VND") %>'></asp:Label>
                             <%--<asp:Label ID="Label4" runat="server" Text='<%# Eval("MoTaSanPham") %>'></asp:Label>--%>
                     </div>
-                </div>
-
-  
-    
+                </div>   
         </ItemTemplate>
     </asp:DataList>
 </asp:Content>

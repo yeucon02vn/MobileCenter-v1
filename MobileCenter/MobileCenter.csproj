@@ -292,6 +292,7 @@
     <Content Include="Admins\View\DangNhapAdmin.aspx" />
     <Content Include="Admins\View\jquery-1.4.2.min.js" />
     <Content Include="Admins\View\SanPham.aspx" />
+    <Content Include="Admins\View\script.js" />
     <Content Include="Admins\View\style.css" />
     <Content Include="Admins\View\SuaSanPham.aspx" />
     <Content Include="Admins\View\ThongKe.aspx" />
