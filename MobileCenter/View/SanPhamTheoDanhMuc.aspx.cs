@@ -25,14 +25,7 @@ namespace MobileCenter.View
             sanPham.IdDanhMucSanPham = int.Parse(Request.QueryString["IdDanhMucSanPham"]);
             SanPhamBUS sanPhamBUS = new SanPhamBUS();
             sanPhamBUS._sanPham = sanPham;
-            try
-            {
-                sanPhamBUS.SelectByDanhMuc();
-            }
-            catch
-            {
-                Response.Redirect("Trangloi.aspx");
-            }
+            sanPhamBUS.SelectByDanhMuc();
             dtlSanPhamDM.DataSource = sanPhamBUS.KetQua;
             dtlSanPhamDM.DataBind();
         }
