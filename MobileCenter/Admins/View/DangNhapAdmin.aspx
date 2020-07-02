@@ -2,34 +2,65 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<table style="width: 820px">
-        <tr>
-            <td colspan="2" style="font-size: 20pt; color: #990000; font-style: normal; text-align: center">
-                ĐĂNG NHẬP QUYỀN QUẢN TRỊ WEBSITE</td>
-        </tr>
-        <tr>
-            <td style="width: 200px; font-size:20px">
-                Tên đăng nhập</td>
-            <td style="width: 520px; ">
-                <asp:TextBox ID="textUsername" class="form-control" runat="server" Width="250px" Height="30px" style="margin-top:20px; font-size:15px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="textUsername"
-                    ErrorMessage="Tên đăng nhập không được rỗng"></asp:RequiredFieldValidator></td>
-        </tr>
-        <tr>
-            <td style="width: 200px; font-size:20px">
-                Mật khẩu</td>
-            <td style="width: 520px">
-                <asp:TextBox ID="textMatKhau" class="form-control" runat="server" TextMode="Password" Width="250px" Height="30px" style="margin-top:20px; font-size:15px"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2"  runat="server" ControlToValidate="textMatKhau"
-                    ErrorMessage="Mật khẩu không được rỗng"></asp:RequiredFieldValidator></td>
-        </tr>
-        <tr>
-            <td style="width: 200px">
-            </td>
-            <td style="width: 520px">
-                <asp:Button ID="btnDangNhap" runat="server" OnClick="btnDangNhap_Click" Width="250px" Height="30px" 
-                    Text="Đăng Nhập" class="btn btn-outline-primary" type="submit" style ="margin-top:20px; font-size:15px"/>
-                <asp:Label ID="labelMessage" runat="server"></asp:Label></td>
-        </tr>
-    </table>
+    <!DOCTYPE html>
+<html>	
+	
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('https://localhost:44375/Admins/View/images/bg-01.jpg')">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input runat="server" id="userName" class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" runat="server" id="passWord" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox" >
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<asp:Button ID="btnDangNhap" runat="server" OnClick="btnDangNhap_Click" 
+                    Text="Login" class="login100-form-btn" />
+					</div>
+
+
+					<div class="text-center p-t-90">
+						<a class="txt1" href="#">
+							Forgot Password?
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+
+	
+	
+</body>
+	
+</html>
+
 </asp:Content>
+
