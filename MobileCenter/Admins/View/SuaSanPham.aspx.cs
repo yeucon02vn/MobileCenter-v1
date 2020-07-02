@@ -57,9 +57,7 @@ namespace MobileCenter.Admins.View
                 textGia.Text = laySanPhamByID._sanPham.GiaSanPham.ToString();
                 imgHinhSanPham.ImageUrl = "~/View/HienThiHinhSanPham.ashx?IdHinhSanPham=" +
                 laySanPhamByID._sanPham.IdHinhSanPham.ToString();
-                dropDanhMucSanPham.SelectedIndex =
-                dropDanhMucSanPham.Items.IndexOf(dropDanhMucSanPham.Items.FindByText(
-                laySanPhamByID._sanPham.DanhMucSanPham.TenDanhMucSanPham));
+                dropDanhMucSanPham.SelectedIndex = laySanPhamByID._sanPham.IdDanhMucSanPham - 1;
                 LuuTamIdHinhSanPham = laySanPhamByID._sanPham.IdHinhSanPham;
             }
             catch

@@ -111,5 +111,14 @@ namespace MobileCenter.Models.DAL
             sqlData.SelectParameters.Add("tieuchuantim", Tieuchuan);
             return sqlData;
         }
+
+        public void Delete()
+        {
+            SqlDataSource sqlData = Connect();
+            sqlData.DeleteCommandType = SqlDataSourceCommandType.StoredProcedure;
+            sqlData.DeleteCommand = "HinhSanPham_Delete";
+            sqlData.DeleteParameters.Add("IdHinhSanPham", _sanPham.IdHinhSanPham.ToString());
+            sqlData.Delete();
+        }
     }
 }

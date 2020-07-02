@@ -60,5 +60,19 @@ namespace MobileCenter.Models.BUS
             registerUser.Insert();
             this._nguoiDung.IdNguoiDung = registerUser._nguoiDung.IdNguoiDung;
         }
+
+        public void Update()
+        {
+            NguoiDungDAL updateUser = new NguoiDungDAL();
+            updateUser._nguoiDung = this._nguoiDung;
+            updateUser.Update();
+        }
+
+        public void ChangePassword()
+        {
+            NguoiDungDAL changePassword = new NguoiDungDAL();
+            changePassword._nguoiDung = this._nguoiDung;
+            changePassword.ChangePassword();
+        }
     }
 }

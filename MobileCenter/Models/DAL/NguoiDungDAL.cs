@@ -1,6 +1,8 @@
 ﻿using MobileCenter.Models.DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
@@ -53,6 +55,37 @@ namespace MobileCenter.Models.DAL
             sqlData.SelectParameters.Add("TenDangNhap", _nguoiDung.TenDangNhap);
             sqlData.SelectParameters.Add("MatKhau", _nguoiDung.MatKhau);
             return sqlData;
+        }
+
+        public void Update()
+        {
+            SqlDataSource sqlData = Connect();
+            SqlConnection conect = new SqlConnection(sqlData.ConnectionString);
+            conect.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = conect;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandText = "NguoiDung_Update";
+            com.Parameters.Add("@HoTen", SqlDbType.Int).Value = _nguoiDung.HoTen;
+            com.Parameters.Add("@DiaChi", SqlDbType.NVarChar).Value = _nguoiDung.DiaChi;
+            com.Parameters.Add("@SoDienThoai", SqlDbType.NVarChar).Value = _nguoiDung.SoDienThoai;
+            com.Parameters.Add("@Email", SqlDbType.NVarChar).Value = _nguoiDung.Email;
+            com.Parameters.Add("@IdNguoiDung", SqlDbType.Int).Value = _nguoiDung.IdNguoiDung;
+            com.ExecuteNonQuery();
+        }
+
+        public void ChangePassword()
+        {
+            SqlDataSource sqlData = Connect();
+            SqlConnection conect = new SqlConnection(sqlData.ConnectionString);
+            conect.Open();
+            SqlCommand com = new SqlCommand();
+            com.Connection = conect;
+            com.CommandType = CommandType.StoredProcedure;
+            com.CommandText = "NguoiDung_Update";
+            com.Parameters.Add("@MatKhau", SqlDbType.NVarChar).Value = _nguoiDung.HoTen;
+            com.Parameters.Add("@IdNguoiDung", SqlDbType.Int).Value = _nguoiDung.DiaChi;
+            com.ExecuteNonQuery();
         }
     }
 }
