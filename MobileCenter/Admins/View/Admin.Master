@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <%--<link rel="stylesheet" type="text/css" href="style.css" media="screen" />--%>
 <head runat="server">
-    <title>Trang quản trị viên</title>a
+    <title>Trang quản trị viên</title>
     <%--<link href="web/admin.css" type="text/css" rel="Stylesheet" />--%>
     <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
@@ -47,7 +47,7 @@
 
     <form id="form1" runat="server">
         <div>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 1000px">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
 
                 <tr>
                         <td id="menu" runat="server" style="width: 179px; background-color: #ffffff; height: 277px;" valign="top">
@@ -77,7 +77,7 @@
                             </nav>
                             </table>
                         </td>
-                    <td style="padding: 10px; background-color: #ffffff; width: 821px; height: 277px;">
+                    <td >
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
                     </td>
