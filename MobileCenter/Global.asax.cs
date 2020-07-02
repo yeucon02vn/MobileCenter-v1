@@ -17,6 +17,7 @@ namespace MobileCenter
             routes.MapPageRoute("Admin SuaSanPham Page", "admin/suasanpham", "~/Admins/View/SuaSanPham.aspx");
             routes.MapPageRoute("Admin ThemSanPham Page", "admin/themsanpham", "~/Admins/View/ThemSanPham.aspx");
             routes.MapPageRoute("Admin ThongKeDonHang Page", "admin/thongkedonhang", "~/Admins/View/ThongKeDonHang.aspx");
+            routes.MapPageRoute("Admin ThongKe Page", "admin/thongke", "~/Admins/View/ThongKe.aspx");
         }
         void Application_Start(object sender, EventArgs e)
         {

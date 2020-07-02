@@ -40,8 +40,12 @@
                                      <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="">TRANG CHỦ</asp:HyperLink>
                                    </li>
                                     <li class="nav-item">
+                                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/admin/thongke">THỐNG KÊ</asp:HyperLink>
+                                   </li>
+                                    <li class="nav-item">
                                      &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">ĐĂNG XUẤT</asp:LinkButton>
                                    </li>
+
                                 </ul>
                             </nav>
                             </table>
