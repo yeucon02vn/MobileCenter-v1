@@ -17,25 +17,35 @@
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/affix.css" media="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>	
     
 </head>
-<nav class="navbar"  style="align-items: initial;">
-    <ul class="nav flex-column">
-       <li class="nav-item">
-         LAPTOP
-       </li>
-       <li class="nav-item">
-         TABLET
-       </li>
-       <li class="nav-item">
-         SMARTPHONE
-       </li>
-    </ul>
-</nav>         
  <body class="html_bg">
       <form id="form1" runat="server">
+          <div>
+            <asp:GridView ID="dtlSanpham" runat="server" AutoGenerateColumns="False" CssClass="menuDM">
+                <EmptyDataTemplate>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdDanhMucSanPham","../SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham={0}") %>'
+                        Text='<%# Eval("TenDanhMuc") %>'></asp:HyperLink>
+                </EmptyDataTemplate>
+                <Columns>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <nav class="navbar" style="align-items: initial;">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham={0}") %>'
+                                            Text='<%# ""+Eval("TenDanhMucSanPham") %>'></asp:HyperLink>
+                                    </li>
+                                </ul> 
+                            </nav>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView> 
+        </div>
          <div>
             <div id="page">
                <div id="header">

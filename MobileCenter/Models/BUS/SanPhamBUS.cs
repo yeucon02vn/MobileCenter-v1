@@ -52,6 +52,7 @@ namespace MobileCenter.Models.BUS
         public void SelectByDanhMuc()
         {
             SanPhamDAL spDAL = new SanPhamDAL();
+            spDAL._sanPham = this._sanPham;
             KetQua = spDAL.SelectByDanhMuc();
         }
 
