@@ -1,1 +1,1 @@
-SQLCMD -S DESKTOP-Q3L9OQF -E -i MobileCenterDB.sql
+SQLCMD -S PHUC\SQLEXPRESS -E -i MobileCenterDB.sql

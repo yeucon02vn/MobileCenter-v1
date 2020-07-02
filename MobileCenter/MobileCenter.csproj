@@ -292,8 +292,10 @@
     <Content Include="Admins\View\DangNhapAdmin.aspx" />
     <Content Include="Admins\View\jquery-1.4.2.min.js" />
     <Content Include="Admins\View\SanPham.aspx" />
+    <Content Include="Admins\View\script.js" />
     <Content Include="Admins\View\style.css" />
     <Content Include="Admins\View\SuaSanPham.aspx" />
+    <Content Include="Admins\View\ThongKe.aspx" />
     <Content Include="Admins\View\ThongKeDonHang.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
     <Content Include="ckeditor\bin\CKEditor.NET.dll" />
@@ -642,6 +644,13 @@
     </Compile>
     <Compile Include="Admins\View\SuaSanPham.aspx.designer.cs">
       <DependentUpon>SuaSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\View\ThongKe.aspx.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\View\ThongKe.aspx.designer.cs">
+      <DependentUpon>ThongKe.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\View\ThongKeDonHang.aspx.cs">
       <DependentUpon>ThongKeDonHang.aspx</DependentUpon>
