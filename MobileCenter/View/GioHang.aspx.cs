@@ -16,6 +16,7 @@ namespace MobileCenter.View
         private decimal _tongtien;
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             gridgiohang.PageSize = 10;
             if (!IsPostBack)
             {
@@ -29,14 +30,7 @@ namespace MobileCenter.View
             gioHang.CartGuid = CartGUID;
             GioHangBUS gioHangBUS = new GioHangBUS();
             gioHangBUS._gioHang = gioHang;
-            try
-            {
-                gioHangBUS.Select();
-            }
-            catch
-            {
-                Response.Redirect("Trangloi.aspx");
-            }
+            gioHangBUS.Select();
             gridgiohang.DataSource = gioHangBUS.KetQua;
             gridgiohang.DataBind();
         }

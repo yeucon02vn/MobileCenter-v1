@@ -2,7 +2,7 @@
 <%@ Register Assembly="CollectionPager" Namespace="SiteUtils" TagPrefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<asp:TextBox ID="textSearch" runat="server" CssClass="txtSearch" Height="25px"></asp:TextBox><asp:ImageButton ID="ImageButtonTim" runat="server" ImageUrl="https://localhost:44375/Admins/View/images/tim1.jpg" OnClick="ImageButtonTim_Click" Height="26px" ImageAlign="AbsMiddle" /><br />
+<%--<asp:TextBox ID="textSearch" runat="server" CssClass="txtSearch" Height="25px"></asp:TextBox><asp:ImageButton ID="ImageButtonTim" runat="server" ImageUrl="https://localhost:44375/Admins/View/images/tim1.jpg" OnClick="ImageButtonTim_Click" Height="26px" ImageAlign="AbsMiddle" /><br />
     <p><asp:Label ID="lblketqua" runat="server" Font-Bold="True" ForeColor="#400000"></asp:Label></p>
     <div><asp:DataList ID="dtlSanPham" runat="server" RepeatColumns="3" Width="530px" CaptionAlign="Top" HorizontalAlign="Center">
         <ItemTemplate>
@@ -32,5 +32,5 @@
     </asp:DataList>
     </div>
     <cc1:CollectionPager ID="CollectionPagerPhanTrang" runat="server" HideOnSinglePage="True" IgnoreQueryString="False" PagingMode="QueryString" ResultsLocation="None" ShowLabel="True" ShowPageNumbers="True" UseSlider="True">
-    </cc1:CollectionPager> 
+    </cc1:CollectionPager> --%>
 </asp:Content>

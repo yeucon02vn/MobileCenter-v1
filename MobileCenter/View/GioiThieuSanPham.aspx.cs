@@ -13,15 +13,15 @@ namespace MobileCenter.View
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            /*if (!IsPostBack)
             {
                 HienThiSanPham();
             }
             this.Form.DefaultButton = ImageButtonTim.UniqueID; 
-            this.textSearch.Focus(); 
+            this.textSearch.Focus(); */
         }
 
-        private void HienThiSanPham()
+        /*private void HienThiSanPham()
         {
             SanPhamBUS sanPhamBUS = new SanPhamBUS();
             try
@@ -70,6 +70,6 @@ namespace MobileCenter.View
             Timsanpham(textSearch.Text);
             // textSearch là ID TextBox dùng để nhập nội dung cần tìm
             //commandSearch là ID của nút lệnh Tìm kiếm
-        }
+        }*/
     }
 }
