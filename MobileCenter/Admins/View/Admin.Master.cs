@@ -12,7 +12,6 @@ namespace MobileCenter.Admins.View
 {
     public partial class Admin : System.Web.UI.MasterPage
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Page.User.Identity.IsAuthenticated)

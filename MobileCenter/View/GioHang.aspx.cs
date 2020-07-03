@@ -19,6 +19,7 @@ namespace MobileCenter.View
             gridgiohang.PageSize = 10;
             if (!IsPostBack)
             {
+                ((Home)this.Master).isVisible = false;
                 HienThiGioHang();
             }
         }

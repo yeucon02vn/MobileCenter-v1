@@ -15,6 +15,7 @@ namespace MobileCenter.View
         protected void Page_Load(object sender, EventArgs e)
         {
             textHoTen.Focus();
+            ((Home)this.Master).isVisible = false;
         }
 
         protected void btnDangKy_Click(object sender, ImageClickEventArgs e)
