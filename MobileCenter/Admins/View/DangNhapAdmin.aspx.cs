@@ -28,8 +28,6 @@ namespace MobileCenter.Admins.View
                 nguoidung.TenDangNhap = userName.Value;
                 nguoidung.MatKhau = passWord.Value;
                 xulydangnhapadmin._nguoiDung = nguoidung;
-                /*try
-                {*/
                 xulydangnhapadmin.LoginWithAdmin();
                 if (xulydangnhapadmin.IsAuthenticated)
                 {
@@ -37,15 +35,6 @@ namespace MobileCenter.Admins.View
                     FormsAuthentication.RedirectFromLoginPage(nguoidung.TenDangNhap, false);
                     Response.Redirect("~/admin/sanpham");
                 }
-                //else
-                //{
-                //    labelMessage.Text = "Đăng nhập không thành công!";
-                //}
-                /*}
-                catch
-                {
-                    Response.Redirect("../Trangloi.aspx");
-                }*/
             }
         }
     }

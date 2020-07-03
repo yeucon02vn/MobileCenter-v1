@@ -14,6 +14,8 @@ namespace MobileCenter.View
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ((Home)this.Master).isVisible = false;
+
             GioHangBUS gioHangBUS = new GioHangBUS();
             GioHangDTO gioHang = new GioHangDTO();
             gioHang.IdSanPham = int.Parse(Request.QueryString["IdSanPham"]);

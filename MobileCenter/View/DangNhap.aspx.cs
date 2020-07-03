@@ -1,4 +1,5 @@
-﻿using MobileCenter.App_User;
+﻿using MobileCenter.Admins.View;
+using MobileCenter.App_User;
 using MobileCenter.Models.BUS;
 using MobileCenter.Models.DTO;
 using System;
@@ -12,6 +13,7 @@ namespace MobileCenter.View
         protected void Page_Load(object sender, EventArgs e)
         {
             textUsername.Focus();
+            ((Home)this.Master).isVisible = false;
         }
 
         protected void btnDangNhap_Click(object sender, ImageClickEventArgs e)

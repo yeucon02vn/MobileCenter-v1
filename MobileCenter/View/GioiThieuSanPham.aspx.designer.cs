@@ -13,50 +13,5 @@ namespace MobileCenter.View
 
     public partial class GioiThieuSanPham
     {
-
-        /// <summary>
-        /// textSearch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textSearch;
-
-        /// <summary>
-        /// ImageButtonTim control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonTim;
-
-        /// <summary>
-        /// lblketqua control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblketqua;
-
-        /// <summary>
-        /// dtlSanPham control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dtlSanPham;
-
-        /// <summary>
-        /// CollectionPagerPhanTrang control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SiteUtils.CollectionPager CollectionPagerPhanTrang;
     }
 }
