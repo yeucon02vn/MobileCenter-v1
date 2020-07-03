@@ -85,8 +85,8 @@
                     </div>
                   <div class="clr"></div>
     <!-- /navigation -->  
-   <div class="clr"></div>
-                  <div class="row">
+   <div class="clr"></div>--%>
+                  <div class="row" id="slideShow" runat="server">
                         <div class="column">
                             <div class="slideshow-container">
 
@@ -178,7 +178,7 @@
       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
       </asp:ContentPlaceHolder>             
   </div>
-    <div class ="card-area row" >
+    <div class ="card-area row" id="cardArea" runat="server">
                         <div class="card bg-light" style="margin-bottom: 10px;"  style="margin-bottom: 10px;">
                             <div class="card-header"><h2>Hot Mobile in June</h2></div>
                             <div class="card-body row" style="padding:0px;">
