@@ -8,8 +8,9 @@
       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
       <meta name="description" content="A Community Based WordPress Theme" />
     <!-- slider -->
-    <script type="text/javascript" src="js/affix.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
+
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/menusm.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/pagenavi-css.css" media="screen" />
@@ -25,18 +26,38 @@
       <form id="form1" runat="server">
           <div>
             <asp:GridView ID="dtlSanpham" runat="server" AutoGenerateColumns="False" CssClass="menuDM">
-                <EmptyDataTemplate>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdDanhMucSanPham","../SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham={0}") %>'
-                        Text='<%# Eval("TenDanhMuc") %>'></asp:HyperLink>
-                </EmptyDataTemplate>
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <nav class="navbar" style="align-items: initial;">
+                            <nav class="navbar" style="align-items: center;">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham={0}") %>'
-                                            Text='<%# ""+Eval("TenDanhMucSanPham") %>'></asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1") %>'>LAPTOP</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink2" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=2") %>'>TIVI</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink3" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3") %>'>TABLET</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink4" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4") %>'>PHONE</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink5" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=5") %>'>MÁY NGHE NHẠC</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink6" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=6") %>'>MÁY GHI ÂM</asp:HyperLink>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:HyperLink ID="HyperLink7" runat="server" 
+                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=7") %>'>MÁY ẢNH</asp:HyperLink>
                                     </li>
                                 </ul> 
                             </nav>
@@ -45,41 +66,24 @@
                 </Columns>
             </asp:GridView> 
         </div>
+         
          <div>
             <div id="page">
                <div id="header">
                   <div class="logo">
-                        <h1><a href="#">LOGO<small class="slogan">Anything</small></a></h1>
-                        
-                    </div>
-                   
+                        <h1><a href="https://localhost:44375">LOGO<small class="slogan">Anything</small></a></h1>
+                  </div>                    
                     <div class="topnav">
-                        
                         <ul class="menusm">
-                            
-                            <li><a href="#">Laptop</a></li>
-                            <li><a href="#">Mobile</a>
-                                <ul>
-                                    <li><a href="#">Ti vi</a></li>
-                                    <li><a href="#">Máy tính</a></li>
-                                    <li><a href="#">Điện thoại</a>
-                                        <ul>
-                                            <li><a href="#">Điện thoại Xperia</a></li>
-                                            <li><a href="#">Điện thoại Walkman</a></li>
-                                        </ul>
-                                    </li>
-                                   
-                                </ul>
-                                 <li><a href="#">Tablet</a></li>
-                             <li>
-                        </li>
-                        <a href="https://localhost:44375/View/GioHang.aspx"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
-                            
+                            <a href="https://localhost:44375/customer/giohang"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
                         </ul>
-                        
-                        <div class="clr"></div>
                     </div>
-<%--                  <div class="clr"></div>
+                    <div class="topnav">
+                        <div class="md-form active-cyan active-cyan-2 mb-3">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
+                  <div class="clr"></div>
     <!-- /navigation -->  
    <div class="clr"></div>--%>
                   <div class="row" id="slideShow" runat="server">
@@ -88,19 +92,26 @@
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="images/slide2.jpg" style="width:100%;">
+                                    <img src="https://localhost:44375/images/slide1.jpg" style="width:100%;"/>
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="images/slide1.jpg" style="width:100%">
+                                    <img src="https://localhost:44375/images/slide2.jpg" style="width:100%"/>
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="images/slide3.jpg" style="width:100%">
+                                    <img src="https://localhost:44375/images/slide3.jpg" style="width:100%"/>
                                 </div>
+
+                                <div class="mySlides fade">
+                                    <div class="numbertext"></div>
+                                    <img src="https://localhost:44375/images/slide4.jpg" style="width:100%"/>
+                                </div>
+
                                 <div style="text-align:center; margin-top: 10px;">
+                                    <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
@@ -108,12 +119,12 @@
                             </div>
                             <br>
                         </div>
-                        <div class="column" style="margin-top: 20px;">
+                        <div class="column" style="margin-top: 10px;">
                             <div class="row" id="news">
                                 <div class="card">
-                                    <div class="row no-gutters" style=" justify-content: space-between; align-items: center;flex-wrap:nowrap ; display: flex;">
+                                    <div class="row no-gutters" style=" justify-content: flex-start; align-items: center;flex-wrap:nowrap ; display: flex;">
                                         <div class="col-auto" style="width: 50%;">
-                                            <img src="images/slide1.jpg" class="img-fluid" alt="">
+                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid"/>
                                         </div>
                                         <div class="" style=" padding-left: 10px;" >
                                             <div class="card-block">
@@ -127,9 +138,9 @@
                             </div>
                             <div class="row" id="news">
                                 <div class="card">
-                            <div class="row no-gutters" style=" justify-content: space-between; align-items: center;flex-wrap:nowrap ; display: flex;">
+                            <div class="row no-gutters" style=" justify-content: flex-start; align-items: center;flex-wrap:nowrap ; display: flex;">
                                 <div class="col-auto" style="width: 50%;">
-                                    <img src="images/slide1.jpg" class="img-fluid" alt="">
+                                    <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="" style=" padding-left: 10px;" >
                                     <div class="card-block">
@@ -143,9 +154,9 @@
                             </div>
                             <div class="row" id="news">
                                 <div class="card">
-                            <div class="row no-gutters" style=" justify-content: space-between; align-items: center;flex-wrap:nowrap ; display: flex;">
+                            <div class="row no-gutters" style=" justify-content: flex-start; align-items: center;flex-wrap:nowrap ; display: flex;">
                                 <div class="col-auto" style="width: 50%;">
-                                    <img src="images/slide1.jpg" class="img-fluid" alt="">
+                                    <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="" style=" padding-left: 10px;" >
                                     <div class="card-block">
@@ -343,5 +354,17 @@
 </div>
     </form>
 </body>
-     <script type="text/javascript" src="js/slideshow.js"></script>	
+     <script type="text/javascript " src="https://localhost:44375/js/jquery-1.4.2.min.js "></script>
+<!-- jQuery -->
+<script type="text/javascript " src="https://localhost:44375/js/coin-slider.min.js "></script>
+<!-- slider -->
+<script type="text/javascript " src="https://localhost:44375/js/cufon-yui.js "></script>
+<!-- cufon -->
+<script type="text/javascript " src="https://localhost:44375/js/cufon-chunkfive.js "></script>
+<!-- cufon font -->
+<script type="text/javascript " src="https://localhost:44375/js/menusm.js "></script>
+<!-- menu -->
+<script type="text/javascript " src="https://localhost:44375/js/script.js "></script>
+<script type="text/javascript " src="https://localhost:44375/js/slideshow.js "></script>
+<script type="text/javascript" src="https://localhost:44375/js/swiper.js"> </script>
 </html>
