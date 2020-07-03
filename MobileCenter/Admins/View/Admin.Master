@@ -13,6 +13,7 @@
     <%--<link href="web/admin.css" type="text/css" rel="Stylesheet" />--%>
     <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
+    <script type="text/javascript " src="https://localhost:44375/Admins/View/jquery-1.4.2.min.js "></script>
     <script  type="text/javascript" src="https://localhost:44375/Admins/View/script.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
