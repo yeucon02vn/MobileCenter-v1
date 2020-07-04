@@ -78,21 +78,21 @@ namespace MobileCenter.Admins.View
         protected global::System.Web.UI.WebControls.DropDownList dropdownlistOrderStatus;
 
         /// <summary>
-        /// btnTroVe control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnTroVe;
-
-        /// <summary>
         /// btnCapNhat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnCapNhat;
+        protected global::System.Web.UI.WebControls.Button btnCapNhat;
+
+        /// <summary>
+        /// btnTroVe control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnTroVe;
     }
 }
