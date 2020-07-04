@@ -13,6 +13,7 @@
     <%--<link href="web/admin.css" type="text/css" rel="Stylesheet" />--%>
     <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
+    <script type="text/javascript " src="https://localhost:44375/Admins/View/jquery-1.4.2.min.js "></script>
     <script  type="text/javascript" src="https://localhost:44375/Admins/View/script.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
@@ -46,7 +47,7 @@
 <body>
 
     <form id="form1" runat="server">
-        <div>
+       <%-- <div>
             <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
 
                 <tr>
@@ -84,8 +85,84 @@
                 </tr>
 
             </table>
-        </div>
+        </div>--%>
+
+        <!-- Vertical navbar -->
+<div runat="server" id="menu">
+    <div class="vertical-nav bg-white" id="sidebar" style="z-index:11111"  >
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">Jason Doe</h4>
+        <p class="font-weight-light text-muted mb-0">Web developer</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a href="~/admin/themsanpham" id="HyperLink1" class="nav-link text-dark font-italic bg-light" runat="server">
+                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                ĐĂNG SẢN PHẨM
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="~/admin/sanpham" class="nav-link text-dark font-italic" id="HyperLink2" runat="server">
+                <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                SẢN PHẨM
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                TRANG CHỦ
+            </a>
+    </li>
+  </ul>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a href="~/admin/thongkedonhang" class="nav-link text-dark font-italic" id="HyperLink4" runat="server">
+                <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                THỐNG KÊ ĐƠN HÀNG
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="~/admin/thongke" class="nav-link text-dark font-italic"  id="HyperLink3" runat="server">
+                <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                THỐNG KÊ
+            </a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content" >
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+
+  <!-- Demo content -->
+  
+  </div>
+        
+
+</div>
+</div>
+
+<!-- End demo content -->
+     
+                     
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder>      
     </form>
+
 </body>
    
 	<script src="https://localhost:44375/Admins/View/vendor/animsition/js/animsition.min.js"></script>
@@ -101,5 +178,6 @@
 	<script src="https://localhost:44375/Admins/View/vendor/countdowntime/countdowntime.js"></script>
 
 	<script src="https://localhost:44375/Admins/View/js/LoginAdmin.js"></script>
+    <script src="https://localhost:44375/Admins/View/js/admin.js"></script>
 
 </html>
