@@ -72,7 +72,7 @@ namespace MobileCenter.Admins.View
             dropdownlistOrderStatus.DataBind();
         }
         //---------Xự kiện nút trở về--------------------
-        protected void btnTroVe_Click(object sender, ImageClickEventArgs e)
+        protected void btnTroVe_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/admin/thongkedonhang");
         }
@@ -97,7 +97,7 @@ namespace MobileCenter.Admins.View
         }
         // --Xử lý nút cập nhật để cập nhật thay đổi đơn hàng sau khi xử lý-------
 
-        protected void btnCapNhat_Click(object sender, ImageClickEventArgs e)
+        protected void btnCapNhat_Click(object sender, EventArgs e)
         {
             DonHangDTO donHang = new DonHangDTO();
             DonHangBUS xulycapnhatdonhang = new DonHangBUS();
