@@ -136,13 +136,11 @@
                     </ul>
 
                     <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Exit</p>
-
-                    <ul>       
+                    <ul>
                         <li class="nav-item">
-                            <a href="~/admin" class="nav-link text-dark" id="A2" runat="server">
-                                <i class="fa fa-sign-out mr-3 text-primary fa-fw"></i>
-                                ĐĂNG XUẤT
-                            </a>
+                            <asp:LinkButton class="nav-link text-dark" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">
+                                <i class="fa fa-sign-out text-primary fa-fw"></i>
+                                ĐĂNG XUẤT</asp:LinkButton>
                         </li>
                     </ul>
                 </div>
