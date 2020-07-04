@@ -1,10 +1,6 @@
 ﻿using MobileCenter.Models.DTO;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using System.Web.UI.WebControls;
 
 namespace MobileCenter.Models.DAL
@@ -37,7 +33,7 @@ namespace MobileCenter.Models.DAL
 
         }
 
-        public SqlDataSource SelectByAdmin()
+        public SqlDataSource LoginWithAdmin()
         {
             SqlDataSource sqlData = Connect();
             sqlData.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
@@ -47,7 +43,7 @@ namespace MobileCenter.Models.DAL
             return sqlData;
         }
 
-        public SqlDataSource SelectByUser()
+        public SqlDataSource LoginWithUser()
         {
             SqlDataSource sqlData = Connect();
             sqlData.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
@@ -86,6 +82,15 @@ namespace MobileCenter.Models.DAL
             com.Parameters.Add("@MatKhau", SqlDbType.NVarChar).Value = _nguoiDung.HoTen;
             com.Parameters.Add("@IdNguoiDung", SqlDbType.Int).Value = _nguoiDung.DiaChi;
             com.ExecuteNonQuery();
+        }
+
+        public SqlDataSource SelectUserById()
+        {
+            SqlDataSource sqlData = Connect();
+            sqlData.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
+            sqlData.SelectCommand = "NguoiDung_SelectById";
+            sqlData.SelectParameters.Add("IdNguoiDung", _nguoiDung.IdNguoiDung.ToString());
+            return sqlData;
         }
     }
 }

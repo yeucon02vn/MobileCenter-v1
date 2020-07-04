@@ -1,9 +1,5 @@
 ﻿using MobileCenter.Models.DAL;
 using MobileCenter.Models.DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI.WebControls;
 
 namespace MobileCenter.Models.BUS
@@ -19,7 +15,7 @@ namespace MobileCenter.Models.BUS
         {
             NguoiDungDAL loginWithAdmin = new NguoiDungDAL();
             loginWithAdmin._nguoiDung = this._nguoiDung;
-            KetQua = loginWithAdmin.SelectByAdmin();
+            KetQua = loginWithAdmin.LoginWithAdmin();
             GridView grid = new GridView();
             grid.DataSource = KetQua;
             grid.DataBind();
@@ -37,7 +33,7 @@ namespace MobileCenter.Models.BUS
         {
             NguoiDungDAL loginWithUser = new NguoiDungDAL();
             loginWithUser._nguoiDung = this._nguoiDung;
-            KetQua = loginWithUser.SelectByUser();
+            KetQua = loginWithUser.LoginWithUser();
             GridView grid = new GridView();
             grid.DataSource = KetQua;
             grid.DataBind();
@@ -73,6 +69,13 @@ namespace MobileCenter.Models.BUS
             NguoiDungDAL changePassword = new NguoiDungDAL();
             changePassword._nguoiDung = this._nguoiDung;
             changePassword.ChangePassword();
+        }
+
+        public void SelectById()
+        {
+            NguoiDungDAL selectUserById = new NguoiDungDAL();
+            selectUserById._nguoiDung = this._nguoiDung;
+            KetQua = selectUserById.SelectUserById();
         }
     }
 }

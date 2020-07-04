@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MobileCenter.Models.BUS;
+using System;
 using System.Web;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -32,6 +33,25 @@ namespace MobileCenter
             RegisterRoute(RouteTable.Routes);
             // Code that runs on application startup
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application["SoNguoiOnLine"] = 0;
+        }
+
+        void Session_Start(object sender, EventArgs e)
+        {
+            // Code that runs when a new session is started
+            ThamSoBUS soLuongTruyCap = new ThamSoBUS();
+            soLuongTruyCap.Update();
+            // Code that runs when a new session is started
+            Application["SoNguoiOnLine"] = (int)Application["SoNguoiOnLine"] + 1;
+        }
+
+        void Session_End(object sender, EventArgs e)
+        {
+            // Code that runs when a session ends. 
+            // Note: The Session_End event is raised only when the sessionstate mode
+            // is set to InProc in the Web.config file. If session mode is set to StateServer 
+            // or SQLServer, the event is not raised.
+            Application["SoNguoiOnLine"] = (int)Application["SoNguoiOnLine"] - 1;
         }
     }
 }
