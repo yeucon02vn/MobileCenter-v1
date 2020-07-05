@@ -80,6 +80,7 @@ namespace MobileCenter.Models.BUS
             SanPhamDAL deleteSanPham = new SanPhamDAL();
             deleteSanPham._sanPham = this._sanPham;
             deleteSanPham.Delete();
+            deleteSanPham.DeleteHinhSanPham();
         }
     }
 }

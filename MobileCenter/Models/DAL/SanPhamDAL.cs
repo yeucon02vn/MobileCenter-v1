@@ -112,12 +112,21 @@ namespace MobileCenter.Models.DAL
             return sqlData;
         }
 
-        public void Delete()
+        public void DeleteHinhSanPham()
         {
             SqlDataSource sqlData = Connect();
             sqlData.DeleteCommandType = SqlDataSourceCommandType.StoredProcedure;
             sqlData.DeleteCommand = "HinhSanPham_Delete";
             sqlData.DeleteParameters.Add("IdHinhSanPham", _sanPham.IdHinhSanPham.ToString());
+            sqlData.Delete();
+        }
+
+        public void Delete()
+        {
+            SqlDataSource sqlData = Connect();
+            sqlData.DeleteCommandType = SqlDataSourceCommandType.StoredProcedure;
+            sqlData.DeleteCommand = "SanPham_Delete";
+            sqlData.DeleteParameters.Add("IdSanPham", _sanPham.IdSanPham.ToString());
             sqlData.Delete();
         }
     }
