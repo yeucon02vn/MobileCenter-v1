@@ -11,9 +11,15 @@ namespace MobileCenter.Admins.View
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Page.User.Identity.IsAuthenticated)
+            {
                 menu.Visible = true;
+                lblName.Text = Page.User.Identity.Name;
+            }
             else
+            {
                 menu.Visible = false;
+                lblName.Text = "";
+            }
         }
         protected void LinkButton1_Click(object sender, EventArgs e)
         {

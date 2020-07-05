@@ -71,11 +71,12 @@ namespace MobileCenter.Models.BUS
             changePassword.ChangePassword();
         }
 
-        public void SelectById()
+        public string  SelectById()
         {
             NguoiDungDAL selectUserById = new NguoiDungDAL();
             selectUserById._nguoiDung = this._nguoiDung;
             KetQua = selectUserById.SelectUserById();
+            return selectUserById._nguoiDung.HoTen;
         }
     }
 }
