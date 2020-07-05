@@ -15,16 +15,16 @@ namespace MobileCenter.Admins.View
         {
             if (IsValid)
             {
-                NguoiDungDTO nguoidung = new NguoiDungDTO();
-                NguoiDungBUS xulydangnhapadmin = new NguoiDungBUS();
-                nguoidung.TenDangNhap = userName.Value;
-                nguoidung.MatKhau = passWord.Value;
-                xulydangnhapadmin._nguoiDung = nguoidung;
-                xulydangnhapadmin.LoginWithAdmin();
-                if (xulydangnhapadmin.IsAuthenticated)
+                NguoiDungDTO nguoiDung = new NguoiDungDTO();
+                NguoiDungBUS nguoiDungBus = new NguoiDungBUS();
+                nguoiDung.TenDangNhap = userName.Value;
+                nguoiDung.MatKhau = passWord.Value;
+                nguoiDungBus._nguoiDung = nguoiDung;
+                nguoiDungBus.LoginWithAdmin();
+                if (nguoiDungBus.IsAuthenticated)
                 {
-                    FormsAuthentication.SetAuthCookie(nguoidung.TenDangNhap, false);
-                    FormsAuthentication.RedirectFromLoginPage(nguoidung.TenDangNhap, false);
+                    FormsAuthentication.SetAuthCookie(nguoiDung.TenDangNhap, false);
+                    FormsAuthentication.RedirectFromLoginPage(nguoiDung.TenDangNhap, false);   
                     Response.Redirect("~/admin/sanpham");
                 }
             }
