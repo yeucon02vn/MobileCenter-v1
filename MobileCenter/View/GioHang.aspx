@@ -3,7 +3,6 @@
 
 <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label><br />
 <asp:GridView ID="gridgiohang" runat="server" AutoGenerateColumns="False" DataKeyNames="IDgiohang" OnRowDataBound="gridgiohang_RowDataBound" Width="530px">
-    
         <Columns>
             <asp:TemplateField HeaderText="X&#243;a">
                 <ItemTemplate>

@@ -2,11 +2,11 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Moonly Center - Trung tâm mua bán sản phẩm chính hãng Sony</title>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-      <meta name="description" content="A Community Based WordPress Theme" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="A Community Based WordPress Theme" />
     <!-- slider -->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
@@ -20,59 +20,73 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>	
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
 </head>
- <body class="html_bg">
-      <form id="form1" runat="server">
-          <div>
-            <asp:GridView ID="dtlSanpham" runat="server" AutoGenerateColumns="False" CssClass="menuDM">
+<body class="html_bg">
+    <form id="form1" runat="server">
+        <div>
+            <asp:GridView ID="dtlSanpham" runat="server" AutoGenerateColumns="False">
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <nav class="navbar" style="align-items: center;">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink1" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1") %>'>LAPTOP</asp:HyperLink>
+                            <div class="vertical-nav bg-white" id="sidebar" style="z-index: 11111; font-size: 13px">
+                                <ul class="nav flex-column bg-white mb-0 justify-content-end">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=1" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1") %>' id="HyperLink1" class="nav-link" runat="server">
+                                            <i class="fa fa-laptop mr-3 text-primary fa-fw"></i>
+                                            LAPTOP</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink2" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=2") %>'>TIVI</asp:HyperLink>
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=2" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=2") %>' id="HyperLink2" class="nav-link" runat="server">
+                                            <i class="fa fa-television mr-3 text-primary fa-fw"></i>
+                                            TIVI</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink3" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3") %>'>TABLET</asp:HyperLink>
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=3" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3") %>' id="HyperLink3" class="nav-link text-dark" runat="server">
+                                            <i class="fa fa-tablet mr-3 text-primary fa-fw"></i>
+                                            TABLET</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink4" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4") %>'>PHONE</asp:HyperLink>
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=4" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4") %>' id="HyperLink4" class="nav-link text-dark" runat="server">
+                                            <i class="fa fa-mobile mr-3 text-primary fa-fw"></i>
+                                            PHONE</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink5" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=5") %>'>MÁY NGHE NHẠC</asp:HyperLink>
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=5" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=5") %>' id="HyperLink5" class="nav-link text-dark" runat="server">
+                                            <i class="fa fa-music mr-3 text-primary fa-fw"></i>
+                                            MÁY NGHE NHẠC</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink6" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=6") %>'>MÁY GHI ÂM</asp:HyperLink>
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=6" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=6") %>' id="HyperLink6" class="nav-link text-dark" runat="server">
+                                            <i class="fa fa-mobile mr-3 text-primary fa-fw"></i>
+                                            MÁY GHI ÂM</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink7" runat="server" 
-                                            NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=7") %>'>MÁY ẢNH</asp:HyperLink>
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=7" ? "active" : "" %>">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=7") %>' id="HyperLink7" class="nav-link text-dark" runat="server">
+                                            <i class="fa fa-camera mr-3 text-primary fa-fw"></i>
+                                            MÁY ẢNH</a>
                                     </li>
-                                </ul> 
-                            </nav>
+                                </ul>
+                            </div>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
-            </asp:GridView> 
+            </asp:GridView>
+
+            <%--Hiện số người online--%>
+            <div class="nav" style="font-size:16px">
+                <asp:Label runat="server">Số người online: </asp:Label>
+                <asp:Label ID="lblOnline" runat="server" Text="lblOnline"></asp:Label>
+            </div>
         </div>
-         
-         <div>
+
+        <div>
             <div id="page">
-               <div id="header">
-                  <div class="logo">
+                <div id="header">
+                    <div class="logo">
                         <h1><a href="https://localhost:44375">LOGO<small class="slogan">Anything</small></a></h1>
-                  </div>                    
+
+                    </div>
                     <div class="topnav">
                         <ul class="menusm">
                             <a href="https://localhost:44375/customer/giohang"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
@@ -80,37 +94,38 @@
                     </div>
                     <div class="topnav">
                         <div class="md-form active-cyan active-cyan-2 mb-3">
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
                         </div>
                     </div>
-                  <div class="clr"></div>
-    <!-- /navigation -->  
-   <div class="clr"></div>--%>
-                  <div class="row" id="slideShow" runat="server">
+                    <div class="clr"></div>
+
+                    <!-- /navigation -->
+                    <div class="clr"></div>
+                    <div class="row" id="slideShow" runat="server">
                         <div class="column">
                             <div class="slideshow-container">
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide1.jpg" style="width:100%;"/>
+                                    <img src="https://localhost:44375/images/slide1.jpg" style="width: 100%;" />
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide2.jpg" style="width:100%"/>
+                                    <img src="https://localhost:44375/images/slide2.jpg" style="width: 100%" />
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide3.jpg" style="width:100%"/>
+                                    <img src="https://localhost:44375/images/slide3.jpg" style="width: 100%" />
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide4.jpg" style="width:100%"/>
+                                    <img src="https://localhost:44375/images/slide4.jpg" style="width: 100%" />
                                 </div>
 
-                                <div style="text-align:center; margin-top: 10px;">
+                                <div style="text-align: center; margin-top: 10px;">
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
@@ -122,11 +137,11 @@
                         <div class="column" style="margin-top: 10px;">
                             <div class="row" id="news">
                                 <div class="card">
-                                    <div class="row no-gutters" style=" justify-content: flex-start; align-items: center;flex-wrap:nowrap ; display: flex;">
+                                    <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
                                         <div class="col-auto" style="width: 50%;">
-                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid"/>
+                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" />
                                         </div>
-                                        <div class="" style=" padding-left: 10px;" >
+                                        <div class="" style="padding-left: 10px;">
                                             <div class="card-block">
                                                 <p class="card-text">
                                                     MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
@@ -134,227 +149,236 @@
                                             </div>
                                         </div>
                                     </div>
-                              </div>    
+                                </div>
                             </div>
                             <div class="row" id="news">
                                 <div class="card">
-                            <div class="row no-gutters" style=" justify-content: flex-start; align-items: center;flex-wrap:nowrap ; display: flex;">
-                                <div class="col-auto" style="width: 50%;">
-                                    <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="" style=" padding-left: 10px;" >
-                                    <div class="card-block">
-                                        <p class="card-text">
-                                            MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
-                                        </p>
+                                    <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
+                                        <div class="col-auto" style="width: 50%;">
+                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="" style="padding-left: 10px;">
+                                            <div class="card-block">
+                                                <p class="card-text">
+                                                    MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                      </div>
                             </div>
                             <div class="row" id="news">
                                 <div class="card">
-                            <div class="row no-gutters" style=" justify-content: flex-start; align-items: center;flex-wrap:nowrap ; display: flex;">
-                                <div class="col-auto" style="width: 50%;">
-                                    <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="" style=" padding-left: 10px;" >
-                                    <div class="card-block">
-                                        <p class="card-text">
-                                            MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
-                                        </p>
+                                    <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
+                                        <div class="col-auto" style="width: 50%;">
+                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="" style="padding-left: 10px;">
+                                            <div class="card-block">
+                                                <p class="card-text">
+                                                    MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                      </div>
                             </div>
                         </div>
-                  <div class="clr"></div>
-      </div>
-    <!--/searchform --><div class="clr"></div>
-  </div> <!--/header -->
-  <div class="sanpham">
-      <asp:Label ID="lblchao" runat="server" Text=""></asp:Label>
-      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-      </asp:ContentPlaceHolder>             
-  </div>
-    <div class ="card-area row" id="cardArea" runat="server">
-                        <div class="card bg-light" style="margin-bottom: 10px;"  style="margin-bottom: 10px;">
-                            <div class="card-header"><h2>Hot Mobile in June</h2></div>
-                            <div class="card-body row" style="padding:0px;">
-                                <div class="card-group col">
-                                    <div class="card card-img" style="width: 10rem;" >
-                                        <img class="card-img-top " src="images/slide1.jpg" >
-                                        <div class="card-body">
+                        <div class="clr"></div>
+                    </div>
+                    <!--/searchform -->
+                    <div class="clr"></div>
+                </div>
+                <!--/header -->
+                <div class="sanpham">
+                    <asp:Label ID="lblchao" runat="server" Text=""></asp:Label>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="card-area row" id="cardArea" runat="server">
+                    <div class="card bg-light" style="margin-bottom: 10px;" style="margin-bottom: 10px;">
+                        <div class="card-header">
+                            <h2>Hot Mobile in June</h2>
+                        </div>
+                        <div class="card-body row" style="padding: 0px;">
+                            <div class="card-group col">
+                                <div class="card card-img" style="width: 10rem;">
+                                    <img class="card-img-top " src="images/slide1.jpg">
+                                    <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-group col" >      
-                                    <div class="card ">
-                                      <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
-                                      <div class="card-body">
+                            </div>
+                            <div class="card-group col">
+                                <div class="card ">
+                                    <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                      </div>
                                     </div>
-                                    <div class="card ">
-                                      <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
-                                      <div class="card-body">
+                                </div>
+                                <div class="card ">
+                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                      </div>
                                     </div>
-                                    <div class="card ">
-                                      <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
-                                      <div class="card-body">
+                                </div>
+                                <div class="card ">
+                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                        
-                                      </div>
+
                                     </div>
-                                  </div>
-                                    
-                                  </div>
-                            </div>
-                            <div class="card bg-light" style="margin-bottom: 10px;" >
-                                <div class="card-header"><h2>Hot Mobile in June</h2></div>
-                                <div class="card-body row" style="padding:0px;">
-                                    <div class="card-group col">
-                                        <div class="card card-img" style="width: 10rem;" >
-                                            <img class="card-img-top " src="images/slide1.jpg" >
-                                            <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-group col" >      
-                                        <div class="card ">
-                                          <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                          </div>
-                                        </div>
-                                        <div class="card ">
-                                          <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                          </div>
-                                        </div>
-                                        <div class="card ">
-                                          <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
-                                          <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                            
-                                          </div>
-                                        </div>
-                                      </div>
-                                        
-                                      </div>
                                 </div>
-                                <div class="card bg-light" style="margin-bottom: 10px;" >
-                                    <div class="card-header"><h2>Hot Mobile in June</h2></div>
-                                    <div class="card-body row" style="padding:0px;">
-                                        <div class="card-group col">
-                                            <div class="card card-img" style="width: 10rem;" >
-                                                <img class="card-img-top " src="images/slide1.jpg" >
-                                                <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-group col" >      
-                                            <div class="card ">
-                                              <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
-                                              <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                              </div>
-                                            </div>
-                                            <div class="card ">
-                                              <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
-                                              <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                              </div>
-                                            </div>
-                                            <div class="card ">
-                                              <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
-                                              <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                                
-                                              </div>
-                                            </div>
-                                          </div>
-                                            
-                                          </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card bg-light" style="margin-bottom: 10px;">
+                        <div class="card-header">
+                            <h2>Hot Mobile in June</h2>
+                        </div>
+                        <div class="card-body row" style="padding: 0px;">
+                            <div class="card-group col">
+                                <div class="card card-img" style="width: 10rem;">
+                                    <img class="card-img-top " src="images/slide1.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
-                          </div>
-          
-    <div class="clearfix"></div>
-    </div>
-    <div class ="card-area">
-                        <h2>Hot Laptop in June</h2>
-                        
+                                </div>
+                            </div>
+                            <div class="card-group col">
+                                <div class="card ">
+                                    <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                                <div class="card ">
+                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                                <div class="card ">
+                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-    <div class ="card-area">
-                        <h2>Hot Tablet in June</h2>
+                    <div class="card bg-light" style="margin-bottom: 10px;">
+                        <div class="card-header">
+                            <h2>Hot Mobile in June</h2>
+                        </div>
+                        <div class="card-body row" style="padding: 0px;">
+                            <div class="card-group col">
+                                <div class="card card-img" style="width: 10rem;">
+                                    <img class="card-img-top " src="images/slide1.jpg">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-group col">
+                                <div class="card ">
+                                    <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                                <div class="card ">
+                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                                <div class="card ">
+                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-   
-  </div>  <!--/page -->
-  <div class="clr"></div>
- <div class="footer2 ">
-                <div class="footer2_resize ">
-                    <div class="col col1 ">
-                        <h2>Customer Support</h2>
-                        <ul>
-                            <li><a href="# ">Purchase     1800.1060 (7:30 - 22:00)</a></li>
-                            <li><a href="# ">Complain     1800.1062 (8:00 - 21:30)</a></li>
-                            <li><a href="# ">Warranty     1800.1064 (8:00 - 21:00)</a></li>
-                            <li><a href="# ">Technique    1800.1763 (7:30 - 22:00)</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col2 ">
-                        <h2>Purchase and Warranty Policy</h2>
-                        <ul>
-                            <li><a href="# ">Security</a></li>
-                            <li><a href="# ">Exchange and Refund</a></li>
-                            <li><a href="# ">Transport</a></li>
-                        </ul>
-                    </div>
-                    <div class="col col4 ">
-                        <h2>Contact Infomation</h2>
-                        <p><span>Address</span> University of Information Technology</p>
-                        <p><span>Telephone:</span> +84-1688-767-549</p>
-                        <p><span>FAX:</span> +458-4578</p>
-                        <p><span>Others:</span> +301 - 0125 - 01258</p>
-                        <p><span>E-mail:</span> <a href=" ">tftcenter@uit.edu.com</a></p>
-                    </div>
-                    <div class="clr "></div>
                 </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="card-area">
+                <h2>Hot Laptop in June</h2>
+
+            </div>
+            <div class="card-area">
+                <h2>Hot Tablet in June</h2>
             </div>
 
-<div id="page_bottom">
-  <div id="footer">
-    <div class="text1">&copy; Copyright <a href="http://www.facebook.com/shiny.phong">CCTM04A</a>. All Rights Reserved</div>
-    <div class="text2">Design: (TS) <a href="http://www.facebook.com/shiny.phong">Shiny Phong</a></div>
-  </div>
-  <div class="clr"></div>
-  <!--/footer -->
-</div>
+        </div>
+        <!--/page -->
+        <div class="clr"></div>
+        <div class="footer2 ">
+            <div class="footer2_resize ">
+                <div class="col col1 ">
+                    <h2>Customer Support</h2>
+                    <ul>
+                        <li><a href="# ">Purchase     1800.1060 (7:30 - 22:00)</a></li>
+                        <li><a href="# ">Complain     1800.1062 (8:00 - 21:30)</a></li>
+                        <li><a href="# ">Warranty     1800.1064 (8:00 - 21:00)</a></li>
+                        <li><a href="# ">Technique    1800.1763 (7:30 - 22:00)</a></li>
+                    </ul>
+                </div>
+                <div class="col col2 ">
+                    <h2>Purchase and Warranty Policy</h2>
+                    <ul>
+                        <li><a href="# ">Security</a></li>
+                        <li><a href="# ">Exchange and Refund</a></li>
+                        <li><a href="# ">Transport</a></li>
+                    </ul>
+                </div>
+                <div class="col col4 ">
+                    <h2>Contact Infomation</h2>
+                    <p><span>Address</span> University of Information Technology</p>
+                    <p><span>Telephone:</span> +84-1688-767-549</p>
+                    <p><span>FAX:</span> +458-4578</p>
+                    <p><span>Others:</span> +301 - 0125 - 01258</p>
+                    <p><span>E-mail:</span> <a href=" ">tftcenter@uit.edu.com</a></p>
+                </div>
+                <div class="clr "></div>
+            </div>
+        </div>
+
+        <div id="page_bottom">
+            <div id="footer">
+                <div class="text1">&copy; Copyright <a href="http://www.facebook.com/shiny.phong">CCTM04A</a>. All Rights Reserved</div>
+                <div class="text2">Design: (TS) <a href="http://www.facebook.com/shiny.phong">Shiny Phong</a></div>
+            </div>
+            <div class="clr"></div>
+            <!--/footer -->
+        </div>
     </form>
 </body>
-     <script type="text/javascript " src="https://localhost:44375/js/jquery-1.4.2.min.js "></script>
+<script type="text/javascript " src="https://localhost:44375/js/jquery-1.4.2.min.js "></script>
 <!-- jQuery -->
 <script type="text/javascript " src="https://localhost:44375/js/coin-slider.min.js "></script>
 <!-- slider -->
