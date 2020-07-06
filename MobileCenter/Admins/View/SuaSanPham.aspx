@@ -44,7 +44,7 @@
             <td style="width: 300px"></td>
             <td style="width: 700px">
                 <asp:Button class="btn btn-outline-primary" type="submit" style ="margin-top:20px; margin-right:100px; font-size:15px" ID="btnCapNhat" runat="server" Text="Cập Nhật" OnClick="btnCapNhat_Click" />
-                <asp:Button class="btn btn-outline-primary" type="submit" style ="margin-top:20px; font-size:16px" ID="btnBoQua" runat="server" Text="ádasdada" OnClick="btnBoQua_Click" /></td>
+                <asp:Button class="btn btn-outline-primary" type="submit" style ="margin-top:20px; font-size:16px" ID="btnBoQua" runat="server" Text="Xoá" OnClick="btnXoaSanPham_Click" /></td>
         </tr>
     </table>
 </asp:Content>

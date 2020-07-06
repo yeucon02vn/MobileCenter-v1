@@ -118,6 +118,21 @@ namespace MobileCenter.Admins.View
         {
             Response.Redirect("SanPham.aspx");
         }
+
+        protected void btnXoaSanPham_Click(object sender, EventArgs e)
+        {
+            if (IsValid)
+            {
+                SanPhamDTO Spham = new SanPhamDTO();
+                Spham.IdSanPham = Convert.ToInt32(Request.QueryString["IdSanPham"]);
+                Spham.IdHinhSanPham = LuuTamIdHinhSanPham;
+                SanPhamBUS sanPhamBus = new SanPhamBUS();
+                sanPhamBus._sanPham = Spham;
+                sanPhamBus.Delete();
+                Response.Redirect("SanPham.aspx");
+            }
+        }
+
         // Lưu hình để lấy lại hình sản phẩm trong trường hợp hình không thay đổi
         private int LuuTamIdHinhSanPham
         {
