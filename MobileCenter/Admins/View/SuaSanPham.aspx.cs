@@ -102,14 +102,7 @@ namespace MobileCenter.Admins.View
                 }
                 SanPhamBUS capNhatSanPham = new SanPhamBUS();
                 capNhatSanPham._sanPham = Spham;
-                try
-                {
-                    capNhatSanPham.Update();
-                }
-                catch
-                {
-                    Response.Redirect("../Trangloi.aspx");
-                }
+                capNhatSanPham.Update();
                 Response.Redirect("SanPham.aspx");
             }
         }
