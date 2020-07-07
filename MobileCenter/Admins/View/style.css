@@ -24,7 +24,7 @@ Author:DreamTemplate
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.03);
     transition: all 0.4s;
 }
 
@@ -43,6 +43,7 @@ Author:DreamTemplate
 #content.active {
     width: 100%;
     margin: 0;
+    margin-left: 15px;
 }
 
 @media (max-width: 768px) {
@@ -112,7 +113,7 @@ body {
 /* .html_bg { background:#e9e9e9 url(images/header_ibg.gif) repeat-x left top;} */
 
 .html_bg {
-    background: #e9e9e9 repeat-x left top;
+    background: #ffffff repeat-x left top !important;
     margin-left: 15%;
 }
 
@@ -1401,7 +1402,7 @@ select {
 
 .card-img {
     /* margin-top : 1rem; */
-    padding: 0 !important;
+    padding: 10px !important;
 }
 
 .hovereffect {
@@ -1531,4 +1532,23 @@ select {
 
 td {
    margin:10px
+}
+
+#slideShow {
+    display: flex;
+}
+
+#slideShow > .first-column {
+    flex: 2;
+}
+#slideShow > .second-column {
+    flex: 1;
+}
+
+#cardArea {
+    background-color : #ffffff !important;
+}
+
+.card-group.col {
+    padding: 20px;
 }

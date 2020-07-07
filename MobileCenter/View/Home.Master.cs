@@ -17,11 +17,12 @@ namespace MobileCenter.View
  
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 HienThiDanhMucSanPham();
                 cardArea.Visible = isVisible;
                 slideShow.Visible = isVisible;
+                //lblOnline.Text = Application["SoNguoiOnLine"].ToString();
             }
         }
 
