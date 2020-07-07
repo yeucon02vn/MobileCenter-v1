@@ -1402,7 +1402,7 @@ select {
 
 .card-img {
     /* margin-top : 1rem; */
-    padding: 0 !important;
+    padding: 10px !important;
 }
 
 .hovereffect {
