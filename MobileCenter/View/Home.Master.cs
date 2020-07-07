@@ -22,6 +22,7 @@ namespace MobileCenter.View
                 HienThiDanhMucSanPham();
                 cardArea.Visible = isVisible;
                 slideShow.Visible = isVisible;
+                imgAdv.Visible = isVisible;
                 //lblOnline.Text = Application["SoNguoiOnLine"].ToString();
             }
         }
