@@ -1,5 +1,5 @@
 html {
-    width: 96%;
+    width: 97%;
   }
   
   nav {
@@ -33,7 +33,7 @@ html {
   }
 
 .active {
-    background-color: #44A7DA;
+    background-color: whitesmoke;
 }
 
 .active a:active {

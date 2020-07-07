@@ -1543,6 +1543,7 @@ td {
 }
 #slideShow > .second-column {
     flex: 1;
+    margin-top: 13px;
 }
 
 #cardArea {
