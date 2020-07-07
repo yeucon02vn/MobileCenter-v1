@@ -90,7 +90,7 @@
         <!-- Vertical navbar -->
         <div style="display:flex; justify-content:flex-start;">
             <div runat="server" id="menu">
-                <div class="vertical-nav bg-white" id="sidebar" style="z-index: 11111">
+                <div class="vertical-nav bg-white" id="sidebar">
                     <div class="py-4 px-3 mb-4 bg-light">
                         <div class="media d-flex align-items-center">
                             <img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
@@ -148,7 +148,12 @@
                 <!-- Page content holder -->
                 <div class="page-content p-2 pt-5" id="content">
                     <!-- Toggle button -->
-                    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+                    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white" style="border-radius: 1000%;
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        transform: translateX(-20px);
+                        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                        "><i class="fa fa-arrow-right"></i></button>
                     <!-- Demo content -->
                 </div>
             </div>
