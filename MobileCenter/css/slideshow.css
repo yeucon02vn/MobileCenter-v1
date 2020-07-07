@@ -18,10 +18,10 @@ img {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 580px;
     position: relative;
     margin: 0 auto;
     margin-top: 23px;
+    margin-left: 15px;
 }
 
 

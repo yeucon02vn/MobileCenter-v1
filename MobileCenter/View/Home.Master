@@ -42,7 +42,7 @@
                                             TIVI</a>
                                     </li>
                                     <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=3" ? "active" : "" %>">
-                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3") %>' id="HyperLink3" class="nav-link text-dark" runat="server">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3") %>' id="HyperLink3" class="nav-link" runat="server">
                                             <i class="fa fa-tablet mr-3 text-primary fa-fw"></i>
                                             TABLET</a>
                                     </li>
@@ -52,17 +52,17 @@
                                             PHONE</a>
                                     </li>
                                     <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=5" ? "active" : "" %>">
-                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=5") %>' id="HyperLink5" class="nav-link text-dark" runat="server">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=5") %>' id="HyperLink5" class="nav-link" runat="server">
                                             <i class="fa fa-music mr-3 text-primary fa-fw"></i>
                                             MÁY NGHE NHẠC</a>
                                     </li>
                                     <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=6" ? "active" : "" %>">
-                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=6") %>' id="HyperLink6" class="nav-link text-dark" runat="server">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=6") %>' id="HyperLink6" class="nav-link" runat="server">
                                             <i class="fa fa-mobile mr-3 text-primary fa-fw"></i>
                                             MÁY GHI ÂM</a>
                                     </li>
                                     <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=7" ? "active" : "" %>">
-                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=7") %>' id="HyperLink7" class="nav-link text-dark" runat="server">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=7") %>' id="HyperLink7" class="nav-link" runat="server">
                                             <i class="fa fa-camera mr-3 text-primary fa-fw"></i>
                                             MÁY ẢNH</a>
                                     </li>
@@ -104,25 +104,24 @@
                     <div class="row" id="slideShow" runat="server">
                         <div class = "first-column">
                             <div class="slideshow-container">
-
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide1.jpg" style="width: 100%;" />
+                                    <img src="https://localhost:44375/images/slide1.png" style="width: 100%;" />
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide2.jpg" style="width: 100%" />
+                                    <img src="https://localhost:44375/images/slide2.png" style="width: 100%" />
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide3.jpg" style="width: 100%" />
+                                    <img src="https://localhost:44375/images/slide3.png" style="width: 100%" />
                                 </div>
 
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
-                                    <img src="https://localhost:44375/images/slide4.jpg" style="width: 100%" />
+                                    <img src="https://localhost:44375/images/slide4.png" style="width: 100%" />
                                 </div>
 
                                 <div style="text-align: center; margin-top: 10px;">
@@ -130,61 +129,50 @@
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
-                                </div>
-                            </div>
-                            <br>
+                                </div>                              
+                            </div>                           
+                            <br/>
                         </div>
-                        <div class="second-column" >
+                        <div class="second-column">
                             <div class="row" id="news">
-                                <div class="card" style="border:none; background-color:whitesmoke">
-                                    <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
-                                        <div class="col-auto" style="width: 20%;">
-                                            <img src="https://localhost:44375/images/phone-oppo.png" class="img-fluid" />
+                                <div class="card" style="border:none; background-color:whitesmoke; width: 405px">
+                                    <a href="https://www.thegioididong.com/tin-tuc/viec-quan-li-cac-tab-tren-chrome-gio-day-lai-don-gian-hon-bao-gio-het-1267452" class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex; font-size:14px">
+                                        <div class="col-auto">
+                                            <img src="https://localhost:44375/images/info.jpg" height="98px" width="140px"/>
                                         </div>
-                                        <div class="" style="padding-left: 10px;">
+                                        <div style="padding-left: 10px;">
                                             <div class="card-block">
-                                                <p class="card-text" style ="margin-right:5px">
-                                                    MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
-                                                </p>
+                                                <div class="card-link" style ="margin-right:5px" >
+                                                    Cách quản lý các Tab trên Google Chrome một cách đơn giản và hiệu quả
+                                                </div>
                                             </div>
                                         </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row" id="news" style="padding-top: 0px;">
+                                <div class="card" style="border:none; background-color:whitesmoke">
+                                    <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="col-auto">
+                                            <img src="https://localhost:44375/images/safe1.png" alt="" height="98px" width="405px"/>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" id="news">
+                            <div class="row" id="news" style="padding-top: 0px;">
                                 <div class="card" style="border:none; background-color:whitesmoke">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
-                                        <div class="col-auto" style="width: 20%;">
-                                            <img src="https://localhost:44375/images/phone-oppo.png" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="" style="padding-left: 10px;">
-                                            <div class="card-block">
-                                                <p class="card-text" style ="margin-right:5px" >
-                                                    MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" id="news">
-                                <div class="card" style="border:none; background-color:whitesmoke">
-                                    <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
-                                        <div class="col-auto" style="width: 20%;">
-                                            <img src="https://localhost:44375/images/phone-oppo.png" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="" style="padding-left: 10px;">
-                                            <div class="card-block">
-                                                <p class="card-text" style ="margin-right:5px">
-                                                    MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
-                                                </p>
-                                            </div>
-                                        </div>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="col-auto">
+                                            <img src="https://localhost:44375/images/safe2.png" alt="" height="98px" width="405px"/>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="clr"></div>
+                    </div>
+                    <div>
+                        <img src="https://localhost:44375/images/adv.png" style="width: 100%"/>
                     </div>
                     <!--/searchform -->
                     <div class="clr"></div>
@@ -196,42 +184,39 @@
                     </asp:ContentPlaceHolder>
                 </div>
                 <div class="card-area row" id="cardArea" runat="server">
-                    <div class="card bg-light" style="margin-bottom: 10px;" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; ">
-                            <h2>Hot Mobile in June</h2>
+                    <div class="card bg-light" style="margin-bottom: 10px;">
+                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; font-size:large; font-weight:bold">
+                            ĐIỆN THOẠI NỔI BẬT NHẤT
                         </div>
                         <div class="card-body row"  style="padding: 0px;">
                             <div class="card-group col">
-                                <div class="card card-img" style="width: 10rem;">
-                                    <img class="card-img-top" src="images/phone-oppo.png">
+                                <div class="card card-img" style="width: 10rem; font-size: 16px">
+                                    <img class="card-img-top" src="https://localhost:44375/images/tile1.jpg"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Samsung Galaxy A31</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-group col">
                                 <div class="card card-img">
-                                    <img class="card-img-top" src="images/phone-oppo.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <img class="card-img-top" src="https://localhost:44375/HinhSanPham/iphone-11-pro-max-(19).jpg" alt="Card image cap">
+                                    <div class="card-body" style="padding: 0; padding-top: 20px">
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link" >IPhone 11 Pro Max 64GB</a>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
                                 <div class="card card-img">
-                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
+                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/oppo-reno3-(13).jpg" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Oppo Reno 3</a>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
                                 <div class="card card-img">
-                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
+                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/samsung-galaxy-a21s-(13).jpg" alt="Card image cap"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Samsung Galaxy A21s</a>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
                             </div>
@@ -239,41 +224,38 @@
                         </div>
                     </div>
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; ">
-                            <h2>Hot Mobile in June</h2>
+                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; font-size:large; font-weight:bold">
+                            LAP TOP NỔI BẬT NHẤT
                         </div>
                         <div class="card-body row"  style="padding: 0px;">
                             <div class="card-group col">
-                                <div class="card card-img" style="width: 10rem;">
-                                    <img class="card-img-top " src="images/phone-oppo.png">
+                                <div class="card card-img" style="width: 10rem; font-size: 16px">
+                                    <img class="card-img-top" src="https://localhost:44375/images/title3.jpg"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1 (81WE003RVN)</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-group col">
                                 <div class="card card-img">
-                                    <img class="card-img-top" src="images/phone-oppo.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <img class="card-img-top" src="https://localhost:44375/HinhSanPham/apple-macbook-pro-2019-touch-i5-8gb-256gb-mv962sa-1-600x600.jpg" alt="Card image cap"/>
+                                    <div class="card-body" style="padding: 0; padding-top: 20px">
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link" >Macbook pro 2019 i5 8GB</a>
+                                        <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
                                     </div>
                                 </div>
                                 <div class="card card-img">
-                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
+                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">HP 15s du0063TU i5 8265U</a>
+                                        <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 2 K.mãi khác</p>
                                     </div>
                                 </div>
                                 <div class="card card-img">
-                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
+                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt="Card image cap"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Acer Aspire 3 A315 i5</a>
+                                        <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
                                     </div>
                                 </div>
                             </div>
@@ -281,41 +263,38 @@
                         </div>
                     </div>
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; "">
-                            <h2>Hot Mobile in June</h2>
+                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; font-size:large; font-weight:bold">
+                            TABLET NỔI BẬT NHẤT
                         </div>
                         <div class="card-body row"  style="padding: 0px;">
                             <div class="card-group col">
-                                <div class="card card-img" style="width: 10rem;">
-                                    <img class="card-img-top " src="images/phone-oppo.png">
+                                <div class="card card-img" style="width: 10rem; font-size: 16px">
+                                    <img class="card-img-top" src="https://localhost:44375/images/title4.jpg"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Samsung Galaxy Tab S6 Lite</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-group col">
                                 <div class="card card-img">
-                                    <img class="card-img-top" src="images/phone-oppo.png" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <img class="card-img-top" src="https://localhost:44375/HinhSanPham/ipad-10-2-inch-wifi-32gb-2019-gold-400x400.jpg" alt="Card image cap"/>
+                                    <div class="card-body" style="padding: 0; padding-top: 20px">
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link" >Ipad 10.2 inch Wifi (2019) 32GB</a>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 1 K.mãi khác</p>
                                     </div>
                                 </div>
                                 <div class="card card-img">
-                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
+                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/samsung-galaxy-tab-a8-plus-p205-(8).jpg" alt="Card image cap"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Samsung Galaxy Tab A8 Plus</a>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 2 K.mãi khác</p>
                                     </div>
                                 </div>
                                 <div class="card card-img">
-                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
+                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/huawei-mediapad-t5-(14).jpg" alt="Card image cap"/>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Huawei Mediapad T5</a>
+                                        <p class="card-des">Bao da (trong hộp máy) và 2 K.mãi khác</p>
                                     </div>
                                 </div>
                             </div>
