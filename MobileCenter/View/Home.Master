@@ -47,7 +47,7 @@
                                             TABLET</a>
                                     </li>
                                     <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=4" ? "active" : "" %>">
-                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4") %>' id="HyperLink4" class="nav-link text-dark" runat="server">
+                                        <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4") %>' id="HyperLink4" class="nav-link" runat="server">
                                             <i class="fa fa-mobile mr-3 text-primary fa-fw"></i>
                                             PHONE</a>
                                     </li>

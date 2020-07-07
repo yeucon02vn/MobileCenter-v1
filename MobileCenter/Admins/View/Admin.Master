@@ -105,7 +105,9 @@
 
                     <ul class="nav flex-column bg-white mb-0">
                         <li class="nav-item">
-                            <a href="~/admin/themsanpham" id="HyperLink1" class="nav-link text-dark" runat="server">
+                            <a href="~/admin/themsanpham" id="HyperLink1" class="
+                                
+                                text-dark" runat="server">
                                 <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
                                 ĐĂNG SẢN PHẨM
                             </a>
