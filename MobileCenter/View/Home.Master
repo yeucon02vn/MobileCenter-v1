@@ -74,10 +74,10 @@
             </asp:GridView>
 
             <%--Hiện số người online--%>
-            <div class="nav" style="font-size:16px">
+            <%--<div class="nav" style="font-size:16px">
                 <asp:Label runat="server">Số người online: </asp:Label>
                 <asp:Label ID="lblOnline" runat="server" Text="lblOnline"></asp:Label>
-            </div>
+            </div>--%>
         </div>
 
         <div>
@@ -190,7 +190,7 @@
                     <div class="clr"></div>
                 </div>
                 <!--/header -->
-                <div class="sanpham">
+                <div class="sanpham" style="display:flex; justify-content:center; align-items:center; width:100%;">
                     <asp:Label ID="lblchao" runat="server" Text=""></asp:Label>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
@@ -326,13 +326,13 @@
 
                 <div class="clearfix"></div>
             </div>
-            <div class="card-area">
+          <%--  <div class="card-area">
                 <h2>Hot Laptop in June</h2>
 
             </div>
             <div class="card-area">
                 <h2>Hot Tablet in June</h2>
-            </div>
+            </div>--%>
 
         </div>
         <!--/page -->
