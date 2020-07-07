@@ -31,31 +31,31 @@
                         <ItemTemplate>
                             <nav class="navbar" style="align-items: center;">
                                 <ul class="nav flex-column">
-                                    <li class="nav-item">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=1" ? "active" : "" %>">
                                         <asp:HyperLink ID="HyperLink1" runat="server" 
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1") %>'>LAPTOP</asp:HyperLink>
                                     </li>
-                                    <li class="nav-item">
-                                        <asp:HyperLink ID="HyperLink2" runat="server" 
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=2" ? "active" : "" %>">
+                                        <asp:HyperLink ID="HyperLink2" runat="server"  CssClass ="TIVI"
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=2") %>'>TIVI</asp:HyperLink>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=3" ? "active" : "" %>">
                                         <asp:HyperLink ID="HyperLink3" runat="server" 
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3") %>'>TABLET</asp:HyperLink>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=4" ? "active" : "" %>">
                                         <asp:HyperLink ID="HyperLink4" runat="server" 
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4") %>'>PHONE</asp:HyperLink>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=5" ? "active" : "" %>">
                                         <asp:HyperLink ID="HyperLink5" runat="server" 
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=5") %>'>MÁY NGHE NHẠC</asp:HyperLink>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=6" ? "active" : "" %>">
                                         <asp:HyperLink ID="HyperLink6" runat="server" 
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=6") %>'>MÁY GHI ÂM</asp:HyperLink>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=7" ? "active" : "" %>">
                                         <asp:HyperLink ID="HyperLink7" runat="server" 
                                             NavigateUrl='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=7") %>'>MÁY ẢNH</asp:HyperLink>
                                     </li>
@@ -179,7 +179,7 @@
       </asp:ContentPlaceHolder>             
   </div>
     <div class ="card-area row" id="cardArea" runat="server">
-                        <div class="card bg-light" style="margin-bottom: 10px;"  style="margin-bottom: 10px;">
+                        <div class="card bg-light" style="margin-bottom: 10px;">
                             <div class="card-header"><h2>Hot Mobile in June</h2></div>
                             <div class="card-body row" style="padding:0px;">
                                 <div class="card-group col">

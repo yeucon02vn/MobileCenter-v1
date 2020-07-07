@@ -57,7 +57,7 @@ namespace MobileCenter.View
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtontieptucmuahang;
+        protected global::System.Web.UI.WebControls.LinkButton ImageButtontieptucmuahang;
 
         /// <summary>
         /// ImageButtoncapnhatthaydoi control.
@@ -66,7 +66,7 @@ namespace MobileCenter.View
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtoncapnhatthaydoi;
+        protected global::System.Web.UI.WebControls.LinkButton ImageButtoncapnhatthaydoi;
 
         /// <summary>
         /// ImageButtonXacnhanthanhtoan control.
@@ -75,6 +75,6 @@ namespace MobileCenter.View
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonXacnhanthanhtoan;
+        protected global::System.Web.UI.WebControls.LinkButton ImageButtonXacnhanthanhtoan;
     }
 }
