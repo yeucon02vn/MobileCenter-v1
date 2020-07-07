@@ -102,7 +102,7 @@
                     <!-- /navigation -->
                     <div class="clr"></div>
                     <div class="row" id="slideShow" runat="server">
-                        <div class="column">
+                        <div class = "first-column">
                             <div class="slideshow-container">
 
                                 <div class="mySlides fade">
@@ -134,7 +134,7 @@
                             </div>
                             <br>
                         </div>
-                        <div class="column" style="margin-top: 10px;">
+                        <div class="second-column" >
                             <div class="row" id="news">
                                 <div class="card">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
@@ -197,7 +197,7 @@
                 </div>
                 <div class="card-area row" id="cardArea" runat="server">
                     <div class="card bg-light" style="margin-bottom: 10px;" style="margin-bottom: 10px;">
-                        <div class="card-header">
+                        <div class="card-header" style ="background-color : white;border:none; ">
                             <h2>Hot Mobile in June</h2>
                         </div>
                         <div class="card-body row" style="padding: 0px;">

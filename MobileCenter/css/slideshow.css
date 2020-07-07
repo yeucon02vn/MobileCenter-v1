@@ -20,8 +20,8 @@ img {
 .slideshow-container {
     max-width: 580px;
     position: relative;
-    margin: left;
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 23px;
 }
 
 
