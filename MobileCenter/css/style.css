@@ -99,6 +99,7 @@ h4 {
 p {
     line-height: 1.5em;
     padding: 0 0 1.3em;
+    font-size:16px;
 }
 
 
@@ -1324,6 +1325,6 @@ select {
 
 .card-img{
     /* margin-top : 1rem; */
-    padding: 0 !important;
+    padding: 10px !important;
 }
 

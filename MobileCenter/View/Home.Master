@@ -29,7 +29,7 @@
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <div class="vertical-nav bg-white" id="sidebar" style="z-index: 11111; font-size: 13px">
+                            <div class="vertical-nav bg-whitesmoke" id="sidebar" style="z-index: 11111; font-size: 13px">
                                 <ul class="nav flex-column bg-white mb-0 justify-content-end">
                                     <li class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=1" ? "active" : "" %>">
                                         <a href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1") %>' id="HyperLink1" class="nav-link" runat="server">
@@ -136,14 +136,14 @@
                         </div>
                         <div class="second-column" >
                             <div class="row" id="news">
-                                <div class="card">
+                                <div class="card" style="border:none; background-color:whitesmoke">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
-                                        <div class="col-auto" style="width: 50%;">
-                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" />
+                                        <div class="col-auto" style="width: 20%;">
+                                            <img src="https://localhost:44375/images/phone-oppo.png" class="img-fluid" />
                                         </div>
                                         <div class="" style="padding-left: 10px;">
                                             <div class="card-block">
-                                                <p class="card-text">
+                                                <p class="card-text" style ="margin-right:5px">
                                                     MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
                                                 </p>
                                             </div>
@@ -152,14 +152,14 @@
                                 </div>
                             </div>
                             <div class="row" id="news">
-                                <div class="card">
+                                <div class="card" style="border:none; background-color:whitesmoke">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
-                                        <div class="col-auto" style="width: 50%;">
-                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
+                                        <div class="col-auto" style="width: 20%;">
+                                            <img src="https://localhost:44375/images/phone-oppo.png" class="img-fluid" alt="">
                                         </div>
                                         <div class="" style="padding-left: 10px;">
                                             <div class="card-block">
-                                                <p class="card-text">
+                                                <p class="card-text" style ="margin-right:5px" >
                                                     MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
                                                 </p>
                                             </div>
@@ -168,14 +168,14 @@
                                 </div>
                             </div>
                             <div class="row" id="news">
-                                <div class="card">
+                                <div class="card" style="border:none; background-color:whitesmoke">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
-                                        <div class="col-auto" style="width: 50%;">
-                                            <img src="https://localhost:44375/images/slide1.jpg" class="img-fluid" alt="">
+                                        <div class="col-auto" style="width: 20%;">
+                                            <img src="https://localhost:44375/images/phone-oppo.png" class="img-fluid" alt="">
                                         </div>
                                         <div class="" style="padding-left: 10px;">
                                             <div class="card-block">
-                                                <p class="card-text">
+                                                <p class="card-text" style ="margin-right:5px">
                                                     MUA PREDATOR LCD TÍCH HỢP G-SYNC TẶNG MOUSE PREDATOR CESTUS 300
                                                 </p>
                                             </div>
@@ -197,13 +197,13 @@
                 </div>
                 <div class="card-area row" id="cardArea" runat="server">
                     <div class="card bg-light" style="margin-bottom: 10px;" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color : white;border:none; ">
+                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; ">
                             <h2>Hot Mobile in June</h2>
                         </div>
-                        <div class="card-body row" style="padding: 0px;">
+                        <div class="card-body row"  style="padding: 0px;">
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 10rem;">
-                                    <img class="card-img-top " src="images/slide1.jpg">
+                                    <img class="card-img-top" src="images/phone-oppo.png">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -212,22 +212,22 @@
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card ">
-                                    <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top" src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                 </div>
-                                <div class="card ">
-                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                 </div>
-                                <div class="card ">
-                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -239,13 +239,13 @@
                         </div>
                     </div>
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header">
+                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; ">
                             <h2>Hot Mobile in June</h2>
                         </div>
-                        <div class="card-body row" style="padding: 0px;">
+                        <div class="card-body row"  style="padding: 0px;">
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 10rem;">
-                                    <img class="card-img-top " src="images/slide1.jpg">
+                                    <img class="card-img-top " src="images/phone-oppo.png">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -254,22 +254,22 @@
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card ">
-                                    <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top" src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                 </div>
-                                <div class="card ">
-                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                 </div>
-                                <div class="card ">
-                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -281,13 +281,13 @@
                         </div>
                     </div>
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header">
+                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; "">
                             <h2>Hot Mobile in June</h2>
                         </div>
-                        <div class="card-body row" style="padding: 0px;">
+                        <div class="card-body row"  style="padding: 0px;">
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 10rem;">
-                                    <img class="card-img-top " src="images/slide1.jpg">
+                                    <img class="card-img-top " src="images/phone-oppo.png">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -296,22 +296,22 @@
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card ">
-                                    <img class="card-img-top" src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top" src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                 </div>
-                                <div class="card ">
-                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                 </div>
-                                <div class="card ">
-                                    <img class="card-img-top " src="images/slide1.jpg" alt="Card image cap">
+                                <div class="card card-img">
+                                    <img class="card-img-top " src="images/phone-oppo.png" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
