@@ -1551,3 +1551,22 @@ td {
 .card-group.col {
     padding: 20px;
 }
+
+/*style table giohang*/
+.styleCol {
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+    padding-right: 20px !important;
+}
+ /*style total money*/
+.style-totalMoney {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 20px; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-top: 25px;
+}
