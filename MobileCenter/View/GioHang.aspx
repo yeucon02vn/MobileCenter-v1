@@ -52,18 +52,16 @@
         <div style="color: #090909; font-size: 20px; font-weight:bold;padding-bottom: 10px;">
             Cart Total
         </div>
-        <div style="border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); width: 250px;">
+        <div style="border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); width: 94%;">
         </div>
-        <div style="font-size: 15px; padding-top: 15px; display: flex; flex-direction: row;">
-            Shipping
-            <div style="padding-left: 120px;">
-                Free ship
-            </div>
+        <div style="width: 100%; font-size: 15px; padding-top: 15px; display: flex; justify-content: space-between;">
+            <div>Shipping</div>
+            <div class="pr-5">Free ship</div>
         </div>
         <div style="font-size: 15px; padding-top: 15px;padding-bottom: 15px;">
             Flat rate
         </div>
-        <div style="border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); width: 250px;">
+        <div style="border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); width: 94%;">
         <div style="display: flex; justify-content: space-between;padding-top: 15px;">
              <asp:Label ID="Label1" Font-Size="15px" runat="server" Text="Total:" Font-Bold="True" ForeColor="#330000"></asp:Label>
              <asp:Label ID="lblTotal" runat="server" Font-Bold="true" Font-Size="15px" ForeColor="#330000"> </asp:Label>
