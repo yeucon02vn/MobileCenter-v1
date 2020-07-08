@@ -120,7 +120,7 @@ namespace MobileCenter.View
             {
                 _tongtien += Convert.ToInt32(DataBinder.Eval(e.Row.DataItem, "ThanhTien"));
             }
-            lblTotal.Text = string.Format(_tongtien.ToString()) + " VND";
+            lblTotal.Text = string.Format(_tongtien.ToString("###,###,###")) + " VND";
 
         }
         protected void ImageButtonXacnhanthanhtoan_Click(object sender, EventArgs e)
