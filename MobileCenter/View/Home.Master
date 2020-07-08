@@ -102,7 +102,7 @@
                     <!-- /navigation -->
                     <div class="clr"></div>
                     <div class="row" id="slideShow" runat="server">
-                        <div class = "first-column">
+                        <div class="first-column">
                             <div class="slideshow-container">
                                 <div class="mySlides fade">
                                     <div class="numbertext"></div>
@@ -129,20 +129,20 @@
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
-                                </div>                              
-                            </div>                           
-                            <br/>
+                                </div>
+                            </div>
+                            <br />
                         </div>
                         <div class="second-column">
                             <div class="row" id="news">
-                                <div class="card" style="border:none; background-color:whitesmoke; width: 405px">
-                                    <a href="https://www.thegioididong.com/tin-tuc/viec-quan-li-cac-tab-tren-chrome-gio-day-lai-don-gian-hon-bao-gio-het-1267452" class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex; font-size:14px">
+                                <div class="card" style="border: none; background-color: whitesmoke; width: 405px">
+                                    <a href="https://www.thegioididong.com/tin-tuc/viec-quan-li-cac-tab-tren-chrome-gio-day-lai-don-gian-hon-bao-gio-het-1267452" class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex; font-size: 14px">
                                         <div class="col-auto">
-                                            <img src="https://localhost:44375/images/info.jpg" height="98px" width="140px"/>
+                                            <img src="https://localhost:44375/images/info.jpg" height="98px" width="140px" />
                                         </div>
                                         <div style="padding-left: 10px;">
                                             <div class="card-block">
-                                                <div class="card-link" style ="margin-right:5px" >
+                                                <div class="card-link" style="margin-right: 5px">
                                                     Cách quản lý các Tab trên Google Chrome một cách đơn giản và hiệu quả
                                                 </div>
                                             </div>
@@ -151,19 +151,19 @@
                                 </div>
                             </div>
                             <div class="row" id="news" style="padding-top: 0px;">
-                                <div class="card" style="border:none; background-color:whitesmoke">
+                                <div class="card" style="border: none; background-color: whitesmoke">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="col-auto">
-                                            <img src="https://localhost:44375/images/safe1.png" alt="" height="98px" width="405px"/>
+                                            <img src="https://localhost:44375/images/safe1.png" alt="" height="98px" width="405px" />
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="row" id="news" style="padding-top: 0px;">
-                                <div class="card" style="border:none; background-color:whitesmoke">
+                                <div class="card" style="border: none; background-color: whitesmoke">
                                     <div class="row no-gutters" style="justify-content: flex-start; align-items: center; flex-wrap: nowrap; display: flex;">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="col-auto">
-                                            <img src="https://localhost:44375/images/safe2.png" alt="" height="98px" width="405px"/>
+                                            <img src="https://localhost:44375/images/safe2.png" alt="" height="98px" width="405px" />
                                         </a>
                                     </div>
                                 </div>
@@ -172,133 +172,184 @@
                         <div class="clr"></div>
                     </div>
                     <div id="imgAdv" runat="server">
-                        <img src="https://localhost:44375/images/adv.png" style="width: 100%"/>
+                        <img src="https://localhost:44375/images/adv.png" style="width: 100%" />
                     </div>
                     <!--/searchform -->
                     <div class="clr"></div>
                 </div>
                 <!--/header -->
-                <div class="sanpham" style="display:flex; justify-content:center; align-items:center; width:100%;">
+                <div class="sanpham" style="display: flex; justify-content: center; align-items: center; width: 100%;">
                     <asp:Label ID="lblchao" runat="server" Text=""></asp:Label>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
                 <div class="card-area row" id="cardArea" runat="server">
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; font-size:large; font-weight:bold">
+                        <div class="card-header" style="background-color: rgba(0,0,0,0); border: none; font-size: large; font-weight: bold">
                             ĐIỆN THOẠI NỔI BẬT NHẤT
                         </div>
-                        <div class="card-body row"  style="padding: 0px;">
+                        <div class="card-body row" style="padding: 0px;">
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 10rem; font-size: 16px">
-                                    <img class="card-img-top" src="https://localhost:44375/images/tile1.jpg"/>
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Samsung Galaxy A31</a>
+                                    <img class="card-img-top pb-3" src="https://localhost:44375/images/tile1.jpg" />
+                                    <div>
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=60" class="card-link">Samsung Galaxy A31</a>
                                     </div>
+                                    <div class="price">5,840,000 VND</div>
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card card-img hovereffect">
-                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/iphone-11-pro-max-(19).jpg" alt="Card image cap">
-                                    <div class="card-body" style="padding: 0; padding-top: 20px">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link" >IPhone 11 Pro Max 64GB</a>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/iphone-11-pro-max-(19).jpg" alt="Card image cap">
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=1" class="card-link">IPhone 11 Pro Max 64GB</a>
+                                        <div class="price">31,990,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
-                                <div class="card card-img hovereffect">
-                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/oppo-reno3-(13).jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Oppo Reno 3</a>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/oppo-reno3-(13).jpg" alt="Card image cap">
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=30" class="card-link">Oppo Reno 3</a>
+                                        <div class="price">8,490,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
-                                <div class="card card-img hovereffect">
-                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/samsung-galaxy-a21s-(13).jpg" alt="Card image cap"/>
-                                    <div class="card-body">
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/samsung-galaxy-a21s-(13).jpg" alt="Card image cap" />
+                                    <div class="card-body p-0 pt-4">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Samsung Galaxy A21s</a>
+                                        <div class="price">8,490,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; font-size:large; font-weight:bold">
+                        <div class="card-header" style="background-color: rgba(0,0,0,0); border: none; font-size: large; font-weight: bold">
                             LAP TOP NỔI BẬT NHẤT
                         </div>
-                        <div class="card-body row"  style="padding: 0px;">
+                        <div class="card-body row" style="padding: 0px;">
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 10rem; font-size: 16px">
-                                    <img class="card-img-top" src="https://localhost:44375/images/title3.jpg"/>
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1 (81WE003RVN)</a>
+                                    <img class="card-img-top pb-3" src="https://localhost:44375/images/title3.jpg" />
+                                    <div>
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=61" class="card-link">Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1 (81WE003RVN)</a>
                                     </div>
+                                    <div class="price">12,990,000 VND</div>
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card card-img hovereffect">
-                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/apple-macbook-pro-2019-touch-i5-8gb-256gb-mv962sa-1-600x600.jpg" alt="Card image cap"/>
-                                    <div class="card-body" style="padding: 0; padding-top: 20px">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link" >Macbook pro 2019 i5 8GB</a>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/apple-macbook-pro-2019-touch-i5-8gb-256gb-mv962sa-1-600x600.jpg" alt="Card image cap" />
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Macbook pro 2019 i5 8GB</a>
+                                        <div class="price">39,490,000 VND</div>
                                         <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img hovereffect">
-                                    <img class="card-img-top "  style="padding: 10px;" src="https://localhost:44375/HinhSanPham/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">HP 15s du0063TU i5 8265U</a>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg" alt="Card image cap">
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=32" class="card-link">HP 15s du0063TU i5 8265U</a>
+                                        <div class="price">18,990,000 VND</div>
                                         <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 2 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img hovereffect">
-                                    <img class="card-img-top " style="padding: 10px;" src="https://localhost:44375/HinhSanPham/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Acer Aspire 3 A315 i5</a>
-                                        <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
+                                    <div class="card card-img hovereffect text-lg-left">
+                                        <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt="Card image cap" />
+                                        <div class="card-body p-0 pt-4">
+                                            <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=26" class="card-link">Acer Aspire 3 A315 i5</a>
+                                            <div class="price">19,000,000 VND</div>
+                                            <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 2 K.mãi khác</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
                     <div class="card bg-light" style="margin-bottom: 10px;">
-                        <div class="card-header" style ="background-color:rgba(0,0,0,0);border:none; font-size:large; font-weight:bold">
+                        <div class="card-header" style="background-color: rgba(0,0,0,0); border: none; font-size: large; font-weight: bold">
                             TABLET NỔI BẬT NHẤT
                         </div>
-                        <div class="card-body row"  style="padding: 0px;">
+                        <div class="card-body row" style="padding: 0px;">
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 10rem; font-size: 16px">
-                                    <img class="card-img-top" src="https://localhost:44375/images/title4.jpg"/>
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Samsung Galaxy Tab S6 Lite</a>
+                                    <img class="card-img-top pb-3" src="https://localhost:44375/images/title4.jpg" />
+                                    <div>
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=62" class="card-link">Samsung Galaxy Tab S6 Lite</a>
                                     </div>
+                                    <div class="price">9,990,000 VND</div>
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card card-img hovereffect" >
-                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/ipad-10-2-inch-wifi-32gb-2019-gold-400x400.jpg" alt="Card image cap"/>
-                                    <div class="card-body" style="padding: 0; padding-top: 20px">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link" >Ipad 10.2 inch Wifi (2019) 32GB</a>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/ipad-10-2-inch-wifi-32gb-2019-gold-400x400.jpg" alt="Card image cap" />
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=5" class="card-link">Ipad 10.2 inch Wifi (2019) 32GB</a>
+                                        <div class="price">9,490,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 1 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img hovereffect" >
-                                    <img class="card-img-top " style="padding: 10px;" src="https://localhost:44375/HinhSanPham/samsung-galaxy-tab-a8-plus-p205-(8).jpg" alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Samsung Galaxy Tab A8 Plus</a>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/samsung-galaxy-tab-a8-plus-p205-(8).jpg" alt="Card image cap" />
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=7" class="card-link">Samsung Galaxy Tab A8 Plus</a>
+                                        <div class="price">3,690,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 2 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img hovereffect" >
-                                    <img class="card-img-top " style="padding: 10px;" src="https://localhost:44375/HinhSanPham/huawei-mediapad-t5-(14).jpg" alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Huawei Mediapad T5</a>
-                                        <p class="card-des">Bao da (trong hộp máy) và 2 K.mãi khác</p>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/huawei-mediapad-t5-(14).jpg" alt="Card image cap" />
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=28" class="card-link">Huawei Mediapad T5</a>
+                                        <div class="price">4,990,000 VND</div>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 1 K.mãi khác</p>
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
+                    </div>
+                    <div class="card bg-light" style="margin-bottom: 10px;">
+                        <div class="card-header" style="background-color: rgba(0,0,0,0); border: none; font-size: large; font-weight: bold">
+                            TIVI NỔI BẬT NHẤT
+                        </div>
+                        <div class="card-body row" style="padding: 0px;">
+                            <div class="card-group col">
+                                <div class="card card-img" style="width: 10rem; font-size: 16px">
+                                    <img class="card-img-top pb-3" src="https://localhost:44375/images/title5.jpg" />
+                                    <div>
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=60" class="card-link">Smart Tivi LG 4K 55 inch 55UM7400PTA</a>
+                                    </div>
+                                    <div class="price">12,600,000 VND</div>
+                                </div>
+                            </div>
+                            <div class="card-group col">
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/lg-49sm8100pta-1-3-org.jpg" alt="Card image cap">
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=17" class="card-link">Smart Tivi NanoCell LG 4K 49 inch</a>
+                                        <div class="price">13,890,000 VND</div>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
+                                    </div>
+                                </div>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/sony-kdl-43w800g-1-1-org-1-org.jpg" alt="Card image cap">
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=38" class="card-link">Android Tivi Sony 43 inch</a>
+                                        <div class="price">9,600,000 VND</div>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
+                                    </div>
+                                </div>
+                                <div class="card card-img hovereffect text-lg-left">
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/tivi-tcl-40s6500-1-1-org.jpg" alt="Card image cap" />
+                                    <div class="card-body p-0 pt-4">
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=48" class="card-link">Android Tivi TCL 40 inch 40S6500</a>
+                                        <div class="price">5,990,000 VND</div>
+                                        <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
