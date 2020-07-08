@@ -198,22 +198,22 @@
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card card-img">
-                                    <img class="card-img-top" src="https://localhost:44375/HinhSanPham/iphone-11-pro-max-(19).jpg" alt="Card image cap">
+                                <div class="card card-img hovereffect">
+                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/iphone-11-pro-max-(19).jpg" alt="Card image cap">
                                     <div class="card-body" style="padding: 0; padding-top: 20px">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link" >IPhone 11 Pro Max 64GB</a>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
-                                <div class="card card-img">
-                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/oppo-reno3-(13).jpg" alt="Card image cap">
+                                <div class="card card-img hovereffect">
+                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/oppo-reno3-(13).jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Oppo Reno 3</a>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
-                                <div class="card card-img">
-                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/samsung-galaxy-a21s-(13).jpg" alt="Card image cap"/>
+                                <div class="card card-img hovereffect">
+                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/samsung-galaxy-a21s-(13).jpg" alt="Card image cap"/>
                                     <div class="card-body">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Samsung Galaxy A21s</a>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
@@ -237,22 +237,22 @@
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card card-img">
-                                    <img class="card-img-top" src="https://localhost:44375/HinhSanPham/apple-macbook-pro-2019-touch-i5-8gb-256gb-mv962sa-1-600x600.jpg" alt="Card image cap"/>
+                                <div class="card card-img hovereffect">
+                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/apple-macbook-pro-2019-touch-i5-8gb-256gb-mv962sa-1-600x600.jpg" alt="Card image cap"/>
                                     <div class="card-body" style="padding: 0; padding-top: 20px">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link" >Macbook pro 2019 i5 8GB</a>
                                         <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img">
-                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg" alt="Card image cap">
+                                <div class="card card-img hovereffect">
+                                    <img class="card-img-top "  style="padding: 10px;" src="https://localhost:44375/HinhSanPham/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg" alt="Card image cap">
                                     <div class="card-body">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">HP 15s du0063TU i5 8265U</a>
                                         <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 2 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img">
-                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt="Card image cap"/>
+                                <div class="card card-img hovereffect">
+                                    <img class="card-img-top " style="padding: 10px;" src="https://localhost:44375/HinhSanPham/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt="Card image cap"/>
                                     <div class="card-body">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Acer Aspire 3 A315 i5</a>
                                         <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
@@ -276,22 +276,22 @@
                                 </div>
                             </div>
                             <div class="card-group col">
-                                <div class="card card-img">
-                                    <img class="card-img-top" src="https://localhost:44375/HinhSanPham/ipad-10-2-inch-wifi-32gb-2019-gold-400x400.jpg" alt="Card image cap"/>
+                                <div class="card card-img hovereffect" >
+                                    <img class="card-img-top" style="padding: 10px;" src="https://localhost:44375/HinhSanPham/ipad-10-2-inch-wifi-32gb-2019-gold-400x400.jpg" alt="Card image cap"/>
                                     <div class="card-body" style="padding: 0; padding-top: 20px">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link" >Ipad 10.2 inch Wifi (2019) 32GB</a>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 1 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img">
-                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/samsung-galaxy-tab-a8-plus-p205-(8).jpg" alt="Card image cap"/>
+                                <div class="card card-img hovereffect" >
+                                    <img class="card-img-top " style="padding: 10px;" src="https://localhost:44375/HinhSanPham/samsung-galaxy-tab-a8-plus-p205-(8).jpg" alt="Card image cap"/>
                                     <div class="card-body">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Samsung Galaxy Tab A8 Plus</a>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác) và 2 K.mãi khác</p>
                                     </div>
                                 </div>
-                                <div class="card card-img">
-                                    <img class="card-img-top " src="https://localhost:44375/HinhSanPham/huawei-mediapad-t5-(14).jpg" alt="Card image cap"/>
+                                <div class="card card-img hovereffect" >
+                                    <img class="card-img-top " style="padding: 10px;" src="https://localhost:44375/HinhSanPham/huawei-mediapad-t5-(14).jpg" alt="Card image cap"/>
                                     <div class="card-body">
                                         <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=3" class="card-link">Huawei Mediapad T5</a>
                                         <p class="card-des">Bao da (trong hộp máy) và 2 K.mãi khác</p>
