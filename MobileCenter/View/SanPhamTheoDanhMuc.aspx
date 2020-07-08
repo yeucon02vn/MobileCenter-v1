@@ -16,7 +16,7 @@
                 </tr>
                 <tr>
                     <td style=" padding-top: 10px; font-size: 15px" align="center">
-                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("GiaSanPham", "{0:##,###,###} VND") %>' ForeColor="#0275d8"></asp:Label></td>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("GiaSanPham", "{0:##,###,###} VND") %>' ForeColor="#0063d1"></asp:Label></td>
                 </tr>
                 <tr>
                     <td style="text-align: center; display: flex;" align="center">
