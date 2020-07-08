@@ -695,6 +695,7 @@
     <Content Include="HinhSanPham\SVE11125CVW.jpg" />
     <Content Include="HinhSanPham\SVE15138CVS e1.jpg" />
     <Content Include="HinhSanPham\SVS13123CVR-1.jpg" />
+    <Content Include="HinhSanPham\template-tv-10041468.jpg" />
     <Content Include="HinhSanPham\tivi-tcl-40s6500-1-1-org.jpg" />
     <Content Include="HinhSanPham\VAIO-DUA-11.jpg" />
     <Content Include="images\info.jpg" />
@@ -712,6 +713,7 @@
     <Content Include="images\title2.jpg" />
     <Content Include="images\title3.jpg" />
     <Content Include="images\title4.jpg" />
+    <Content Include="images\title5.jpg" />
     <Content Include="js\affix.js" />
     <Content Include="js\app.js" />
     <Content Include="js\coin-slider.min.js" />

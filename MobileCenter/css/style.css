@@ -1345,5 +1345,12 @@ select {
 .card-des {
     font-size: 12px;
     font-weight: 500;
-    color: gray;
+    color: #242424;
+    padding-top: 6px;
+}
+
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0063d1;
 }
