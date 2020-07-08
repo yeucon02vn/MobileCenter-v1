@@ -162,7 +162,7 @@
 
         <!-- End demo content -->
 
-            <div style="display:flex; justify-content:center; align-items:center; width:100%;">
+            <div style="display:flex; justify-content:center; align-items:center; width:100%">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>

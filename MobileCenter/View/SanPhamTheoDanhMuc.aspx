@@ -6,8 +6,8 @@
                 <asp:Panel ID="Panel1" runat="server" BorderColor="#E0E0E0" BorderStyle="Solid" BorderWidth="0.1px"
                 Width="170px" Height="250px" box-shadow="5px">
             <table cellpadding="0" cellspacing="0" style="display: flex; justify-content: center; align-items: center; "> 
-                <tr style="display:flex ;justify-content:center; ">
-                    <td style="text-align: center;padding-top: 10px; " align="center">
+                <tr>
+                    <td style=" text-align: center; padding-top: 10px; padding-left: 100px; " align="center">
                         <asp:Image ID="Image1" runat="server" Height="125px" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>' Width="100px" /></td>
                 </tr>
                 <tr>
