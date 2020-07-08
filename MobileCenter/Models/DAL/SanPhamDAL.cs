@@ -99,7 +99,7 @@ namespace MobileCenter.Models.DAL
             com.Parameters.Add("@GiaSanPham", SqlDbType.Int).Value =
             _sanPham.GiaSanPham;
             com.Parameters.Add("@IdSanPham ", SqlDbType.Int).Value =
-            _sanPham.IdHinhSanPham;
+            _sanPham.IdSanPham;
             com.ExecuteNonQuery();
         }
 

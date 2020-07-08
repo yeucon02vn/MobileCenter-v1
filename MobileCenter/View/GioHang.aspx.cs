@@ -16,7 +16,7 @@ namespace MobileCenter.View
         private decimal _tongtien;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             gridgiohang.PageSize = 10;
             if (!IsPostBack)
             {
@@ -39,11 +39,11 @@ namespace MobileCenter.View
         {
             get { return TaoCartGuid.LayCartGUID(); }
         }
-        protected void ImageButtontieptucmuahang_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtontieptucmuahang_Click(object sender, EventArgs e)
         {
             Response.Redirect("gioithieusanpham.aspx");
         }
-        protected void ImageButtoncapnhatthaydoi_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtoncapnhatthaydoi_Click(object sender, EventArgs e)
         {
             foreach (GridViewRow row in gridgiohang.Rows)
             {
@@ -123,7 +123,7 @@ namespace MobileCenter.View
             lblTotal.Text = string.Format(_tongtien.ToString()) + " VND";
 
         }
-        protected void ImageButtonXacnhanthanhtoan_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtonXacnhanthanhtoan_Click(object sender, EventArgs e)
         {
             Response.Cookies["ReturnURL"].Value = "ThemDonHang.aspx";
             Response.Redirect("DangNhap.aspx");
