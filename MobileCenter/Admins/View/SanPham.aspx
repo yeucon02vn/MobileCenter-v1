@@ -10,7 +10,7 @@
                         <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#2c2d33" NavigateUrl='<%# Eval("IdSanPham","SuaSanPham.aspx?IdSanPham={0}") %>'
                                 Text='<%# Eval("TenSanPham") %>'></asp:HyperLink>
                             <br />
-                            <asp:Label ID="Label3" runat="server" Font-Size="Small" ForeColor="#0275d8" Text='<%# Eval("GiaSanPham","{0:###,###,###} VND") %>'></asp:Label>
+                            <asp:Label ID="Label3" runat="server" Font-Size="Small" ForeColor="#0063d1" Text='<%# Eval("GiaSanPham","{0:###,###,###} VND") %>'></asp:Label>
                             <%--<asp:Label ID="Label4" runat="server" Text='<%# Eval("MoTaSanPham") %>'></asp:Label>--%>
                     </div>
                 </div>   
