@@ -124,7 +124,6 @@
                         </div>
                         <div style="display: flex; flex-direction: row; align-items: center;">
                             <div id="authen" runat="server">
-                                <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink12" runat="server" NavigateUrl="~">Đổi thông tin</asp:HyperLink>
                                 <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink11" runat="server" NavigateUrl="~/customer/invoice">Lịch sử</asp:HyperLink>
                                 <asp:LinkButton class="btn btn-outline-primary btn-lg" runat="server" OnClick="btnDangXuat_Click" ID="btnDangXuat" OnClientClick="return confirm('Do you want to log out?');return false;">Đăng xuất</asp:LinkButton>                                
                             </div>
