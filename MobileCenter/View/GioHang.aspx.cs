@@ -12,20 +12,21 @@ namespace MobileCenter.View
     public partial class GioHang : NguoiDungHienTai
     {
         private decimal _tongtien;
-        private bool check = false;
+        private int dem = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
 
             gridgiohang.PageSize = 10;
             if (!IsPostBack)
             {
-                ((Home)this.Master).isVisible = false;
                 HienThiGioHang();
+                ((Home)this.Master).isVisible = false;
             }
         }
 
         private void HienThiGioHang()
         {
+            dem = 0;
             GioHangDTO gioHang = new GioHangDTO();
             gioHang.CartGuid = CartGUID;
             GioHangBUS gioHangBUS = new GioHangBUS();
@@ -33,6 +34,13 @@ namespace MobileCenter.View
             gioHangBUS.Select();
             gridgiohang.DataSource = gioHangBUS.KetQua;
             gridgiohang.DataBind();
+            foreach (GridViewRow row in gridgiohang.Rows)
+            {
+                TextBox quantity = (TextBox)row.FindControl("textQuantity");
+                dem += int.Parse(quantity.Text);
+            }
+            Label count = (Label)((Home)this.Master).FindControl("productQuantity");
+            count.Text = dem.ToString();
         }
         private string CartGUID
         {
@@ -63,7 +71,6 @@ namespace MobileCenter.View
                 lblTotal.Text = "0 VND";
                 lblThongBao.Text = "Bạn chưa có sản phẩm nào trong giỏ hàng";
             }
-            check = false;
         }
 
 
@@ -130,8 +137,8 @@ namespace MobileCenter.View
             Delete(int.Parse(data.Values["IdGioHang"].ToString()));
             HienThiGioHang();
 
-            int Dem = gridgiohang.Rows.Count;
-            if (Dem == 0)
+            int dem = gridgiohang.Rows.Count;
+            if (dem == 0)
             {
                 lblTotal.Text = "0 VND";
                 lblThongBao.Text = "Bạn chưa có sản phẩm nào trong giỏ hàng";

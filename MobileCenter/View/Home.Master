@@ -129,7 +129,10 @@
                    
                     <div class="clr"></div>
                      <div class ="shopping-card">
-                         <ul class="menusm" style="margin-left:10px; float:right;">
+                          <ul class="menusm" style="margin-left:0px; float:right;">
+                             <asp:Label CssClass="numberCircle" Text="0" ID="productQuantity" runat="server"> </asp:Label>
+                         </ul>
+                         <ul class="menusm" style="margin-left:10px; float:right;padding-top:10px">
                             <a href="https://localhost:44375/customer/cart"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
                         </ul>
                     </div>

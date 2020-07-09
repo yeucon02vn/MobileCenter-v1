@@ -1570,3 +1570,15 @@ td {
     padding-left: 30px;
     padding-top: 25px;
 }
+
+.numberCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: white;
+    padding-top: 2px;
+    border: 1px solid blue;
+    color: red;
+    text-align: center;
+    font: 22px Arial, sans-serif;
+}
