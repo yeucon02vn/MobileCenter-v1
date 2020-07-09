@@ -26,15 +26,8 @@ namespace MobileCenter.View
                 nguoiDung.MatKhau = textMatKhau.Value;
                 nguoiDungBUS._nguoiDung = nguoiDung;
                 nguoiDungBUS.LoginWithUser();
-                try
-                {
+                //labelMessage.Text = "Đăng nhập thành công!";
 
-                    //labelMessage.Text = "Đăng nhập thành công!";
-                }
-                catch
-                {
-                    Response.Redirect("TrangLoi.aspx");
-                }
                 if (nguoiDungBUS.IsInvalid)
                 {
                     base._NguoiDungHienTai = nguoiDungBUS._nguoiDung;
@@ -42,12 +35,13 @@ namespace MobileCenter.View
                     lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
                     if (Request.Cookies["ReturnURL"].Value == "add-bill")
                     {
-                        Response.Redirect(Request.Cookies["ReturnURL"].Value);
+                        Response.Redirect(Request.Cookies["ReturnURL"].Value);                     
                     }
                     else
                     {
                         Response.Redirect("~/customer/invoice");
                     }
+                    
                 }
                 else
                 {
