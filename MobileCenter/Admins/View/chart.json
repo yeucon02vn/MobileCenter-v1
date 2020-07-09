@@ -1,0 +1,74 @@
+{
+    "2018" : {
+        "laptop" : 25.09,
+        "tablet" : 9.40,
+        "phone" : 8.50,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "2019" : {
+        "laptop" : 20.09,
+        "tablet" : 9.40,
+        "phone" : 8.5,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "2020" : {
+        "laptop" : 30.09,
+        "tablet" : 9.40,
+        "phone" : 8.5,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "05/2020" : {
+        "laptop" : 15.09,
+        "tablet" : 9.40,
+        "phone" : 8.5,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "06/2020" : {
+        "laptop" : 20.09,
+        "tablet" : 9.40,
+        "phone" : 8.5,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "07/2020" : {
+        "laptop" : 30.5,
+        "tablet" : 9.40,
+        "phone" : 8.5,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "12/2019" : {
+        "laptop" : 30.5,
+        "tablet" : 9.40,
+        "phone" : 28.5,
+        "recorder" : 7.96,
+        "playermusic" : 37.80,
+        "camera" : 7.56,
+        "television" : 7.20
+    },
+    "12/2018" : {
+        "laptop" : 30.5,
+        "tablet" : 9.40,
+        "phone" : 48.5,
+        "recorder" : 7.96,
+        "playermusic" : 7.80,
+        "camera" : 17.56,
+        "television" : 7.20
+    }
+}
