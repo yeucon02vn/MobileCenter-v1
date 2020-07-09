@@ -7,7 +7,7 @@
                             <div class="card-group col">
                                 <div class="card card-img" style="width: 50rem; font-size: 16px">
                                     <div>
-                                        <asp:Image ID="Image1" class="zoom" runat="server" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>' />
+                                        <asp:Image ID="Image1" style="width: 60%;" class="zoom" runat="server" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>' />
                                     </div>
                                     
                                 </div>
