@@ -16,20 +16,20 @@ namespace MobileCenter.View
             ((Home)this.Master).isVisible = false;
         }
 
-        protected void btnDangNhap_Click(object sender, ImageClickEventArgs e)
+        protected void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (IsValid)
             {
                 NguoiDungDTO nguoiDung = new NguoiDungDTO();
                 NguoiDungBUS nguoiDungBUS = new NguoiDungBUS();
-                nguoiDung.TenDangNhap = textUsername.Text;
-                nguoiDung.MatKhau = textMatKhau.Text;
+                nguoiDung.TenDangNhap = textUsername.Value;
+                nguoiDung.MatKhau = textMatKhau.Value;
                 nguoiDungBUS._nguoiDung = nguoiDung;
                 nguoiDungBUS.LoginWithUser();
                 try
                 {
 
-                    labelMessage.Text = "Đăng nhập thành công!";
+                    //labelMessage.Text = "Đăng nhập thành công!";
                 }
                 catch
                 {
@@ -51,7 +51,7 @@ namespace MobileCenter.View
                 }
                 else
                 {
-                    labelMessage.Text = "Đăng nhập không thành công!";
+                    //labelMessage.Text = "Đăng nhập không thành công!";
                 }   
             }
         }

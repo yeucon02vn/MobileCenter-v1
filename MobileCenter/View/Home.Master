@@ -1,7 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="MobileCenter.View.Home" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Moonly Center - Trung tâm mua bán sản phẩm chính hãng Sony</title>
@@ -10,7 +11,8 @@
     <!-- slider -->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
-
+     <script type="text/javascript " src="https://localhost:44375/Admins/View/jquery-1.4.2.min.js "></script>
+    <script type="text/javascript" src="https://localhost:44375/Admins/View/script.js"></script>
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/style.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/menusm.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/pagenavi-css.css" media="screen" />
@@ -18,9 +20,29 @@
     <link rel="stylesheet" type="text/css" href="https://localhost:44375/css/affix.css" media="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+     <link rel="icon" type="image/png" href="~/Admins/View/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/Admins/View/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/css/main.css">
 </head>
 <body class="html_bg">
     <form id="form1" runat="server">
@@ -433,4 +455,19 @@
 <script type="text/javascript " src="https://localhost:44375/js/script.js "></script>
 <script type="text/javascript " src="https://localhost:44375/js/slideshow.js "></script>
 <script type="text/javascript" src="https://localhost:44375/js/swiper.js"> </script>
+
+<script src="https://localhost:44375/Admins/View/vendor/animsition/js/animsition.min.js"></script>
+
+<script src="https://localhost:44375/Admins/View/vendor/bootstrap/js/popper.js"></script>
+<script src="https://localhost:44375/Admins/View/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="https://localhost:44375/Admins/View/vendor/select2/select2.min.js"></script>
+
+<script src="https://localhost:44375/Admins/View/vendor/daterangepicker/moment.min.js"></script>
+<script src="https://localhost:44375/Admins/View/vendor/daterangepicker/daterangepicker.js"></script>
+
+<script src="https://localhost:44375/Admins/View/vendor/countdowntime/countdowntime.js"></script>
+
+<script src="https://localhost:44375/Admins/View/js/LoginAdmin.js"></script>
+<script src="https://localhost:44375/Admins/View/js/admin.js"></script>
 </html>
