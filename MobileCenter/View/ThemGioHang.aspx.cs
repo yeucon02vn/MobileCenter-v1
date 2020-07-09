@@ -36,7 +36,7 @@ namespace MobileCenter.View
             {
                 Response.Redirect("Trangloi.aspx");
             }
-            Response.Redirect("GioHang.aspx");
+            Response.Redirect("~/customer/cart");
         }
         private string CartGUID
         {

@@ -20,8 +20,8 @@
                 </tr>
                 <tr>
                     <td style="text-align: center; display: flex;" align="center">
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdSanPham","ChiTietSanPham.aspx?IdSanpham={0}") %>'  ><button type="button" class="btn btn-outline-primary" style="margin-right:10px; margin-left: 10px; border-radius: 2.286em; font-size:14px;">Chi tiết đơn hàng</button></asp:HyperLink>
-                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# Eval("IdSanPham","ThemGioHang.aspx?IDSanpham={0}") %>'><button type="button" class="btn btn-outline-primary" style="margin-right:10px; border-radius: 2.286em; font-size:14px;padding-left: 30px; padding-right: 30px;">Mua hàng</button></asp:HyperLink></td>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdSanPham","~/customer/product-detail?IdSanpham={0}") %>'  ><button type="button" class="btn btn-outline-primary" style="margin-right:10px; margin-left: 10px; border-radius: 2.286em; font-size:14px;">Chi tiết đơn hàng</button></asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# Eval("IdSanPham","~/customer/add-product?IdSanpham={0}") %>'><button type="button" class="btn btn-outline-primary" style="margin-right:10px; border-radius: 2.286em; font-size:14px;padding-left: 30px; padding-right: 30px;">Mua hàng</button></asp:HyperLink></td>
                 </tr>
             </table>
             </asp:Panel>
