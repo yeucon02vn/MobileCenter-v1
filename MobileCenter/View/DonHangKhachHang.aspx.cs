@@ -19,7 +19,7 @@ namespace MobileCenter.View
                 ((Home)this.Master).isLogIn = false;
 
                 Label lblWelcome = (Label)Master.FindControl("lblchao");
-                lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
+                //lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
                 HienThiDonHang();
             }
         }
@@ -40,7 +40,7 @@ namespace MobileCenter.View
             gridviewOrders.DataSource = donHangBUS.KetQua;
             gridviewOrders.DataBind();
         }
-        protected void ImageButtontrove_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtontrove_Click(object sender, EventArgs e)
         {
             Response.Redirect("~");
 

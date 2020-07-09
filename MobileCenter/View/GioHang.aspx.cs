@@ -33,7 +33,7 @@ namespace MobileCenter.View
             gioHangBUS._gioHang = gioHang;
             gioHangBUS.Select(); gioHangBUS.Select();
             gridgiohang.DataSource = gioHangBUS.KetQua;
-            gridgiohang.DataBind(); gridgiohang.DataBind();
+            gridgiohang.DataBind();
             foreach (GridViewRow row in gridgiohang.Rows)
             {
                 TextBox quantity = (TextBox)row.FindControl("textQuantity");
