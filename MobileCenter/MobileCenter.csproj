@@ -603,6 +603,7 @@
     <Content Include="Admins\View\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="Admins\View\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Admins\View\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Admins\View\chart.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="HinhSanPham\acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" />
     <Content Include="HinhSanPham\acer-aspire-a315-34-c2h9-n4000-4gb-256gb-win10-nx-210665-400x400.jpg" />

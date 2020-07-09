@@ -8,7 +8,7 @@
             <table cellpadding="0" cellspacing="0" style="display: flex; justify-content: center; align-items: center; "> 
                 <tr>
                     <td style=" text-align: center; padding-top: 10px; padding-left: 70px; " align="center">
-                        <asp:Image class="img-full" ID="Image1" runat="server" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>'  /></td>
+                        <asp:Image class="img-full" Height="130px" ID="Image1" runat="server" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>'  /></td>
                 </tr>
                 <tr>
                     <td style="padding-top: 10px;" align="center">
