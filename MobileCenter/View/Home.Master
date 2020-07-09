@@ -125,9 +125,17 @@
                                 <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink9" runat="server" NavigateUrl="~/customer/signup">Đăng ký</asp:HyperLink>
                                 <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink10" runat="server" NavigateUrl="~/customer/signout">Đăng xuất</asp:HyperLink>
                             </div>
-                            <div> 
-                                <a href="https://localhost:44375/customer/cart"><i class="fa fa-shopping-cart" style="font-size: 30px; margin-left: 20px"></i></a>
+                            <div class="shopping-card">
+                                <ul class="menusm" style="margin-left: 10px; float: right;">
+                                    <ul class="menusm" style="margin-left: 0px; float: right;">
+                                        <asp:Label CssClass="numberCircle" Text="0" ID="productQuantity" runat="server"> </asp:Label>
+                                    </ul>
+                                    <ul class="menusm" style="margin-left: 10px; float: right; padding-top: 10px">
+                                        <a href="https://localhost:44375/customer/cart"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
+                                    </ul>
+                                </ul>
                             </div>
+                        </div>
                         </div>                                             
                     </div>
                    

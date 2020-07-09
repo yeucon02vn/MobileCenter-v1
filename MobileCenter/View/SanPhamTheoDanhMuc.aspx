@@ -4,11 +4,11 @@
         <ItemTemplate>
             <div  class="card hovereffect" style=" margin: 20px; justify-content:center; align-items: center; padding-left: 50px; padding-right: 50px; ">
                 <asp:Panel ID="Panel1" runat="server" BorderColor="#E0E0E0" BorderStyle="Solid" BorderWidth="0.1px"
-                Width="170px" Height="250px" box-shadow="5px">
+                Width="170px"  box-shadow="5px">
             <table cellpadding="0" cellspacing="0" style="display: flex; justify-content: center; align-items: center; "> 
                 <tr>
-                    <td style=" text-align: center; padding-top: 10px; padding-left: 100px; " align="center">
-                        <asp:Image ID="Image1" runat="server" Height="125px" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>' Width="100px" /></td>
+                    <td style=" text-align: center; padding-top: 10px; padding-left: 70px; " align="center">
+                        <asp:Image class="img-full" ID="Image1" runat="server" ImageUrl='<%# Eval("IdHinhSanPham","HienThiHinhSanPham.ashx?IdHinhSanPham={0}") %>'  /></td>
                 </tr>
                 <tr>
                     <td style="padding-top: 10px;" align="center">

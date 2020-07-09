@@ -37,17 +37,47 @@
                                     <div style="padding-right: 20px">
                                         Giá niêm yết
                                     </div>
-
-                                    <div style="padding-top: 5px;">
-                                        Giá khuyến mãi
+                                    <div style="height:60px">
+                                        <div style="float :left">     
+                                            <div style ="padding-right:23px ">
+                                                Giá niêm yết
+                                            </div>
+                                             
+                                            <div style ="padding-top:5px; ">
+                                                Giá khuyến mãi
+                                            </div>
+                                         </div> 
+                                        <div style="float :right">
+                                            <div style ="color:darkgray; padding-right:216px; text-decoration: line-through;">
+                                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>' ></asp:Label>
+                                            </div>
+                                            <div style ="color:darkgray;padding-top:5px; padding-right:223px">
+                                                <asp:Label class="price" ID="lblGiaSanpham" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>' ></asp:Label>
+                                            </div>
+                                         </div>
                                     </div>
-                                </div>
-                                <div style="float: right">
-                                    <div style="color: darkgray; padding-right: 218px; text-decoration: line-through;">
-                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>'></asp:Label>
+                                    
+                                    <div style="height:60px">
+                                        <div style="float :left">       
+                                             Khuyến mãi
+                                         </div> 
+                                        <div style="float :right">
+                                            <i class="fa fa-gift" style="color: orangered;" aria-hidden="true"></i>                                             
+                                            <a style ="color:darkgray; padding-right:218px"> Mua một tặng: </a>
+                                            <div style ="color:darkgray;padding-top:5px; padding-right:16px">
+                                                Khung mâm nghiêng - Từ 19” - 42″ M43N
+                                            </div>
+                                         </div>
                                     </div>
-                                    <div style="color: darkgray; padding-top: 5px; padding-right: 218px">
-                                        <asp:Label class="price" ID="lblGiaSanpham" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>'></asp:Label>
+                                     <div style="height:40px">
+                                         <div style="float :left ;">
+                                             Vận chuyển
+                                         </div> 
+                                        
+                                         <div style="float :right;padding-right: 8px;">
+                                             <i class="fa fa-truck fa-flip-horizontal" style="color: lightcoral;" aria-hidden="true"></i>
+                                             <a style ="color:#6c757d; ">Miễn phí vận chuyển đơn hàng trên 500.000đ</a>
+                                         </div>
                                     </div>
                                 </div>
                             </div>

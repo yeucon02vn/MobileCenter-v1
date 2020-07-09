@@ -22,8 +22,8 @@ namespace MobileCenter.View
             {
                 ((Home)this.Master).isVisible = false;
 
-                Label lblWelcome = (Label)Master.FindControl("lblChao");
-                lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
+                //Label lblWelcome = (Label)Master.FindControl("lblChao");
+                //lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
                 HienThiGioHang();
             }
         }
@@ -52,7 +52,7 @@ namespace MobileCenter.View
             {
                 _tongtien += Convert.ToInt32(DataBinder.Eval(e.Row.DataItem, "ThanhTien"));
             }
-            lblTotal.Text = _tongtien.ToString() + " VND";
+            lblTotal.Text = _tongtien.ToString("###,###,###") + " VND";
         }
         //---------Tạo đơn hàng, dựa số liệu trên gridview giỏ hàng-------------------
         private void GuiDonHang()
@@ -63,13 +63,13 @@ namespace MobileCenter.View
             Response.Redirect("~/customer/invoice");
         }
         //---------------Sự kiện cho nút tiếp tục mua hàng----------------------------------
-        protected void ImageButtonTieptucmuahang_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtonTieptucmuahang_Click(object sender, EventArgs e)
         {
             Response.Redirect("~");
         }
         //---------------Sự kiện cho nút tạo và gửi đơn hàng-----------------
 
-        protected void ImageButtonTaovaguidonhang_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtonTaovaguidonhang_Click(object sender, EventArgs e)
         {
             DonHangDTO donHang = new DonHangDTO();
             SanPhamDTO[] dsSanPham = new SanPhamDTO[gridgiohang.Rows.Count];

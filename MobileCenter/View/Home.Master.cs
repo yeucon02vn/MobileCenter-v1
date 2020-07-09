@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using MobileCenter.App_User;
+using MobileCenter.Models;
 using MobileCenter.Models.BUS;
 using MobileCenter.Models.DTO;
 
@@ -15,7 +16,7 @@ namespace MobileCenter.View
     {
         public bool isVisible = true;
         public bool isLogIn = true;
-
+        public int dem { get; set; } = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -28,7 +29,26 @@ namespace MobileCenter.View
                 HyperLink8.Visible = isLogIn;
                 HyperLink9.Visible = isLogIn;
                 HyperLink10.Visible = !isLogIn;
+                dem = 0;
+                GioHangDTO gioHang = new GioHangDTO();
+                gioHang.CartGuid = CartGUID;
+                GioHangBUS gioHangBUS = new GioHangBUS();
+                gioHangBUS._gioHang = gioHang;
+                gioHangBUS.Select();
+                GridView gridView = new GridView();
+                gridView.DataSource = gioHangBUS.KetQua;
+                gridView.DataBind();
+
+                foreach (GridViewRow row in gridView.Rows)
+                {
+                    dem += int.Parse(row.Cells[3].Text);
+                }
+                productQuantity.Text = dem.ToString();
             }
+        }
+        private string CartGUID
+        {
+            get { return TaoCartGuid.LayCartGUID(); }
         }
 
         private void HienThiDanhMucSanPham()
