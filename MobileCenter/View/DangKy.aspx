@@ -1,74 +1,60 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="DangKy.aspx.cs" Inherits="MobileCenter.View.DangKy" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="container">
-<br>  
-<hr>
-
-
-
-
-
-<div class="card bg-light" >
-<article class="card-body mx-auto" style="max-width: 800px;">
-	<h4 class="card-title mt-3 text-center">Create Account</h4>
-	<p class="text-center">Get started with your free account</p>
-	<p>
-		<a href="" style="background-color:#42AEEC; color:white" class="btn btn-block btn-twitter text-register"> <i class="fa fa-twitter" style="padding-top: 6px;"></i>   Login via Twitter</a>
-		<a href="" style="background-color:#0056b3; color:white" class="btn btn-block btn-facebook text-register"> <i class="fa fa-facebook-official" style="padding-top: 6px;"></i>   Login via facebook</a>
-	</p>
-	<p class="divider-text">
-        <span class="bg-light">OR</span>
-    </p>
-	<form>
-	<div class="form-group input-group" style="height: 40px;">
-		<div class="input-group-prepend" ">
-		    <span class="input-group-text" > <i class="fa fa-user"></i> </span>
-		 </div>
-        <asp:TextBox class="form-control text-register text-register" placeholder="Full name" ID="textHoTen" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
-                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group" style="height: 40px;">
-	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-		 </div>
-        <asp:TextBox class="form-control text-register" placeholder="Tên đăng nhập" ID="textTenDangNhap" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator18" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
-                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group" style="height: 40px;">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-envelope" style ="width: 7px;"></i> </span>
-		 </div>
-        <asp:TextBox class="form-control text-register" placeholder="Email address" ID="textEmail" runat="server"></asp:TextBox>
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
-                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group" style="height: 40px;">
-    	<div class="input-group-prepend" >
-		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-		</div>
-		<select class="custom-select text-register"  style="max-width: 120px; height: 40px;">
-		    <option selected="">+971</option>
-		    <option value="1">+972</option>
-		    <option value="2">+84</option>
-		    <option value="3">+37</option>
-		</select>
-        <asp:TextBox class="form-control text-register" placeholder="Phone number" ID="textSoDienThoai" runat="server"></asp:TextBox>
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
-                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group" style="height: 40px;">
-    	<div class="input-group-prepend">
-		    <span class="input-group-text"> <i class="fa fa-map-marker"></i> </span>
-		</div>
-         <asp:dropdownlist runat="server" class="form-control text-register" id="textThanhPho">
-                     <asp:listitem text="Hồ Chí Minh" value="1"></asp:listitem>
-                     <asp:listitem text="Hà Nội" value="2"></asp:listitem>
-                     <asp:listitem text="Đà Nẵng" value="3"></asp:listitem>
-                </asp:dropdownlist>
-               
-               <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="textHoTen"
+       <link rel="stylesheet" href="https://localhost:44375/View/fonts/material-icon/css/material-design-iconic-font.min.css" >
+    <link rel="stylesheet" href="https://localhost:44375/View/css/style.css">
+<%--<table style="width: 600px">
+        <tr>
+            <td style="width: 200px; height: 21px">
+                <span style="color: #000000">
+                Họ Và Tên</span></td>
+            <td style="width: 400px; height: 21px" align="left">
+                <asp:TextBox ID="textHoTen" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="textHoTen"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 200px; height: 40px">
+                <span style="color: #000000">
+                Tên Đăng Nhập</span></td>
+            <td style="width: 400px; height: 40px" align="left">
+                <asp:TextBox ID="textTenDangNhap" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="textTenDangNhap"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 200px">
+                <span style="color: #000000">
+                Thành Phố</span></td>
+            <td style="width: 400px" align="left">
+                <asp:TextBox ID="textThanhPho" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="textThanhPho"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 200px; height: 26px">
+                <span style="color: #000000">
+                Quận Huyện</span></td>
+            <td style="width: 400px; height: 26px" align="left">
+                <asp:TextBox ID="textQuanHuyen" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="textQuanHuyen"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 200px">
+                <span style="color: #000000">
+                Tên Đường Phố</span></td>
+            <td style="width: 400px" align="left">
+                <asp:TextBox ID="textTenDuongPho" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="textTenDuongPho"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator></td>
+        </tr>
+        
+        <tr>
+            <td style="width: 200px">
+                <span style="color: #000000">Mật Khẩu</span></td>
+            <td style="width: 400px" align="left">
+                <asp:TextBox ID="textMatKhau" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="textMatKhau"
                     ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
          <asp:RequiredFieldValidator ID="RequiredFieldValidator13" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
                     ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
@@ -113,17 +99,108 @@
                     ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="textMatKhau"
                     ErrorMessage="Mật khẩu nhập lại không khớp"></asp:RequiredFieldValidator></td>
-    </div> <!-- form-group// -->                                      
-    <div class="form-group">
-        <button type="submit" style="background-image: linear-gradient(to left, #74ebd5, #9face6); border:none;" class="btn btn-primary btn-block text-register"> Create Account  </button>
-    </div> <!-- form-group// -->                                                                    
-</form>
-</article>
-</div> <!-- card.// -->
+        </tr>
+        <tr>
+            <td style="width: 200px">
+                <span style="color: #000000">
+                Nhập Lại Mật Khẩu</span></td>
+            <td style="width: 400px" align="left">
+                <asp:TextBox ID="TextBox6" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox6"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 200px">
+                <span style="color: #000000">
+                Email</span></td>
+            <td style="width: 400px" align="left">
+                <asp:TextBox ID="textEmail" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="textEmail"
+                    ErrorMessage="Không đúng định dạng"></asp:RequiredFieldValidator></td>
+        </tr>
+        <tr>
+            <td style="width: 200px">
+                <span style="color: #000000">Số Điện Thoại</span></td>
+            <td style="width: 400px" align="left">
+                <asp:TextBox ID="textSoDienThoai" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 200px; height: 26px;">
+            </td>
+            <td style="width: 400px; height: 26px;" align="left">
+                <asp:ImageButton ID="btnDangKy" runat="server" ImageUrl="~/images/button_dangky.jpg" OnClick="btnDangKy_Click" /></td>
+        </tr>
+    </table>--%>
 
-</div> 
-<!--container end.//-->
+     <div class="main">
+
+        <!-- Sign up form -->
+        <div class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-accounts-outline material-icons-name"></i></label>
+                                <input type="text" name="name" ID="textHoTen" runat="server" placeholder="Họ Và Tên"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="textTenDangNhap" runat="server" placeholder="Tên đăng nhập"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-city"></i></label>
+                                <input type="text" name="email" runat="server" id="textThanhPho" placeholder="Thành Phố"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-my-location "></i></label>
+                                <input type="text" name="pass" id="textQuanHuyen" runat="server" placeholder="Quận huyện"/>
+                                
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-circle "></i></label>
+                                <input type="text" runat="server" id="textDuongPho" placeholder="Tên Đường Phố"/>
+                            </div>
+                             <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="textMatKhau" runat="server" placeholder="Mật Khẩu"/>
+                                
+                            </div>
+                             <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="pass" id="TextBox6" runat="server" placeholder="Nhập lại mật khẩu"/>
+                                
+                            </div>
+                              <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="pass" id="textEmail" runat="server" placeholder="Email"/>
+                                
+                            </div>
+                             <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-phone"></i></label>
+                                <input type="text" name="pass" id="textSoDienThoai" runat="server" placeholder="Số Điện Thoại" />
+                                
+                            </div>  
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <asp:LinkButton class="btn btn-outline-primary border border-primary " ID="ImageButtontieptucmuahang" style ="margin-top:20px; width:50%;  padding:10px; border-radius: 10px; padding-right:10px; margin-right: 5px;font-size:12px; margin-bottom: 20px;" runat="server"  OnClick="btnDangKy_Click"> Đăng ký </asp:LinkButton>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="https://localhost:44375/View/images/signup-image.jpg" alt="sing up image"></figure>
+                        <%--<a href="#" class="signup-image-link">I am already member</a>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+    </div>
 </asp:Content>
 
