@@ -16,24 +16,18 @@ namespace MobileCenter.View
             ((Home)this.Master).isVisible = false;
         }
 
-        protected void btnDangNhap_Click(object sender, ImageClickEventArgs e)
+        protected void btnDangNhap_Click(object sender, EventArgs e)
         {
             if (IsValid)
             {
                 NguoiDungDTO nguoiDung = new NguoiDungDTO();
                 NguoiDungBUS nguoiDungBUS = new NguoiDungBUS();
-                nguoiDung.TenDangNhap = textUsername.Text;
-                nguoiDung.MatKhau = textMatKhau.Text;
+                nguoiDung.TenDangNhap = textUsername.Value;
+                nguoiDung.MatKhau = textMatKhau.Value;
                 nguoiDungBUS._nguoiDung = nguoiDung;
                 nguoiDungBUS.LoginWithUser();
-                try
-                {
-                    labelMessage.Text = "Đăng nhập thành công!";
-                }
-                catch
-                {
-                    Response.Redirect("TrangLoi.aspx");
-                }
+                //labelMessage.Text = "Đăng nhập thành công!";
+
                 if (nguoiDungBUS.IsInvalid)
                 {
                     base._NguoiDungHienTai = nguoiDungBUS._nguoiDung;
@@ -41,16 +35,17 @@ namespace MobileCenter.View
                     lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
                     if (Request.Cookies["ReturnURL"] != null)
                     {
-                        Response.Redirect(Request.Cookies["ReturnURL"].Value);
+                        Response.Redirect(Request.Cookies["ReturnURL"].Value);                     
                     }
                     else
                     {
-                        Response.Redirect("DonHangKhachHang.aspx");
+                        Response.Redirect("~/customer/invoice");
                     }
+                    
                 }
                 else
                 {
-                    labelMessage.Text = "Đăng nhập không thành công!";
+                    //labelMessage.Text = "Đăng nhập không thành công!";
                 }   
             }
         }

@@ -31,7 +31,7 @@ namespace MobileCenter.Models.DAL
         {
             SqlDataSource sqlData = Connect();
             sqlData.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
-            sqlData.SelectCommand = "DonHang_Top1_Select ";
+            sqlData.SelectCommand = "DonHang_Top1_Select";
             return sqlData;
         }
 

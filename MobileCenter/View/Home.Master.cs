@@ -15,7 +15,7 @@ namespace MobileCenter.View
     {
         public bool isVisible = true;
         public bool isLogIn = true;
- 
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

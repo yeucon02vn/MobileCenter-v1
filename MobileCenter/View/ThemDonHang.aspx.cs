@@ -59,21 +59,13 @@ namespace MobileCenter.View
         {
             DonHangBUS donHangBUS = new DonHangBUS();
             donHangBUS._donhang = _donhang;
-
-            try
-            {
-                donHangBUS.Insert();
-            }
-            catch
-            {
-                Response.Redirect("Trangloi.aspx");
-            }
-            Response.Redirect("GioiThieuSanPham.aspx");
+            donHangBUS.Insert();
+            Response.Redirect("~");
         }
         //---------------Sự kiện cho nút tiếp tục mua hàng----------------------------------
         protected void ImageButtonTieptucmuahang_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("GioiThieuSanPham.aspx");
+            Response.Redirect("~");
         }
         //---------------Sự kiện cho nút tạo và gửi đơn hàng-----------------
 

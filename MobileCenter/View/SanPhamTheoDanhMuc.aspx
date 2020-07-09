@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="SanPhamTheoDanhMuc.aspx.cs" Inherits="MobileCenter.View.SanPhamTheoDanhMuc" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <asp:DataList ID="dtlSanPhamDM" runat="server" RepeatColumns="3"  CaptionAlign="Top" HorizontalAlign="Center">
+     <asp:DataList ID="dtlSanPhamDM" runat="server" RepeatColumns="3"  CaptionAlign="Top" HorizontalAlign="Center" Width="1000">
         <ItemTemplate>
             <div  class="card hovereffect" style=" margin: 20px; justify-content:center; align-items: center; padding-left: 50px; padding-right: 50px; ">
                 <asp:Panel ID="Panel1" runat="server" BorderColor="#E0E0E0" BorderStyle="Solid" BorderWidth="0.1px"
