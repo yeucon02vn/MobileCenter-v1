@@ -27,7 +27,7 @@ namespace MobileCenter.View
                 nguoiDung.IdKieuNguoiDung = 1;
                 nguoiDung.HoTen = textHoTen.Text;
                 nguoiDung.TenDangNhap = textTenDangNhap.Text;
-                nguoiDung.DiaChi = textTenDuongPho.Text + ", " + textThanhPho.Text + ", " + textQuanHuyen.Text  ;
+                nguoiDung.DiaChi = textTenDuongPho.Text + ", " + textThanhPho.SelectedItem.Text + ", " + textQuanHuyen.SelectedItem.Text;
                 nguoiDung.MatKhau = textMatKhau.Text;
                 nguoiDung.Email = textEmail.Text;
                 nguoiDung.SoDienThoai = textSoDienThoai.Text;
