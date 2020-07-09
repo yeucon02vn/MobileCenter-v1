@@ -60,7 +60,7 @@ namespace MobileCenter.View
             DonHangBUS donHangBUS = new DonHangBUS();
             donHangBUS._donhang = _donhang;
             donHangBUS.Insert();
-            Response.Redirect("~");
+            Response.Redirect("~/customer/invoice");
         }
         //---------------Sự kiện cho nút tiếp tục mua hàng----------------------------------
         protected void ImageButtonTieptucmuahang_Click(object sender, ImageClickEventArgs e)

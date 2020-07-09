@@ -7,7 +7,7 @@
 <Columns>
     <asp:TemplateField HeaderText="Id giao dịch">
 <ItemTemplate>
-<a href="View/ChitietDonHangKhachHang.aspx?MaGiaoDich=<%# Eval("MaGiaoDich")%>&IdDonHang=<%# Eval("IdDonHang") %>">
+<a href="invoice-detail?MaGiaoDich=<%# Eval("MaGiaoDich")%>&IdDonHang=<%# Eval("IdDonHang") %>">
 <%# Eval("MaGiaoDich") %>
 </a>
 </ItemTemplate>
