@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="ChiTietSanPham.aspx.cs" Inherits="MobileCenter.View.ChiTietSanPham" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <asp:DataList ID="dtlChiTietSanPham" runat="server">
+    <asp:DataList ID="dtlChiTietSanPham" runat="server" CssClass="w-100">
         <ItemTemplate>
             <div class="card bg-light" style="margin-bottom: 10px;">
                 <div class="card-body row" style="padding: 0px;">
