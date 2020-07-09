@@ -42,12 +42,12 @@ namespace MobileCenter.View
         protected global::System.Web.UI.WebControls.Label lblTongTien;
 
         /// <summary>
-        /// ImageButtonTroVe control.
+        /// ImageButtontieptucmuahang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButtonTroVe;
+        protected global::System.Web.UI.WebControls.LinkButton ImageButtontieptucmuahang;
     }
 }

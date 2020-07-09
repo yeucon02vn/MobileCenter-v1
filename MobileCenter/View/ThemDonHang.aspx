@@ -20,7 +20,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Đơn Gi&#225;">
                 <ItemTemplate>
-                    <asp:Label ID="lblDonGia" runat="server" Text='<%# Eval("GiaSanPham" ) %>'></asp:Label>
+                    <asp:Label ID="lblDonGia" runat="server" Text='<%# Eval("GiaSanPham", "{0:###,###,###} VND" ) %>'></asp:Label>
                
                 </ItemTemplate>
                 <HeaderStyle  BorderColor="#404040" ForeColor="#626060" HorizontalAlign="Center"
