@@ -16,8 +16,6 @@ namespace MobileCenter.View
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            gridgiohang.PageSize = 10;
             if (!IsPostBack)
             {
                 HienThiGioHang();
@@ -145,6 +143,12 @@ namespace MobileCenter.View
                 lblTotal.Text = "0 VND";
                 lblThongBao.Text = "Bạn chưa có sản phẩm nào trong giỏ hàng";
             }
+        }
+
+        protected void gridgiohang_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gridgiohang.PageIndex = e.NewPageIndex;
+            HienThiGioHang();
         }
     }
 

@@ -32,5 +32,11 @@ namespace MobileCenter.Admins.View
             gridTatCaDonHang.DataSource = layTatCaDonHang.KetQua;
             gridTatCaDonHang.DataBind();
         }
+
+        protected void gridTatCaDonHang_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gridTatCaDonHang.PageIndex = e.NewPageIndex;
+            HienTatCaDonHang();
+        }
     }
 }

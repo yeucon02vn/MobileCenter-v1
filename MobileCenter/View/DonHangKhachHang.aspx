@@ -4,7 +4,7 @@
     <div style="margin-bottom: 20px">
         <strong><span style="font-size: 15pt; color: #330000"><span style="color: #cc0000">CÁC ĐƠN HÀNG CỦA BẠN</span><br />
         </span></strong>
-        <asp:GridView ID="gridviewOrders" runat="server" AutoGenerateColumns="False" Width="680px" class="table table-hover table-condensed">
+        <asp:GridView ID="gridviewOrders" runat="server" AutoGenerateColumns="False" Width="680px" class="table table-hover table-condensed" AllowPaging="True" OnPageIndexChanging="gridviewOrders_PageIndexChanging" PageSize="5">
             <Columns>
                 <asp:TemplateField HeaderText="Id giao dịch">
                     <ItemTemplate>

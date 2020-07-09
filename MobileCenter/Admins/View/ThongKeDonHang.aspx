@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admins/View/Admin.Master" AutoEventWireup="true" CodeBehind="ThongKeDonHang.aspx.cs" Inherits="MobileCenter.Admins.View.ThongKeDonHang" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="gridTatCaDonHang" class="table table-hover table-condensed" runat="server" AutoGenerateColumns="False" BorderStyle="Dashed" CssClass="mt-5"> 
+    <asp:GridView ID="gridTatCaDonHang" class="table table-hover table-condensed" runat="server" AutoGenerateColumns="False" BorderStyle="Dashed" CssClass="mt-5" AllowPaging="True" OnPageIndexChanging="gridTatCaDonHang_PageIndexChanging" PageSize="7"> 
         <Columns>
             <asp:TemplateField HeaderText="ID Giao dịch" >
                 <ItemTemplate >

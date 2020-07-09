@@ -95,5 +95,11 @@ namespace MobileCenter.View
             _donhang.MaGiaoDich = Guid.NewGuid().ToString();
             GuiDonHang();
         }
+
+        protected void gridgiohang_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gridgiohang.PageIndex = e.NewPageIndex;
+            HienThiGioHang();
+        }
     }
 }

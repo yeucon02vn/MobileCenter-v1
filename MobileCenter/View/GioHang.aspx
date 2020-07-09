@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label><br />
-<asp:GridView ID="gridgiohang" class="table table-hover table-condensed" runat="server" AutoGenerateColumns="False" DataKeyNames="IdGioHang" OnRowDataBound="gridgiohang_RowDataBound" Width="680px" OnRowDeleting="gridgiohang_RowDeleting" >
+<asp:GridView ID="gridgiohang" class="table table-hover table-condensed" runat="server" AutoGenerateColumns="False" DataKeyNames="IdGioHang" OnRowDataBound="gridgiohang_RowDataBound" Width="680px" OnRowDeleting="gridgiohang_RowDeleting" AllowPaging="True" OnPageIndexChanging="gridgiohang_PageIndexChanging" PageSize="6" >
     
         <Columns >
             <asp:TemplateField HeaderText="Sản Phẩm" >

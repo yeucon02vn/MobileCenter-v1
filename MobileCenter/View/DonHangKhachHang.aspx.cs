@@ -48,5 +48,11 @@ namespace MobileCenter.View
             Response.Redirect("~");
 
         }
+
+        protected void gridviewOrders_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gridviewOrders.PageIndex = e.NewPageIndex;
+            HienThiDonHang();
+        }
     }
 }
