@@ -18,19 +18,19 @@ namespace MobileCenter.View
             ((Home)this.Master).isVisible = false;
         }
 
-        protected void btnDangKy_Click(object sender, ImageClickEventArgs e)
+        protected void btnDangKy_Click(object sender, EventArgs e)
         {
             NguoiDungDTO nguoiDung = new NguoiDungDTO();
             NguoiDungBUS nguoiDungBUS = new NguoiDungBUS();
             if (IsValid)
             {
                 nguoiDung.IdKieuNguoiDung = 1;
-                nguoiDung.HoTen = textHoTen.Text;
-                nguoiDung.TenDangNhap = textTenDangNhap.Text;
-                nguoiDung.DiaChi = textTenDuongPho.Text + ", " + textThanhPho.Text + ", " + textQuanHuyen.Text  ;
-                nguoiDung.MatKhau = textMatKhau.Text;
-                nguoiDung.Email = textEmail.Text;
-                nguoiDung.SoDienThoai = textSoDienThoai.Text;
+                nguoiDung.HoTen = textHoTen.Value;
+                nguoiDung.TenDangNhap = textTenDangNhap.Value;
+                nguoiDung.DiaChi = textDuongPho.Value + ", " + textThanhPho.Value + ", " + textQuanHuyen.Value;
+                nguoiDung.MatKhau = textMatKhau.Value;
+                nguoiDung.Email = textEmail.Value;
+                nguoiDung.SoDienThoai = textSoDienThoai.Value;
 
                 nguoiDungBUS._nguoiDung = nguoiDung;
                 nguoiDungBUS.Register();
