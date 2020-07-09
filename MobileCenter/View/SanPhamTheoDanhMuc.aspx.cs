@@ -1,4 +1,5 @@
-﻿using MobileCenter.Models.BUS;
+﻿using MobileCenter.App_User;
+using MobileCenter.Models.BUS;
 using MobileCenter.Models.DTO;
 using System;
 using System.Collections.Generic;
@@ -9,14 +10,17 @@ using System.Web.UI.WebControls;
 
 namespace MobileCenter.View
 {
-    public partial class SanPhamTheoDanhMuc : System.Web.UI.Page
+    public partial class SanPhamTheoDanhMuc : NguoiDungHienTai
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 ((Home)this.Master).isVisible = false;
-                ((Home)this.Master).isLogIn = false;
+                if (base._NguoiDungHienTai == null)
+                    ((Home)this.Master).isLogIn = true;
+                else
+                    ((Home)this.Master).isLogIn = false;
                 HienThiSanPham();
             }
         }

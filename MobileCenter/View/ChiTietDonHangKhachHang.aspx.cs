@@ -20,7 +20,7 @@ namespace MobileCenter.View
                 else
                     ((Home)this.Master).isLogIn = false;
                 Label lblWelcome = (Label)Master.FindControl("lblchao");
-                lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
+                //lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
                 HienChiTietDonHang();
             }
         }
@@ -30,7 +30,7 @@ namespace MobileCenter.View
             {
                 _tongtien += Convert.ToDecimal(DataBinder.Eval(e.Row.DataItem, "GiaSanPham"));
             }
-            lblTongTien.Text = string.Format(_tongtien.ToString()) + " VNĐ";
+            lblTongTien.Text = string.Format(_tongtien.ToString("###,###,###")) + " VNĐ";
         }
         private void HienChiTietDonHang()
         {
@@ -53,7 +53,7 @@ namespace MobileCenter.View
             donHang.MaGiaoDich = Request.QueryString["MaGiaoDich"];
         }
 
-        protected void ImageButtonTroVe_Click(object sender, ImageClickEventArgs e)
+        protected void ImageButtonTroVe_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/customer/invoice");
         }

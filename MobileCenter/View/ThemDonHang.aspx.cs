@@ -85,7 +85,7 @@ namespace MobileCenter.View
                     Label lblSoLuong = (Label)grow.FindControl("lblSoLuong");
                     sanPham.SoLuong = int.Parse(lblSoLuong.Text);
                     Label lblDonGia = (Label)grow.FindControl("lblDonGia");
-                    sanPham.GiaSanPham = Convert.ToInt32(lblDonGia.Text.Replace("VND", ""));
+                    sanPham.GiaSanPham = Convert.ToInt32(lblDonGia.Text.Replace("VND", "").Replace(",", ""));
                     dsSanPham.SetValue(sanPham, grow.DataItemIndex);
                 }
             }

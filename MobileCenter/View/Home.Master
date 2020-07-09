@@ -4,6 +4,7 @@
  
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
     <title>Mobile Center - Trung tâm mua bán sản phẩm điện tử chính hãng</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="A Community Based WordPress Theme" />
@@ -11,6 +12,7 @@
     
     <link rel="stylesheet" type="text/css" href="~/Admins/View/affix.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="~/Admins/View/style.css" media="screen" />
+   
 
 <%--    <script type="text/javascript " src="https://localhost:44375/Admins/View/jquery-1.4.2.min.js "></script>
     <script type="text/javascript" src="https://localhost:44375/Admins/View/script.js"></script>--%>
@@ -22,11 +24,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
-     <link rel="icon" type="image/png" href="~/Admins/View/images/icons/favicon.ico" />
+     <link rel="icon" type="image/png" href="~/Admins/View/images/icons/logo-title.png" />
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="~/Admins/View/images/icons/favicon.ico" />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -44,8 +45,9 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="~/Admins/View/css/util.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/css/util.css" media="screen"/>	
     <link rel="stylesheet" type="text/css" href="~/Admins/View/css/main.css" media="screen"/>
+    
 </head>
 <body class="html_bg">
     <form id="form1" runat="server">
@@ -54,7 +56,7 @@
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <div class="vertical-nav bg-whitesmoke" id="sidebar" style="z-index: 11111; font-size: 13px">
+                            <div class="vertical-nav bg-whitesmoke" id="sidebar" style="z-index: 11111; font-size: 13px;">
                                 <ul class="nav flex-column bg-white mb-0 justify-content-end" >
                                     <li  class="nav-item <%#HttpContext.Current.Request.Url.Query == "?IdDanhMucSanPham=1" ? "active" : "" %>">
                                         <a style="font-size: 13px;" href='<%# Eval("IdDanhMucSanPham","~/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1") %>' id="HyperLink1" class="nav-link text-primary" runat="server">
@@ -109,8 +111,8 @@
             <div id="page">
                 <div id="header">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; margin-bottom: 15px;">
-                        <div class="logo">
-                            <h1><a href="https://localhost:44375" style="font-size: 40px">LOGO<small class="slogan">Anything</small></a></h1>
+                        <div class="logo" style="width:200px">
+                            <a href="https://localhost:44375" style="font-size: 40px"><img src="https://localhost:44375/images/logo.png" style="width: 100%;" /></a>
                         </div>
                         <div class="input-group md-form form-sm form-2 pl-0 w-50" style="height: 30px;">
                             <asp:TextBox ID="searchBy" runat="server" CssClass="form-control y-0 py-1 h-100" placeholder="Search" aria-label="Search"></asp:TextBox>
@@ -131,12 +133,12 @@
                                 <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink9" runat="server" NavigateUrl="~/customer/signup">Đăng ký</asp:HyperLink>
                             </div>
                             <div class="shopping-card">
-                                <ul class="menusm" style="margin-left: 10px; float: right;">
+                                <ul class="menusm" style="margin-left: 10px; margin-top: -2px;float: right;">
                                     <ul class="menusm" style="margin-left: 0px; float: right;">
                                         <asp:Label CssClass="numberCircle" Text="0" ID="productQuantity" runat="server"> </asp:Label>
                                     </ul>
-                                    <ul class="menusm" style="margin-left: 10px; float: right; padding-top: 10px">
-                                        <a href="https://localhost:44375/customer/cart"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
+                                    <ul class="menusm" style="margin-left: 10px; float: right; padding-top: -6px">
+                                        <a href="https://localhost:44375/customer/cart"><i class="fa fa-shopping-cart" style="font-size: 30px;cursor: pointer;background: radial-gradient(circle at 33% 100%, #0345fc 28%, #03dffc 91%, #0394fc 85%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;display: inline;color:red"></i></a>
                                     </ul>
                                 </ul>
                             </div>
@@ -415,29 +417,39 @@
         <div class="footer2">
             <div class="flex-c">
                 <div class="col col1">
-                    <h2>Customer Support</h2>
+                    <div class="titleFooter">Công ty</div>
                     <ul>
-                        <li><a href="# ">Purchase: 1800.1060 (7:30 - 22:00)</a></li>
-                        <li><a href="# ">Complain: 1800.1062 (8:00 - 21:30)</a></li>
-                        <li><a href="# ">Warranty: 1800.1064 (8:00 - 21:00)</a></li>
-                        <li><a href="# ">Technique: 1800.1763 (7:30 - 22:00)</a></li>
+                        <li><a href="# "><i class="fa fa-info-circle mr-3"></i>Giới thiệu về Mobile Center</a></li>
+                        <li><a href="# "><i class="fa fa-home mr-3"></i>Hệ thống cửa hàng</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Chăm sóc khách hàng</a></li>
                     </ul>
                 </div>
-                <div class="col col2 ">
-                    <h2>Purchase and Warranty Policy</h2>
+                <div class="col col2">
+                    <div class="titleFooter">Hỗ trợ khách hàng</div>
                     <ul>
-                        <li><a href="# ">Security</a></li>
-                        <li><a href="# ">Exchange and Refund</a></li>
-                        <li><a href="# ">Transport</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Gọi mua hàng: 1800.1060 (7:30 - 22:00)</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Gọi khiếu nại: 1800.1062 (8:00 - 21:30)</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Gọi bảo hành: 1800.1064 (8:00 - 21:00)</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Kỹ thuật: 1800.1066 (7:30 - 22:00)</a></li>
                     </ul>
                 </div>
-                <div class="col col3 ">
-                    <h2>Contact Infomation</h2>
-                    <p><span>Address</span> University of Information Technology</p>
-                    <p><span>Telephone:</span> +84-1688-767-549</p>
-                    <p><span>FAX:</span> +458-4578</p>
-                    <p><span>Others:</span> +301 - 0125 - 01258</p>
-                    <p><span>E-mail:</span> <a href=" ">tftcenter@uit.edu.com</a></p>
+                <div class="col col3">
+                    <div class="titleFooter">Chính sách mua và đổi trả</div>
+                    <ul>
+                        <li><a href="# "><i class="fa fa-shield mr-3"></i>Bảo hành</a></li>
+                        <li><a href="# "><i class="fa fa-buysellads mr-3"></i>Tìm hiểu về mua trả góp</a></li>
+                        <li><a href="# "><i class="fa fa-telegram mr-3"></i>Giao hàng & Thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col col4">
+                    <div class="titleFooter">Thông tin liên hệ</div>
+                    <ul>
+                        <li><a href="# "><i class="fa fa-home mr-3"></i>Địa chỉ: University of Information Technology</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Tel.: +84-1688-767-549</a></li>
+                        <li><a href="# "><i class="fa fa-print mr-3"></i>FAX: +458-4578</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Others: +301-0125-01258</a></li>
+                        <li><a href="# "><i class="fa fa-envelope mr-3"></i>E-mail: tftcenter@uit.edu.com</a></li>
+                    </ul>
                 </div>
                 <div class="clr "></div>
             </div>
@@ -446,7 +458,12 @@
         <div id="page_bottom">
             <div id="footer">
                 <div class="text1">&copy; Copyright <a href="http://www.facebook.com/shiny.phong">CCTM04A</a>. All Rights Reserved</div>
-                <div class="text2">Design: (TS) <a href="http://www.facebook.com/shiny.phong">Shiny Phong</a></div>
+                <div class="text2">
+                    <a href="https://www.facebook.com/tanphucuit"><i class="fa fa-facebook-f fa-2x fa- mr-5"></i></a>
+                    <a href="https://www.facebook.com/tanphucuit"><i class="fa fa-twitter fa-2x mr-5"></i></a>
+                    <a href="mailto:16520954@gm.uit.edu.vn"><i class="fa fa-google-plus fa-2x mr-5"></i></a>
+                    <a href="https://www.instagram.com/tanphucuit/"><i class="fa fa-instagram fa-2x mr-5"></i></a>
+                </div>
             </div>
             <div class="clr"></div>
             <!--/footer -->

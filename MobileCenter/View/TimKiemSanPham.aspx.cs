@@ -14,7 +14,10 @@ namespace MobileCenter.View
         protected void Page_Load(object sender, EventArgs e)
         {
             ((Home)this.Master).isVisible = false;
-            ((Home)this.Master).isLogIn = false;
+            if (base._NguoiDungHienTai == null)
+                ((Home)this.Master).isLogIn = true;
+            else
+                ((Home)this.Master).isLogIn = false;
             HienThiSanPham();
         }
 
