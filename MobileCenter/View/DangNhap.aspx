@@ -2,8 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <link rel="stylesheet" type="text/css" href="https://localhost:44375/Admins/View/css/util.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="https://localhost:44375/Admins/View/css/main.css" media="screen"/>
+<%--    <link rel="stylesheet" type="text/css" href="https://localhost:44375/Admins/View/css/util.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="https://localhost:44375/Admins/View/css/main.css" media="screen"/>--%>
 
     <body>
 

@@ -133,10 +133,10 @@
         </tr>
     </table>--%>
 
-     <div class="main">
+     <div>
 
         <!-- Sign up form -->
-        <div class="signup">
+        <div class="signup m-0">
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">

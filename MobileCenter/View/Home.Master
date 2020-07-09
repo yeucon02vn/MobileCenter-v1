@@ -31,7 +31,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="~/Admins/View/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<%--    <link rel="stylesheet" type="text/css" href="~/Admins/View/fonts/font-awesome-4.7.0/css/font-awesome.min.css">--%>
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/fonts/iconic/css/material-design-iconic-font.min.css">
     <!--===============================================================================================-->
@@ -45,6 +45,8 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="~/Admins/View/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/css/util.css" media="screen"/>	
+    <link rel="stylesheet" type="text/css" href="~/Admins/View/css/main.css" media="screen"/>
     
 </head>
 <body class="html_bg">
