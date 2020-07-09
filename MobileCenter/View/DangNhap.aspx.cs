@@ -28,7 +28,6 @@ namespace MobileCenter.View
                 nguoiDungBUS.LoginWithUser();
                 try
                 {
-
                     labelMessage.Text = "Đăng nhập thành công!";
                 }
                 catch

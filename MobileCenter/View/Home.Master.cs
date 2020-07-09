@@ -14,6 +14,7 @@ namespace MobileCenter.View
     public partial class Home : MasterPage
     {
         public bool isVisible = true;
+        public bool isLogIn = true;
  
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,6 +25,9 @@ namespace MobileCenter.View
                 slideShow.Visible = isVisible;
                 imgAdv.Visible = isVisible;
                 //lblOnline.Text = Application["SoNguoiOnLine"].ToString();
+                HyperLink8.Visible = isLogIn;
+                HyperLink9.Visible = isLogIn;
+                HyperLink10.Visible = !isLogIn;
             }
         }
 
