@@ -33,7 +33,7 @@ namespace MobileCenter.View
                     base._NguoiDungHienTai = nguoiDungBUS._nguoiDung;
                     Label lblWelcome = (Label)Master.FindControl("lblchao");
                     lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
-                    if (Request.Cookies["ReturnURL"] != null)
+                    if (Request.Cookies["ReturnURL"].Value == "add-bill")
                     {
                         Response.Redirect(Request.Cookies["ReturnURL"].Value);                     
                     }

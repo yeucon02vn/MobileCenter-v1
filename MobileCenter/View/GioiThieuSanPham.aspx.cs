@@ -14,6 +14,7 @@ namespace MobileCenter.View
         protected void Page_Load(object sender, EventArgs e)
         {
             ((Home)this.Master).isVisible = true;
+            Response.Cookies["ReturnURL"].Value = null;
         }
     }
 }

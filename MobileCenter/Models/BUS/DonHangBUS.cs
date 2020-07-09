@@ -23,7 +23,7 @@ namespace MobileCenter.Models.BUS
             g.DataSource = insertDonHang.SelectTop1();
             g.DataBind();
             _donhang.IdDonHang = int.Parse(g.Rows[0].Cells[0].Text);
-            _donhang.ChiTietDonHang = insertChiTietDonHang._chitietdonhang;
+            insertChiTietDonHang._chitietdonhang = _donhang.ChiTietDonHang;
             for (int i = 0; i < _donhang.ChiTietDonHang.SanPham.Length; i++)
             {
                 insertChiTietDonHang._chitietdonhang.IdDonHang = _donhang.IdDonHang;

@@ -49,5 +49,10 @@ namespace MobileCenter.View
             DonHangDTO donHang = new DonHangDTO();
             donHang.MaGiaoDich = Request.QueryString["MaGiaoDich"];
         }
+
+        protected void ImageButtonTroVe_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/customer/invoice");
+        }
     }
 }
