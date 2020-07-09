@@ -117,10 +117,11 @@ namespace MobileCenter.View
         }
         protected void ImageButtonXacnhanthanhtoan_Click(object sender, EventArgs e)
         {
-            Response.Cookies["ReturnURL"].Value = "ThemDonHang.aspx";
-            if(base._NguoiDungHienTai != null)
-                Response.Redirect("DonHangKhachHang.aspx");
-            Response.Redirect("DangNhap.aspx");
+            Response.Cookies["ReturnURL"].Value = "add-bill";
+            if(base._NguoiDungHienTai == null)
+                Response.Redirect("~/customer/signin");
+            else
+                Response.Redirect("~/customer/invoice");
         }
 
         protected void gridgiohang_RowDeleting(object sender, GridViewDeleteEventArgs e)

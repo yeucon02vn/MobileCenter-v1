@@ -12,12 +12,11 @@ namespace MobileCenter
         void RegisterRoute(RouteCollection routes)
         {
             routes.MapPageRoute("Home Page","", "~/View/GioiThieuSanPham.aspx");
-            routes.MapPageRoute("Customer GioHang Page", "customer/giohang", "~/View/GioHang.aspx");
+            routes.MapPageRoute("Cart Page", "customer/cart", "~/View/GioHang.aspx");
             routes.MapPageRoute("Sign in Page", "customer/signin", "~/View/DangNhap.aspx");
             routes.MapPageRoute("Sign up Page", "customer/signup", "~/View/DangKy.aspx");
-            //routes.MapPageRoute("Admin ThongKe Page", "admin/thongke", "~/Admins/View/ThongKe.aspx");
-            //routes.MapPageRoute("Admin ThongKe Page", "admin/thongke", "~/Admins/View/ThongKe.aspx");
-            //routes.MapPageRoute("Admin ThongKe Page", "admin/thongke", "~/Admins/View/ThongKe.aspx");
+            routes.MapPageRoute("Add Bill", "customer/add-bill", "~/View/ThemDonHang.aspx");
+            routes.MapPageRoute("Invoice Page", "customer/invoice", "~/View/DonHangKhachHang.aspx");
             //routes.MapPageRoute("Admin ThongKe Page", "admin/thongke", "~/Admins/View/ThongKe.aspx");
 
             routes.MapPageRoute("Admin Page", "admin", "~/Admins/View/DangNhapAdmin.aspx");

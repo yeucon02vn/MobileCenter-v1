@@ -41,7 +41,7 @@ namespace MobileCenter.View
         }
         protected void ImageButtontrove_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("GioiThieuSanPham.aspx");
+            Response.Redirect("~");
 
         }
     }
