@@ -54,16 +54,22 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username" >
 						<input runat="server" id="textUsername" class="input100" type="text" name="username" placeholder="Username">
-						<%--<span class="focus-input100" data-placeholder="&#xf207;"></span>--%>
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="font-weight-bold text-danger"  ControlToValidate="textUsername"
+                    ErrorMessage="Tên đăng nhập không để trống"></asp:RequiredFieldValidator>
+
+
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" runat="server" id="textMatKhau" type="password" name="pass" placeholder="Password">
-						<%--<span class="focus-input100" data-placeholder="&#xf191;"></span>--%>
+						<input class="input100" runat="server" id="textMatKhau" type="password" name="pass" placeholder="Password"/>
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass="font-weight-bold text-danger"  ControlToValidate="textMatKhau" 
+                    ErrorMessage="Mật khẩu không để trống"></asp:RequiredFieldValidator>
 					</div>
 
 					<div class="contact100-form-checkbox" style="display: flex; justify-content: flex-start" >
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me"/>
 						<label class="label-checkbox100" for="ckb1">
 							Remember me
 						</label>

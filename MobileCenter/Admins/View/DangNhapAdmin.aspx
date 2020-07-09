@@ -22,11 +22,21 @@
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input runat="server" id="userName" class="input100" type="text" name="username" placeholder="Username">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+						<div style="display: flex; justify-content: center">
+							<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="font-weight-bold text-danger"  ControlToValidate="userName"
+                    ErrorMessage="Tên đăng nhập không để trống"></asp:RequiredFieldValidator>	
+						</div>
+
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
 						<input class="input100" runat="server" id="passWord" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+						<div style="display: flex; justify-content: center">
+							<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass="font-weight-bold text-danger"  ControlToValidate="passWord" 
+                    ErrorMessage="Mật khẩu không để trống"></asp:RequiredFieldValidator>
+						</div>
+						
 					</div>
 
 					<div class="contact100-form-checkbox" >
