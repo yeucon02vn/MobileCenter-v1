@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="ChiTietSanPham.aspx.cs" Inherits="MobileCenter.View.ChiTietSanPham" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <asp:DataList ID="dtlChiTietSanPham" runat="server" CssClass="mb-5">
+    <asp:DataList ID="dtlChiTietSanPham" runat="server" CssClass="w-100">
         <ItemTemplate>
             <div class="card bg-light" style="margin-bottom: 10px;">
                 <div class="card-body row" style="padding: 0px;">
@@ -34,50 +34,20 @@
                             </div>
                             <div style="height: 60px">
                                 <div style="float: left">
-                                    <div style="padding-right: 20px">
+                                    <div style="padding-right: 23px">
                                         Giá niêm yết
                                     </div>
-                                    <div style="height:60px">
-                                        <div style="float :left">     
-                                            <div style ="padding-right:23px ">
-                                                Giá niêm yết
-                                            </div>
-                                             
-                                            <div style ="padding-top:5px; ">
-                                                Giá khuyến mãi
-                                            </div>
-                                         </div> 
-                                        <div style="float :right">
-                                            <div style ="color:darkgray; padding-right:216px; text-decoration: line-through;">
-                                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>' ></asp:Label>
-                                            </div>
-                                            <div style ="color:darkgray;padding-top:5px; padding-right:223px">
-                                                <asp:Label class="price" ID="lblGiaSanpham" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>' ></asp:Label>
-                                            </div>
-                                         </div>
+
+                                    <div style="padding-top: 5px;">
+                                        Giá khuyến mãi
                                     </div>
-                                    
-                                    <div style="height:60px">
-                                        <div style="float :left">       
-                                             Khuyến mãi
-                                         </div> 
-                                        <div style="float :right">
-                                            <i class="fa fa-gift" style="color: orangered;" aria-hidden="true"></i>                                             
-                                            <a style ="color:darkgray; padding-right:218px"> Mua một tặng: </a>
-                                            <div style ="color:darkgray;padding-top:5px; padding-right:16px">
-                                                Khung mâm nghiêng - Từ 19” - 42″ M43N
-                                            </div>
-                                         </div>
+                                </div>
+                                <div style="float: right">
+                                    <div style="color: darkgray; padding-right: 216px; text-decoration: line-through;">
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>'></asp:Label>
                                     </div>
-                                     <div style="height:40px">
-                                         <div style="float :left ;">
-                                             Vận chuyển
-                                         </div> 
-                                        
-                                         <div style="float :right;padding-right: 8px;">
-                                             <i class="fa fa-truck fa-flip-horizontal" style="color: lightcoral;" aria-hidden="true"></i>
-                                             <a style ="color:#6c757d; ">Miễn phí vận chuyển đơn hàng trên 500.000đ</a>
-                                         </div>
+                                    <div style="color: darkgray; padding-top: 5px; padding-right: 223px">
+                                        <asp:Label class="price" ID="lblGiaSanpham" runat="server" Text='<%# Eval("GiaSanPham", "{0:0,000,000} VND") %>'></asp:Label>
                                     </div>
                                 </div>
                             </div>
@@ -89,35 +59,33 @@
                                 <div style="float: right">
                                     <i class="fa fa-gift" style="color: orangered;" aria-hidden="true"></i>
                                     <a style="color: darkgray; padding-right: 218px">Mua một tặng: </a>
-                                    <div style="color: darkgray; padding-top: 5px; padding-right: 7px">
+                                    <div style="color: darkgray; padding-top: 5px; padding-right: 16px">
                                         Khung mâm nghiêng - Từ 19” - 42″ M43N
                                     </div>
                                 </div>
                             </div>
                             <div style="height: 40px">
-                                <div style="float: left">
+                                <div style="float: left;">
                                     Vận chuyển
                                 </div>
 
-                                <div style="float: right">
+                                <div style="float: right; padding-right: 8px;">
                                     <i class="fa fa-truck fa-flip-horizontal" style="color: lightcoral;" aria-hidden="true"></i>
                                     <a style="color: #6c757d;">Miễn phí vận chuyển đơn hàng trên 500.000đ</a>
                                 </div>
                             </div>
-                            <div style="width: 60%">
-                                <asp:LinkButton class="btn btn-outline-primary  border-primary " NavigateUrl='<%# "GioiThieuSanPham.aspx" %>' Style="border: 1.5px solid!important; padding: 10px; border-radius: 5px; padding-left: 30px; padding-right: 30px; font-size: 16px;" runat="server"> Trở lại</asp:LinkButton>
-                                <asp:LinkButton class="btn btn-outline-primary  border-primary " NavigateUrl='<%# Eval("IdSanPham","ThemGioHang.aspx?IDSanpham={0}") %>' Style="border: 1.5px solid!important; float: right; padding: 10px; border-radius: 5px; font-size: 16px;" runat="server">Thêm vào giỏ hàng </asp:LinkButton>
-
+                            <div style="display:flex; justify-content:space-evenly; width: 100%">
+                                <asp:LinkButton class="btn btn-outline-primary  border-primary " NavigateUrl='<%# "GioiThieuSanPham.aspx" %>' Style="width:30%; border: 1.5px solid!important; padding: 10px; border-radius: 5px; padding-left: 30px; padding-right: 30px; font-size: 16px;" runat="server"> Trở lại</asp:LinkButton>
+                                <asp:LinkButton class="btn btn-outline-primary  border-primary " NavigateUrl='<%# Eval("IdSanPham","ThemGioHang.aspx?IDSanpham={0}") %>' Style="width:30%; border: 1.5px solid!important; float: right; padding: 10px; border-radius: 5px; font-size: 16px;" runat="server">Thêm vào giỏ hàng </asp:LinkButton>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="float: left">
-                <asp:Label ID="lblMoTaChiTiet" Style="float: left; font-size: 16px; text-align: left;" runat="server" Text='<%# Eval("MoTaSanPham") %>'></asp:Label>
+            <div >
+                <asp:Label CssClass="mo-ta" ID="lblMoTaChiTiet" Style="font-size: 16px; text-align:left" runat="server" Text='<%# Eval("MoTaSanPham") %>'></asp:Label>
             </div>
 
         </ItemTemplate>
     </asp:DataList>
 </asp:Content>
-

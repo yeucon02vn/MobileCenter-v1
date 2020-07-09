@@ -410,29 +410,39 @@
         <div class="footer2">
             <div class="flex-c">
                 <div class="col col1">
-                    <h2>Customer Support</h2>
+                    <div class="titleFooter">Công ty</div>
                     <ul>
-                        <li><a href="# ">Purchase: 1800.1060 (7:30 - 22:00)</a></li>
-                        <li><a href="# ">Complain: 1800.1062 (8:00 - 21:30)</a></li>
-                        <li><a href="# ">Warranty: 1800.1064 (8:00 - 21:00)</a></li>
-                        <li><a href="# ">Technique: 1800.1763 (7:30 - 22:00)</a></li>
+                        <li><a href="# "><i class="fa fa-info-circle mr-3"></i>Giới thiệu về Mobile Center</a></li>
+                        <li><a href="# "><i class="fa fa-home mr-3"></i>Hệ thống cửa hàng</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Chăm sóc khách hàng</a></li>
                     </ul>
                 </div>
-                <div class="col col2 ">
-                    <h2>Purchase and Warranty Policy</h2>
+                <div class="col col2">
+                    <div class="titleFooter">Hỗ trợ khách hàng</div>
                     <ul>
-                        <li><a href="# ">Security</a></li>
-                        <li><a href="# ">Exchange and Refund</a></li>
-                        <li><a href="# ">Transport</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Gọi mua hàng: 1800.1060 (7:30 - 22:00)</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Gọi khiếu nại: 1800.1062 (8:00 - 21:30)</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Gọi bảo hành: 1800.1064 (8:00 - 21:00)</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Kỹ thuật: 1800.1066 (7:30 - 22:00)</a></li>
                     </ul>
                 </div>
-                <div class="col col3 ">
-                    <h2>Contact Infomation</h2>
-                    <p><span>Address</span> University of Information Technology</p>
-                    <p><span>Telephone:</span> +84-1688-767-549</p>
-                    <p><span>FAX:</span> +458-4578</p>
-                    <p><span>Others:</span> +301 - 0125 - 01258</p>
-                    <p><span>E-mail:</span> <a href=" ">tftcenter@uit.edu.com</a></p>
+                <div class="col col3">
+                    <div class="titleFooter">Chính sách mua và đổi trả</div>
+                    <ul>
+                        <li><a href="# "><i class="fa fa-shield mr-3"></i>Bảo hành</a></li>
+                        <li><a href="# "><i class="fa fa-buysellads mr-3"></i>Tìm hiểu về mua trả góp</a></li>
+                        <li><a href="# "><i class="fa fa-telegram mr-3"></i>Giao hàng & Thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col col4">
+                    <div class="titleFooter">Thông tin liên hệ</div>
+                    <ul>
+                        <li><a href="# "><i class="fa fa-home mr-3"></i>Địa chỉ: University of Information Technology</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Tel.: +84-1688-767-549</a></li>
+                        <li><a href="# "><i class="fa fa-print mr-3"></i>FAX: +458-4578</a></li>
+                        <li><a href="# "><i class="fa fa-phone mr-3"></i>Others: +301-0125-01258</a></li>
+                        <li><a href="# "><i class="fa fa-envelope mr-3"></i>E-mail: tftcenter@uit.edu.com</a></li>
+                    </ul>
                 </div>
                 <div class="clr "></div>
             </div>
@@ -441,7 +451,12 @@
         <div id="page_bottom">
             <div id="footer">
                 <div class="text1">&copy; Copyright <a href="http://www.facebook.com/shiny.phong">CCTM04A</a>. All Rights Reserved</div>
-                <div class="text2">Design: (TS) <a href="http://www.facebook.com/shiny.phong">Shiny Phong</a></div>
+                <div class="text2">
+                    <a href="https://www.facebook.com/tanphucuit"><i class="fa fa-facebook-f fa-2x fa- mr-5"></i></a>
+                    <a href="https://www.facebook.com/tanphucuit"><i class="fa fa-twitter fa-2x mr-5"></i></a>
+                    <a href="mailto:16520954@gm.uit.edu.vn"><i class="fa fa-google-plus fa-2x mr-5"></i></a>
+                    <a href="https://www.instagram.com/tanphucuit/"><i class="fa fa-instagram fa-2x mr-5"></i></a>
+                </div>
             </div>
             <div class="clr"></div>
             <!--/footer -->

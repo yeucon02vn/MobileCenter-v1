@@ -883,6 +883,8 @@ select {
 
 .footer2 {
     background: #222 url(images/footer2_bg.gif) repeat-x left top;
+    margin-left: -50px;
+    margin-right: -50px;
 }
 
 .footer2_resize {
@@ -962,12 +964,13 @@ select {
                 background: url(images/li_a.gif) no-repeat left center;
             }
 
-.footer2 h2 {
+.titleFooter {
     margin: 0;
     font-size: 18px;
     letter-spacing: normal;
     font-weight: normal;
     color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 .slider {
@@ -1565,3 +1568,12 @@ td {
     padding-left: 30px;
     padding-top: 25px;
 }
+
+.mo-ta {
+    list-style:initial!important;
+    padding: initial!important;
+}
+    .mo-ta li {
+        list-style: initial !important;
+        padding:initial!important;
+    }

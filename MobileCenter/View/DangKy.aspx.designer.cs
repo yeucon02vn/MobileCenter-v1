@@ -33,7 +33,7 @@ namespace MobileCenter.View
         protected global::System.Web.UI.HtmlControls.HtmlInputText textTenDangNhap;
 
         /// <summary>
-        /// textThanhPho control.
+        /// textEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -42,7 +42,7 @@ namespace MobileCenter.View
         protected global::System.Web.UI.HtmlControls.HtmlInputText textThanhPho;
 
         /// <summary>
-        /// textQuanHuyen control.
+        /// textSoDienThoai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -60,7 +60,7 @@ namespace MobileCenter.View
         protected global::System.Web.UI.HtmlControls.HtmlInputText textDuongPho;
 
         /// <summary>
-        /// textMatKhau control.
+        /// RequiredFieldValidator13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -69,7 +69,7 @@ namespace MobileCenter.View
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword textMatKhau;
 
         /// <summary>
-        /// TextBox6 control.
+        /// textTenDuongPho control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -78,7 +78,7 @@ namespace MobileCenter.View
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword TextBox6;
 
         /// <summary>
-        /// textEmail control.
+        /// TextBox6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -87,7 +87,7 @@ namespace MobileCenter.View
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl textEmail;
 
         /// <summary>
-        /// textSoDienThoai control.
+        /// textMatKhau control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

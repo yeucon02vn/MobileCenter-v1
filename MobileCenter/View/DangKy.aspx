@@ -56,7 +56,48 @@
                 <asp:TextBox ID="textMatKhau" runat="server" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="textMatKhau"
                     ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="textMatKhau"
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator13" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
+	</div> <!-- form-group end.// -->
+          <div class="form-group input-group" style="height: 40px;">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-map-marker"></i> </span>
+		</div>
+               <asp:dropdownlist runat="server" class="form-control text-register" id="textQuanHuyen">
+                     <asp:listitem text="Quận 1" value="1"></asp:listitem>
+                     <asp:listitem text="Quận 2" value="2"></asp:listitem>
+                     <asp:listitem text="Quận Thủ Đức" value="3"></asp:listitem>
+                     <asp:listitem text="Quận Tân Bình" value="4"></asp:listitem>
+                     <asp:listitem text="Quận Bình Thạnh" value="5"></asp:listitem>
+                </asp:dropdownlist>
+               
+               <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="textHoTen"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
+	</div> <!-- form-group end.// -->
+          <div class="form-group input-group" style="height: 40px;">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-map-marker"></i> </span>
+		 </div>
+              <asp:TextBox class="form-control text-register" placeholder="Địa chỉ" ID="textTenDuongPho" runat="server"></asp:TextBox>
+               <asp:RequiredFieldValidator ID="RequiredFieldValidator15" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
+    </div>
+    <div class="form-group input-group" style="height: 40px;">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <asp:TextBox class="form-control text-register" placeholder="Create password" ID="TextBox6" runat="server" TextMode="Password"></asp:TextBox>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator16" class= "pl-2 pt-2" runat="server" ControlToValidate="textHoTen"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
+    </div> <!-- form-group// -->
+    <div class="form-group input-group" style="height: 40px;">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <asp:TextBox class="form-control text-register" placeholder="Repeat password" ID="textMatKhau" runat="server" TextMode="Password"></asp:TextBox>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="textMatKhau"
+                    ErrorMessage="Không được để trống"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="textMatKhau"
                     ErrorMessage="Mật khẩu nhập lại không khớp"></asp:RequiredFieldValidator></td>
         </tr>
         <tr>
