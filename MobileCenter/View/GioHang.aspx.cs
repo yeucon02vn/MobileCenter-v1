@@ -40,7 +40,7 @@ namespace MobileCenter.View
         }
         protected void ImageButtontieptucmuahang_Click(object sender, EventArgs e)
         {
-            Response.Redirect("gioithieusanpham.aspx");
+            Response.Redirect("~");
         }
         protected void ImageButtoncapnhatthaydoi_Click(object sender, EventArgs e)
         {

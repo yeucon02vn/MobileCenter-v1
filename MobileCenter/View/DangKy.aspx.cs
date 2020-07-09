@@ -34,16 +34,8 @@ namespace MobileCenter.View
 
                 nguoiDungBUS._nguoiDung = nguoiDung;
                 nguoiDungBUS.Register();
-                //try
-                //{
-                   
-                //}
-                //catch
-                //{
-                //    Response.Redirect("TrangLoi.aspx");
-                //}
                 _NguoiDungHienTai = nguoiDungBUS._nguoiDung;
-                Response.Redirect("DangNhap.aspx");
+                Response.Redirect("~");
             }
         }
     }
