@@ -117,9 +117,7 @@
                         <div class="input-group md-form form-sm form-2 pl-0 w-50" style="height: 30px;">
                             <asp:TextBox ID="searchBy" runat="server" CssClass="form-control y-0 py-1 h-100" placeholder="Search" aria-label="Search"></asp:TextBox>
                             <div class="input-group-append">
-                                <asp:LinkButton class="input-group-text text-info" id="btnSearch" runat="server" OnClick="btnSearch_Click"></asp:LinkButton>
-                            <i class="fa fa-search"
-                                    aria-hidden="true"></i>
+                                <asp:LinkButton class="input-group-text text-info" id="btnSearch" runat="server" OnClick="btnSearch_Click"><i class="fa fa-search" aria-hidden="true"></i></asp:LinkButton>        
                             </div>
                         </div>
                         <div style="display: flex; flex-direction: row; align-items: center;">
