@@ -15,6 +15,10 @@ namespace MobileCenter.View
         protected void Page_Load(object sender, EventArgs e)
         {
             ((Home)this.Master).isVisible = true;
+            if (base._NguoiDungHienTai == null)
+                ((Home)this.Master).isLogIn = true;
+            else
+                ((Home)this.Master).isLogIn = false;
             Response.Cookies["ReturnURL"].Value = null;
         }
     }

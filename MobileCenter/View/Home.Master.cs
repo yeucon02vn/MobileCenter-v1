@@ -26,9 +26,9 @@ namespace MobileCenter.View
                 slideShow.Visible = isVisible;
                 imgAdv.Visible = isVisible;
                 //lblOnline.Text = Application["SoNguoiOnLine"].ToString();
-                HyperLink8.Visible = isLogIn;
-                HyperLink9.Visible = isLogIn;
-                HyperLink10.Visible = !isLogIn;
+                
+                anonymous.Visible = isLogIn;
+                authen.Visible = !isLogIn;
                 dem = 0;
                 GioHangDTO gioHang = new GioHangDTO();
                 gioHang.CartGuid = CartGUID;
@@ -57,6 +57,17 @@ namespace MobileCenter.View
             xulydanhmucsanpham.Select();
             dtlSanpham.DataSource = xulydanhmucsanpham.KetQua;
             dtlSanpham.DataBind();
+        }
+
+        protected void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/customer/signout");
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string search = "~/customer/search?SearchBy=" + searchBy.Text;
+            Response.Redirect(search);
         }
     }
 }

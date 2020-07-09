@@ -112,18 +112,23 @@
                         <div class="logo">
                             <h1><a href="https://localhost:44375" style="font-size: 40px">LOGO<small class="slogan">Anything</small></a></h1>
                         </div>
-                        <div class="input-group md-form form-sm form-2 pl-0 w-50" style="height: 30px">
-                            <input class="form-control y-0 py-1 h-100" type="text" placeholder="Search" aria-label="Search"/>
+                        <div class="input-group md-form form-sm form-2 pl-0 w-50" style="height: 30px;">
+                            <asp:TextBox ID="searchBy" runat="server" CssClass="form-control y-0 py-1 h-100" placeholder="Search" aria-label="Search"></asp:TextBox>
                             <div class="input-group-append">
-                                <span class="input-group-text text-info" id="basic-text1"><i class="fa fa-search"
-                                    aria-hidden="true"></i></span>
+                                <asp:LinkButton class="input-group-text text-info" id="btnSearch" runat="server" OnClick="btnSearch_Click"></asp:LinkButton>
+                            <i class="fa fa-search"
+                                    aria-hidden="true"></i>
                             </div>
                         </div>
                         <div style="display: flex; flex-direction: row; align-items: center;">
-                            <div>
+                            <div id="authen" runat="server">
+                                <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink12" runat="server" NavigateUrl="~">Đổi thông tin</asp:HyperLink>
+                                <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink11" runat="server" NavigateUrl="~/customer/invoice">Lịch sử</asp:HyperLink>
+                                <asp:LinkButton class="btn btn-outline-primary btn-lg" runat="server" OnClick="btnDangXuat_Click" ID="btnDangXuat" OnClientClick="return confirm('Do you want to log out?');return false;">Đăng xuất</asp:LinkButton>                                
+                            </div>
+                            <div id="anonymous" runat="server">
                                 <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink8" runat="server" NavigateUrl="~/customer/signin">Đăng nhập</asp:HyperLink>
                                 <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink9" runat="server" NavigateUrl="~/customer/signup">Đăng ký</asp:HyperLink>
-                                <asp:HyperLink CssClass="btn btn-outline-primary btn-lg" ID="HyperLink10" runat="server" NavigateUrl="~/customer/signout">Đăng xuất</asp:HyperLink>
                             </div>
                             <div class="shopping-card">
                                 <ul class="menusm" style="margin-left: 10px; float: right;">

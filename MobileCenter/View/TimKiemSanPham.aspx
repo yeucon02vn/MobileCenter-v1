@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="SanPhamTheoDanhMuc.aspx.cs" Inherits="MobileCenter.View.SanPhamTheoDanhMuc" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="TimKiemSanPham.aspx.cs" Inherits="MobileCenter.View.TimKiemSanPham" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <asp:DataList ID="dtlSanPhamDM" runat="server" RepeatColumns="3"  CaptionAlign="Top" HorizontalAlign="Center" Width="1000">
+     <asp:DataList ID="dtlSanPhamSearch" runat="server" RepeatColumns="3"  CaptionAlign="Top" HorizontalAlign="Center" Width="1000">
         <ItemTemplate>
             <div  class="card hovereffect" style=" margin: 20px; justify-content:center; align-items: center; padding-left: 50px; padding-right: 50px; ">
                 <asp:Panel ID="Panel1" runat="server" BorderColor="#E0E0E0" BorderStyle="Solid" BorderWidth="0.1px"
@@ -21,7 +21,7 @@
                 <tr>
                     <td style="text-align: center; display: flex;" align="center">
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("IdSanPham","ChiTietSanPham.aspx?IdSanpham={0}") %>'  ><button type="button" class="btn btn-outline-primary" style="margin-right:10px; margin-left: 10px; border-radius: 2.286em; font-size:14px;">Chi tiết đơn hàng</button></asp:HyperLink>
-                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# Eval("IdSanPham","ThemGioHang.aspx?IdSanpham={0}") %>'><button type="button" class="btn btn-outline-primary" style="margin-right:10px; border-radius: 2.286em; font-size:14px;padding-left: 30px; padding-right: 30px;">Mua hàng</button></asp:HyperLink></td>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# Eval("IdSanPham","ThemGioHang.aspx?IDSanpham={0}") %>'><button type="button" class="btn btn-outline-primary" style="margin-right:10px; border-radius: 2.286em; font-size:14px;padding-left: 30px; padding-right: 30px;">Mua hàng</button></asp:HyperLink></td>
                 </tr>
             </table>
             </asp:Panel>

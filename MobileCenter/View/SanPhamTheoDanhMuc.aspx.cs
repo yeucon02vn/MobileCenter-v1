@@ -16,7 +16,7 @@ namespace MobileCenter.View
             if (!IsPostBack)
             {
                 ((Home)this.Master).isVisible = false;
-
+                ((Home)this.Master).isLogIn = false;
                 HienThiSanPham();
             }
         }

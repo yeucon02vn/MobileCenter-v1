@@ -14,6 +14,7 @@ namespace MobileCenter.View
         {
             textUsername.Focus();
             ((Home)this.Master).isVisible = false;
+            string a = Request.Cookies["ReturnURL"].Value;
         }
 
         protected void btnDangNhap_Click(object sender, EventArgs e)

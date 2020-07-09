@@ -13,6 +13,7 @@ namespace MobileCenter.View
     {
         private decimal _tongtien;
         private int dem = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,6 +22,10 @@ namespace MobileCenter.View
             {
                 HienThiGioHang();
                 ((Home)this.Master).isVisible = false;
+                if (base._NguoiDungHienTai == null)
+                    ((Home)this.Master).isLogIn = true;
+                else
+                    ((Home)this.Master).isLogIn = false;
             }
         }
 
@@ -33,7 +38,7 @@ namespace MobileCenter.View
             gioHangBUS._gioHang = gioHang;
             gioHangBUS.Select(); gioHangBUS.Select();
             gridgiohang.DataSource = gioHangBUS.KetQua;
-            gridgiohang.DataBind(); gridgiohang.DataBind();
+            gridgiohang.DataBind();
             foreach (GridViewRow row in gridgiohang.Rows)
             {
                 TextBox quantity = (TextBox)row.FindControl("textQuantity");
@@ -73,11 +78,6 @@ namespace MobileCenter.View
             }
         }
 
-
-        protected void DeleteProduct(object sender, EventArgs e)
-        {
-        }
-
         //------------Thủ tục Update------------------
         private void Update(int id, int soluong)
         {
@@ -112,6 +112,7 @@ namespace MobileCenter.View
                 Response.Redirect("Trangloi.aspx");
             }
         }
+
         protected void gridgiohang_RowDataBound(object sender, GridViewRowEventArgs e)
         {
 
@@ -122,13 +123,14 @@ namespace MobileCenter.View
             lblTotal.Text = string.Format(_tongtien.ToString("###,###,###")) + " VND";
 
         }
+
         protected void ImageButtonXacnhanthanhtoan_Click(object sender, EventArgs e)
         {
             Response.Cookies["ReturnURL"].Value = "add-bill";
             if(base._NguoiDungHienTai == null)
                 Response.Redirect("~/customer/signin");
             else
-                Response.Redirect("~/customer/invoice");
+                Response.Redirect("~/customer/add-bill");
         }
 
         protected void gridgiohang_RowDeleting(object sender, GridViewDeleteEventArgs e)

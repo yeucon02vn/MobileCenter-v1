@@ -758,12 +758,14 @@
     <Content Include="View\ChiTietSanPham.aspx" />
     <Content Include="View\DangKy.aspx" />
     <Content Include="View\DangNhap.aspx" />
+    <Content Include="View\DangXuat.aspx" />
     <Content Include="View\DonHangKhachHang.aspx" />
     <Content Include="View\GioHang.aspx" />
     <Content Include="View\GioiThieuSanPham.aspx" />
     <Content Include="View\SanPhamTheoDanhMuc.aspx" />
     <Content Include="View\ThemDonHang.aspx" />
     <Content Include="View\ThemGioHang.aspx" />
+    <Content Include="View\TimKiemSanPham.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -895,6 +897,13 @@
     <Compile Include="View\DangNhap.aspx.designer.cs">
       <DependentUpon>DangNhap.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\DangXuat.aspx.cs">
+      <DependentUpon>DangXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\DangXuat.aspx.designer.cs">
+      <DependentUpon>DangXuat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\DonHangKhachHang.aspx.cs">
       <DependentUpon>DonHangKhachHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -943,6 +952,13 @@
     </Compile>
     <Compile Include="View\ThemGioHang.aspx.designer.cs">
       <DependentUpon>ThemGioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimKiemSanPham.aspx.cs">
+      <DependentUpon>TimKiemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\TimKiemSanPham.aspx.designer.cs">
+      <DependentUpon>TimKiemSanPham.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

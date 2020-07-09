@@ -16,7 +16,10 @@ namespace MobileCenter.View
             if (!IsPostBack)
             {
                 ((Home)this.Master).isVisible = false;
-                ((Home)this.Master).isLogIn = false;
+                if (base._NguoiDungHienTai == null)
+                    ((Home)this.Master).isLogIn = true;
+                else
+                    ((Home)this.Master).isLogIn = false;
 
                 Label lblWelcome = (Label)Master.FindControl("lblchao");
                 lblWelcome.Text = "Xin chào, " + base._NguoiDungHienTai.HoTen;
