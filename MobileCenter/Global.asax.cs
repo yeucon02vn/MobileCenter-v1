@@ -15,9 +15,11 @@ namespace MobileCenter
             routes.MapPageRoute("Cart Page", "customer/cart", "~/View/GioHang.aspx");
             routes.MapPageRoute("Sign in Page", "customer/signin", "~/View/DangNhap.aspx");
             routes.MapPageRoute("Sign up Page", "customer/signup", "~/View/DangKy.aspx");
+            routes.MapPageRoute("Sign out Page", "customer/signout", "~/View/DangXuat.aspx");
             routes.MapPageRoute("Add Bill", "customer/add-bill", "~/View/ThemDonHang.aspx");
             routes.MapPageRoute("Invoice Page", "customer/invoice", "~/View/DonHangKhachHang.aspx");
             routes.MapPageRoute("Invoice Detail Page", "customer/invoice-detail", "~/View/ChiTietDonHangKhachHang.aspx");
+            routes.MapPageRoute("Search Product Page", "customer/search", "~/View/TimKiemSanPham.aspx");
 
             routes.MapPageRoute("Admin Page", "admin", "~/Admins/View/DangNhapAdmin.aspx");
             routes.MapPageRoute("Admin SanPham Page", "admin/sanpham", "~/Admins/View/SanPham.aspx");

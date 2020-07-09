@@ -2,7 +2,6 @@
 using MobileCenter.Models.BUS;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -10,16 +9,24 @@ using System.Web.UI.WebControls;
 
 namespace MobileCenter.View
 {
-    public partial class GioiThieuSanPham : NguoiDungHienTai
+    public partial class TimKiemSanPham : NguoiDungHienTai
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ((Home)this.Master).isVisible = true;
+            ((Home)this.Master).isVisible = false;
             if (base._NguoiDungHienTai == null)
                 ((Home)this.Master).isLogIn = true;
             else
                 ((Home)this.Master).isLogIn = false;
-            Response.Cookies["ReturnURL"].Value = null;
+            HienThiSanPham();
+        }
+
+        private void HienThiSanPham()
+        {
+            SanPhamBUS sanPhamBUS = new SanPhamBUS();
+            sanPhamBUS.Search(Request.QueryString["SearchBy"]);
+            dtlSanPhamSearch.DataSource = sanPhamBUS.KetQua;
+            dtlSanPhamSearch.DataBind();
         }
     }
 }
