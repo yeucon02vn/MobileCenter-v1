@@ -60,7 +60,7 @@
             </asp:TemplateField>
         </Columns>
     </asp:GridView>
-    <div class="style-totalMoney">
+    <div class="style-totalMoney mb-5">
         <div style="color: #090909; font-size: 20px; font-weight:bold;padding-bottom: 10px;">
             Cart Total
         </div>
