@@ -240,7 +240,7 @@
                                 <div class="card card-img" style="width: 10rem; font-size: 16px">
                                     <img class="card-img-top pb-3" src="https://localhost:44375/images/tile1.jpg" />
                                     <div>
-                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=60" class="card-link">Samsung Galaxy A31</a>
+                                        <a href="https://localhost:44375/customer/product-detail?IdSanpham=60" class="card-link">Samsung Galaxy A31</a>
                                     </div>
                                     <div class="price">5,840,000 VND</div>
                                 </div>
@@ -391,7 +391,7 @@
                                 <div class="card card-img hovereffect text-lg-left">
                                     <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/tivi-tcl-40s6500-1-1-org.jpg" alt="Card image cap" />
                                     <div class="card-body p-0 pt-4">
-                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=48" class="card-link">Android Tivi TCL 40 inch 40S6500</a>
+                                        <a href="https://localhost:44375/customer/product-detail?IdSanpham=48" class="card-link">Android Tivi TCL 40 inch 40S6500</a>
                                         <div class="price">5,990,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
