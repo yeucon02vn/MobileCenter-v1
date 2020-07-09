@@ -228,10 +228,10 @@
                                     </div>
                                 </div>
                                 <div class="card card-img hovereffect text-lg-left">
-                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/samsung-galaxy-a21s-(13).jpg" alt="Card image cap" />
+                                    <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/samsung-galaxy-fold-black-600x600.jpg" alt="Card image cap" />
                                     <div class="card-body p-0 pt-4">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=4" class="card-link">Samsung Galaxy A21s</a>
-                                        <div class="price">8,490,000 VND</div>
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=58" class="card-link">Samsung Galaxy Fold</a>
+                                        <div class="price">50,000,000 VND</div>
                                         <p class="card-des">Tặng 2 suất mua Đồng hồ thời trang giảm 40% (Không áp dụng thêm khuyến mãi khác)</p>
                                     </div>
                                 </div>
@@ -256,7 +256,7 @@
                                 <div class="card card-img hovereffect text-lg-left">
                                     <img class="card-img-top pt-5" src="https://localhost:44375/HinhSanPham/apple-macbook-pro-2019-touch-i5-8gb-256gb-mv962sa-1-600x600.jpg" alt="Card image cap" />
                                     <div class="card-body p-0 pt-4">
-                                        <a href="https://localhost:44375/View/SanPhamTheoDanhMuc.aspx?IdDanhMucSanPham=1" class="card-link">Macbook pro 2019 i5 8GB</a>
+                                        <a href="https://localhost:44375/View/ChiTietSanPham.aspx?IdSanpham=25" class="card-link">Macbook pro 2019 i5 8GB</a>
                                         <div class="price">39,490,000 VND</div>
                                         <p class="card-des">Tặng túi chống sốc Laptop 15.6 inch eValu LMP-T002A và 1 K.mãi khác</p>
                                     </div>
