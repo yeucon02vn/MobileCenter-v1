@@ -108,7 +108,7 @@
                     <div class="clr"></div>
                      <div class ="shopping-card">
                          <ul class="menusm" style="margin-left:10px; float:right;">
-                            <a href="https://localhost:44375/customer/giohang"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
+                            <a href="https://localhost:44375/customer/cart"><i class="fa fa-shopping-cart" style="font-size: 30px"></i></a>
                         </ul>
                     </div>
                     <!-- /navigation -->

@@ -5,10 +5,10 @@
     </span></strong>
 <asp:GridView ID="gridviewOrders" runat="server" AutoGenerateColumns="False" Width="530px">
 <Columns>
-    <asp:TemplateField HeaderText="ID giao dịch">
+    <asp:TemplateField HeaderText="Id giao dịch">
 <ItemTemplate>
-<a href="ChiTietDonHangKhach.aspx?IDGiaoDich=<%# Eval("IDGiaoDich")%>&IDDonHang=<%# Eval("IDDonHang") %>">
-<%# Eval("IDGiaoDich") %>
+<a href="View/ChitietDonHangKhachHang.aspx?MaGiaoDich=<%# Eval("MaGiaoDich")%>&IdDonHang=<%# Eval("IdDonHang") %>">
+<%# Eval("MaGiaoDich") %>
 </a>
 </ItemTemplate>
         <HeaderStyle BackColor="#E0E0E0" BorderColor="#404040" BorderStyle="Solid" BorderWidth="1px"

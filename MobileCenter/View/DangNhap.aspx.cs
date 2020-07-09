@@ -46,7 +46,7 @@ namespace MobileCenter.View
                     }
                     else
                     {
-                        Response.Redirect("DonHangKhachHang.aspx");
+                        Response.Redirect("~/customer/invoice");
                     }
                 }
                 else
