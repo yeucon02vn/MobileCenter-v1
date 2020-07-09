@@ -1332,6 +1332,11 @@ select {
     width: 50%!important;
 }
 
+.img-full {
+    width: 70% !important;
+    height:auto !important;
+}
+
 .img-small {
     width: 30%!important;
 }
