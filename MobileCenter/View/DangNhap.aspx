@@ -35,8 +35,6 @@
         <tr>
             <td style="width: 200px; height: 22px;">
             </td>
-            <td style="width: 400px; height: 22px;" align="left">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/DangKy.aspx">Đăng Ký Tài Khoản</asp:HyperLink></td>
         </tr>
     </table>
 </asp:Content>

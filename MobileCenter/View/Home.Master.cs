@@ -34,14 +34,5 @@ namespace MobileCenter.View
             dtlSanpham.DataSource = xulydanhmucsanpham.KetQua;
             dtlSanpham.DataBind();
         }
-
-        protected void LinkButton1_Click1(object sender, EventArgs e)
-        {
-            if (Request.Cookies["ReturnURL"] != null)
-            {
-                Response.Cookies["ReturnURL"].Expires = DateTime.Now.AddDays(-1);
-            }
-            Response.Redirect("DangNhap.aspx");
-        }
     }
 }

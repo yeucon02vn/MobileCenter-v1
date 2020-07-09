@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label><br />
-<asp:GridView ID="gridgiohang" class="table table-hover table-condensed " runat="server" AutoGenerateColumns="False" DataKeyNames="IDgiohang" OnRowDataBound="gridgiohang_RowDataBound" Width="700px" >
+<asp:GridView ID="gridgiohang" class="table table-hover table-condensed " runat="server" AutoGenerateColumns="False" DataKeyNames="IdGioHang" OnRowDataBound="gridgiohang_RowDataBound" Width="700px" OnRowDeleting="gridgiohang_RowDeleting" >
     
         <Columns>
             <asp:TemplateField HeaderText="Sản Phẩm">
@@ -24,7 +24,7 @@
             </asp:TemplateField>
              <asp:TemplateField HeaderText="Số lượng" HeaderStyle-Font-Size="15px">
                 <ItemTemplate>
-                    <asp:TextBox ID="textQuantity" type="number" class="form-control text-center" runat="server" Text='<%# Eval("SoLuong") %>' Width="50px" Height="30"></asp:TextBox>
+                    <asp:TextBox OnTextChanged="ImageButtoncapnhatthaydoi_Click" AutoPostBack="true" ID="textQuantity" type="number" class="form-control text-center" runat="server" Text='<%# Eval("SoLuong") %>' Width="50px" Height="30"></asp:TextBox>
                 </ItemTemplate>
                 <HeaderStyle  ForeColor="#626060" HorizontalAlign="Center"
                     VerticalAlign="Middle" BorderWidth="0" Font-Size="13px" Width="20%" CssClass="pl-4" />
@@ -38,11 +38,23 @@
                     VerticalAlign="Middle" BorderWidth="0" Font-Size="13px" Width=""/>
                 <ItemStyle ForeColor="#404040" HorizontalAlign="Right" VerticalAlign="Middle" CssClass="styleCol pr-5"  Font-Size="15px" Font-Bold="true"/>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="X&#243;a">
+       <%--     <asp:TemplateField HeaderText="X&#243;a">
                 <ItemTemplate>
-                    <button class="btn btn-primary btn-lg"><i class="fa fa-trash-o"></i>
+                    <asp:LinkButton class="btn btn-primary btn-lg" ID="DeleteId" runat="server"  >
+   
+                    </asp:LinkButton>
                 </ItemTemplate>
                 <HeaderStyle ForeColor="#626060" HorizontalAlign="Center"
+                    VerticalAlign="Middle" BorderWidth="0" Font-Size="13px"/>
+                <ItemStyle BackColor="White"  CssClass="styleCol" />
+            </asp:TemplateField>--%>
+            <asp:TemplateField HeaderText="X&#243;a">
+                <ItemTemplate>
+                    <asp:LinkButton  class="btn btn-primary btn-lg" ID="DeleteId" runat="server" CausesValidation="False" CommandName="Delete" OnClientClick="return confirm('Do you want to delete?');return true;">
+                        <i class="fa fa-trash-o"></i>
+                    </asp:LinkButton>
+                </ItemTemplate>
+                 <HeaderStyle ForeColor="#626060" HorizontalAlign="Center"
                     VerticalAlign="Middle" BorderWidth="0" Font-Size="13px"/>
                 <ItemStyle BackColor="White"  CssClass="styleCol" />
             </asp:TemplateField>
