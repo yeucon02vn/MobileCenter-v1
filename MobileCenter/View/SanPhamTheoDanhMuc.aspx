@@ -15,13 +15,8 @@
                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("TenSanPham") %>' Font-Bold="True" ForeColor="#2c2d33"></asp:Label></td>
                 </tr>
                 <tr>
-<<<<<<< HEAD
                     <td style=" padding-top: 10px; font-size: 15px" align="center">
                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("GiaSanPham", "{0:##,###,###} VND") %>' ForeColor="#0063d1"></asp:Label></td>
-=======
-                    <td style=" font-size: 15px" align="center">
-                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("GiaSanPham", "{0:##,###,###} VND") %>' ForeColor="#0275d8"></asp:Label></td>
->>>>>>> master
                 </tr>
                 <tr>
                     <td style="text-align: center; display: flex;" align="center">
