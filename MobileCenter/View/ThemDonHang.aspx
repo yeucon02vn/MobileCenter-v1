@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Home.Master" AutoEventWireup="true" CodeBehind="ThemDonHang.aspx.cs" Inherits="MobileCenter.View.ThemDonHang" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<asp:GridView ID="gridgiohang" runat="server" AutoGenerateColumns="False" DataKeyNames="IdSanPham" OnRowDataBound="gridgiohang_RowDataBound" Width="530px">
+<asp:GridView ID="gridgiohang" runat="server" AutoGenerateColumns="False" DataKeyNames="IdSanPham" OnRowDataBound="gridgiohang_RowDataBound" Width="530px" CssClass="mb-5">
         <Columns>            
             <asp:TemplateField HeaderText="T&#234;n Sản Phẩm">
                 <ItemTemplate>
