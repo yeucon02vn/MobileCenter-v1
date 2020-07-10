@@ -75,8 +75,8 @@
                                 </div>
                             </div>
                             <div style="display:flex; justify-content:space-evenly; width: 100%">
-                                <asp:LinkButton class="btn btn-outline-primary  border-primary " NavigateUrl='<%# "GioiThieuSanPham.aspx" %>' Style="width:30%; border: 1.5px solid!important; padding: 10px; border-radius: 5px; padding-left: 30px; padding-right: 30px; font-size: 16px;" runat="server"> Trở lại</asp:LinkButton>
-                                <asp:LinkButton class="btn btn-outline-primary  border-primary " NavigateUrl='<%# Eval("IdSanPham","ThemGioHang.aspx?IDSanpham={0}") %>' Style="width:30%; border: 1.5px solid!important; float: right; padding: 10px; border-radius: 5px; font-size: 16px;" runat="server">Thêm vào giỏ hàng </asp:LinkButton>
+                                <asp:HyperLink class="btn btn-outline-primary  border-primary " NavigateUrl='<%# "~" %>' Style="width:30%; border: 1.5px solid!important; padding: 10px; border-radius: 5px; padding-left: 30px; padding-right: 30px; font-size: 16px;" runat="server"> Trở lại</asp:HyperLink>
+                                <asp:HyperLink class="btn btn-outline-primary  border-primary " NavigateUrl='<%# Eval("IdSanPham","~/customer/add-product?IdSanPham={0}") %>' Style="width:30%; border: 1.5px solid!important; float: right; padding: 10px; border-radius: 5px; font-size: 16px;" runat="server">Thêm vào giỏ hàng </asp:HyperLink>
                             </div>
                         </div>
                     </div>
@@ -87,5 +87,5 @@
             </div>
 
         </ItemTemplate>
-    </asp:DataList>
+    </asp:DataList>s
 </asp:Content>
