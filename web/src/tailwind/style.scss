@@ -1,0 +1,194 @@
+@import "./theme/color/colors";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply transform ease-in-out transition duration-150 cursor-pointer;
+
+  &-zoom {
+    &:hover {
+      @apply shadow-card scale-105;
+    }
+  }
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin s-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin s-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin s-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin s-xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+:root {
+  font-size: 13px;
+}
+
+@include s-md() {
+  :root {
+    font-size: 16px;
+  }
+}
+
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+body {
+  font-family: "Roboto", serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+p {
+  @apply text-gray-700;
+}
+
+$colors: (
+  "primary": $primary,
+  "white": $white,
+  "black": $black,
+  "white-smoke": $white-smoke,
+);
+
+/* ------------- img ------------- */
+
+.img {
+  &__decorate {
+    width: 500px;
+
+    &--mobile-card {
+      width: 480px;
+    }
+
+    &--side {
+      width: 300px;
+      height: 170px;
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+    width: 16rem;
+  }
+
+  &__icon {
+    width: 32px;
+
+    &--md {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &-sm {
+    width: 150px;
+    height: auto;
+  }
+
+  &-md {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+
+  &--tiny {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--sm {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--md {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+// ------------------------ shadow ------------------------
+
+.a-shadow {
+  box-shadow: 0 0 15px $shadow-color;
+}
+
+.footer {
+  min-height: 20vh;
+  background-color: transparent;
+}
+
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper {
+  border: none;
+  outline: none;
+
+  .active {
+    border: none;
+    outline: none;
+  }
+}
+.menu-item.active {
+  border: none;
+  outline: none;
+}
+
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}

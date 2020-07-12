@@ -1,9 +1,17 @@
-# MobileCenter
-Website bán hàng di động- TMĐT ( Đồ án )
+### Prerequisites
 
-# Hướng dẫn chạy
+- .NET Core SDK 3.0 or later
+- MongoDB
+- In mongodb dir, run command:
+  `mongo < scripts.js`
 
-- Vào thư mục CSDL chọn edit file CreateDB thay đổi thành tên CSDL của bạn
-- Sau đó chạy file CreateDB để sinh ra CSDL
-- Chạy project lên và vào WebConfig thay đổi tên CSDL trong thẻ connectstring thành cSDL của bạn và chạy project
- 
+- For web : nodejs and yarn
+- For mock data: Products/generate-mock-data/40
+Providers/generate-mock-data/1
+
+## Run web project
+-  Make sure you run server.
+- run command in web dir in first time:
+  ` yarn`
+- run web project: `yarn start`
+- similar in admin project
