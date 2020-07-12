@@ -75,9 +75,9 @@ Author:DreamTemplate
 */
 
 body {
-    background: #599fd9;
+/*    background: #599fd9;
     background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
-    background: linear-gradient(to right, #599fd9, #c2e59c);
+    background: linear-gradient(to right, #599fd9, #c2e59c);*/
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -1577,3 +1577,20 @@ td {
         list-style: initial !important;
         padding:initial!important;
     }
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+.day {
+    font-size: 15px;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.handle {
+    font-size: 15px;
+    font-weight: bold;
+    color: #55a832;
+}
