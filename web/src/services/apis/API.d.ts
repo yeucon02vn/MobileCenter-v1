@@ -177,41 +177,9 @@ declare namespace API {
     status: string
   }
 
-  export interface ReviewResponse {
-    id?: string
-    userId?: string
-    productId?: string
-    rate?: Rate
-    userInfo?: AccountInfo
-  }
-
-  export interface Rate {
-    valueRating?: number
-    title?: string
-    description?: string
-  }
-
-  export interface ReviewByUserResponse {
-    pagination: Pagination
-    items?: ReviewByUser[]
-  }
-
-  export interface ReviewByUser {
-    id: string
-    rate: Rate
-    productInfo: Product
-  }
-
   export interface APIResponse<T> {
     data?: T
     message?: string
     error?: boolean
-  }
-  export interface Feedback {
-    id?: string
-    email?: string
-    title?: string
-    description?: string
-    orderId?: string
   }
 }

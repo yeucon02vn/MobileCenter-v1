@@ -34,26 +34,9 @@ const handleResponse = async (response: any) => {
 
     return Promise.resolve(data?.data)
   } catch (error) {
+    console.log("error request not handle yet", error)
+
     return Promise.reject(error.message)
-  }
-}
-
-export const handleAxiosRes = (response) => {
-  console.log("response", response)
-  try {
-    const data = response?.data
-
-    if (response.status === 401) {
-      logout()
-    }
-    if (response.status !== 200 || (data && data.error)) {
-      const error = data?.message || response.statusText
-      return Promise.reject(new Error(error))
-    }
-
-    return Promise.resolve(data?.data)
-  } catch (error) {
-    return Promise.reject(new Error(error))
   }
 }
 

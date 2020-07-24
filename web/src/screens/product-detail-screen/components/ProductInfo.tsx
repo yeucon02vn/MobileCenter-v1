@@ -18,7 +18,7 @@ interface ProductInfoProps {
   totalQuestions: number
 }
 
-export const renderStar = (amount: number, Star: any) => {
+const renderStar = (amount: number, Star: any) => {
   const list = new Array(amount).fill(0)
   return list.map((_, i) => {
     return (
@@ -41,12 +41,10 @@ export const ProductInfo: React.FC<ProductInfoProps> = (props) => {
   const starRs = calcRating(rating)
   const commentCount = totalQuestions
 
-  const {
-    value: selectedQuantity,
-    increase: insQuantity,
-    decrease: descQuantity,
-    setValue: setSelectedQuantity,
-  } = useIncrement(1, quantity || Infinity)
+  const { value: selectedQuantity, increase: insQuantity, decrease: descQuantity } = useIncrement(
+    1,
+    quantity || Infinity,
+  )
   const onError = (e) => {
     console.log("e", e)
     enqueueSnackbar(e, {
@@ -66,6 +64,7 @@ export const ProductInfo: React.FC<ProductInfoProps> = (props) => {
   if (isLoading) return null
 
   const renderAddToCart = () => {
+    console.log("quantity", quantity)
     if (quantity > 0)
       return (
         <div className="flex my-8">
@@ -73,13 +72,7 @@ export const ProductInfo: React.FC<ProductInfoProps> = (props) => {
             <p className="mb-2 text-gray-800">Quantity</p>
             <div className="flex items-center justify-between pb-2">
               <IoIosRemove onClick={descQuantity} className={iconsClasses} />
-              <input
-                value={selectedQuantity}
-                onChange={(e) => setSelectedQuantity(Number(e.target.value))}
-                style={{ width: 50 }}
-                className="text-center"
-                type="number"
-              />
+              {selectedQuantity}
               <IoIosAdd onClick={insQuantity} className={iconsClasses} />
             </div>
           </div>

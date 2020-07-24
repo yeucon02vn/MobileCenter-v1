@@ -23,8 +23,8 @@ export const BoughtProduct: React.FC<BoughtProductProps> = (props) => {
   const history = useHistory()
   const { productId } = product
   const { data, isLoading } = useGetProduct(productId)
-  if (isLoading || !data) return null
-  const { thumbnailId, productName: title } = data || {}
+  if (isLoading) return null
+  const { thumbnailId, productName: title } = data
   // const thumbnailUrl =
   // "https://picsum.photos/350/" + (Math.floor(Math.random() * 350) + 300).toString()
 

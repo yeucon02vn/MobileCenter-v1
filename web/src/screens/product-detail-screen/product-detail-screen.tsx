@@ -8,8 +8,6 @@ import { useAccountStore } from "zustands"
 import { Gallary } from "./components/Gallary"
 import { ProductInfo } from "./components/ProductInfo"
 import { QuestionsAndAnswer } from "./components/QuestionsAndAnswer"
-import { useQueryGetReviewById } from "services/apis/rate.api"
-import { Reviews } from "./Reviews"
 
 interface ProductDetailScreenProps {}
 
@@ -17,18 +15,23 @@ export const ProductDetailScreen: React.FC<ProductDetailScreenProps> = (props) =
   const { id } = useParams()
   const { data, error, isFetching } = useGetProduct(id || "")
   const { data: questions, isFetching: isFetchingQuestion } = useQueryGetQuestions(id)
-  const { data: rates, isLoading: isLoadingReviews } = useQueryGetReviewById(id)
-
   const { account } = useAccountStore()
   const { enqueueSnackbar } = useSnackbar()
   // const [data, setData] = React.useState(undefined)
 
-  const isAdmin = account?.accountType !== 1
+  const isAdmin = account?.accountType === 0
+
+  React.useEffect(() => {
+    // getProduct("", id).then((d) => {
+    // setData(d)
+    // })
+  }, [])
+
   if (error) {
     enqueueSnackbar(error?.message, { variant: "warning" })
   }
 
-  const isLoading = isFetching || isFetchingQuestion || isLoadingReviews
+  const isLoading = isFetching || isFetchingQuestion
 
   if (!data || isLoading) return <div className="min-h-screen">loading...</div>
 
@@ -48,7 +51,6 @@ export const ProductDetailScreen: React.FC<ProductDetailScreenProps> = (props) =
       )}
 
       <QuestionsAndAnswer productId={id} questions={questions} />
-      <Reviews reviews={rates} productId={id} />
     </Screen>
   )
 }

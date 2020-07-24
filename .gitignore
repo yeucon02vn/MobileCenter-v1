@@ -47,3 +47,5 @@ Ankh.NoLoad
 .svn
 # Local Netlify folder
 .netlify
+/.vs
+/.vscode

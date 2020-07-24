@@ -1,9 +1,9 @@
 import { Button } from "@material-ui/core"
 import cx from "classnames"
 import { CategorySidebar, ProductItem, Screen } from "components"
-import React, { useMemo, useState } from "react"
-import ScrollMenu from "react-horizontal-scrolling-menu"
+import React, { useState, useCallback, useMemo } from "react"
 import { queryCache, useInfiniteQuery } from "react-query"
+import ScrollMenu from "react-horizontal-scrolling-menu"
 import { useHistory } from "react-router-dom"
 import StackGrid from "react-stack-grid"
 import { Paths } from "router"
@@ -91,7 +91,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = () => {
 
   React.useEffect(() => {
     if (selectedTag !== ALL_ITEM) {
-      const query = `${productsUrl.getByTags}?tagName=${selectedTag}&`
+      const query = `${productsUrl.getByTags}?tagName=${selectedTag}`
       setQuery(query)
     } else clearQuery()
   }, [selectedTag])

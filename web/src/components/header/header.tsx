@@ -5,7 +5,7 @@ import cx from "classnames"
 import { SearchBar } from "components/search-bar/search-bar"
 import { useSidebar } from "components/SideBar"
 import React from "react"
-import { ChevronDown, ShoppingCart, User, HelpCircle } from "react-feather"
+import { ChevronDown, ShoppingCart, User } from "react-feather"
 import { useHistory } from "react-router"
 import { Paths } from "router"
 import { apiWorker } from "services"
@@ -69,13 +69,6 @@ export const Header: React.FC<HeaderState> = ({ type }) => {
         </div>
 
         <div className="flex flex-row items-center">
-          <div
-            className={cx("flex flex-row items-center mr-4 cursor-pointer ", textColor)}
-            onClick={() => history.push(Paths.feedback)}
-          >
-            <HelpCircle />
-            <p className={cx(textColor, "ml-2")}>Get help?</p>
-          </div>
           <div
             className={cx("flex flex-row items-center mr-4 cursor-pointer ", textColor)}
             onClick={token ? handleOpenMenu : () => openForm()}

@@ -1,12 +1,5 @@
-import {
-  HomeScreen,
-  OrderGeneralScreen,
-  ProfileScreen,
-  ProductDetailScreen,
-  FeedbackScreen,
-} from "screens"
+import { HomeScreen, OrderGeneralScreen, ProfileScreen, ProductDetailScreen } from "screens"
 import { OrderSuccessScreen } from "screens/order-general-screen/OrderSuccessScreen"
-import { RateProductScreen } from "screens/rate-product/RateProductScreen"
 
 export interface RouterModel {
   path: string
@@ -20,13 +13,11 @@ const Paths = {
   orderSuccess: "/order-success/",
   userProfile: "/user-profile",
   productDetail: "/product/",
-  rateProduct: "/rateProduct/",
-  feedback: "/feedback",
 }
 
+// eslint-disable-next-line
 Object.keys(Paths).map((key) => {
   Paths[key] = process.env.PUBLIC_URL + Paths[key]
-  return key
 })
 
 export const RootRouters: RouterModel[] = [
@@ -49,15 +40,6 @@ export const RootRouters: RouterModel[] = [
   {
     Component: OrderSuccessScreen,
     path: Paths.orderSuccess + ":id",
-  },
-
-  {
-    Component: RateProductScreen,
-    path: Paths.rateProduct + ":id",
-  },
-  {
-    Component: FeedbackScreen,
-    path: Paths.feedback,
   },
 ]
 
